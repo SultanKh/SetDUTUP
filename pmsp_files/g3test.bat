@@ -1,0 +1,1 @@
+PMSP.Cli.exe "C:\Users\Administrator.SERVER\Desktop\pmsp_files\UserFiles\Scripts\Basic\G3Test.xml"

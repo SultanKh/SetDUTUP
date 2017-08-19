@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExternalScriptsBrowser>
+  <ExternalsPackage Path="UserFiles\Externals" IsChecked="false">
+    <ExternalScript Name="DALAliveness" Path="UserFiles\Externals\DALAliveness.xml" IsChecked="false" />
+    <ExternalScript Name="PTTAliveness" Path="UserFiles\Externals\PTTAliveness.xml" IsChecked="false" />
+    <ExternalScript Name="aDSPAliveness" Path="UserFiles\Externals\aDSPAliveness.xml" IsChecked="false" />
+    <ExternalScript Name="TCSSAliveness" Path="UserFiles\Externals\TCSSAliveness.xml" IsChecked="false" />
+    <ExternalScript Name="ISHAliveness" Path="UserFiles\Externals\ISHAliveness.xml" IsChecked="false" />
+    <ExternalScript Name="iUnitAliveness" Path="UserFiles\Externals\iUnitAliveness.xml" IsChecked="false" />
+  </ExternalsPackage>
+</ExternalScriptsBrowser>

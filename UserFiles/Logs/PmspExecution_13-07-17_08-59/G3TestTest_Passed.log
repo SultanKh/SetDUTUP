@@ -1,0 +1,526 @@
+
+G3Test
+[13.07.2017 | 08:59:15] [SUMMARY   ]  [      Test Execution]  ========= Begin run Test: G3Test =====
+[13.07.2017 | 08:59:15] [INFO      ]  [   General Operation]  Begin recovery flow...
+[13.07.2017 | 08:59:15] [DEBUG     ]  [        Power Device]  Get power source
+[13.07.2017 | 08:59:15] [CLI_INFO  ]                             MuDi.Cli.exe PwrCtrl getPwrSrc  
+[13.07.2017 | 08:59:15] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 08:59:15] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 08:59:15] [DEBUG     ]  [        Power Device]  Get power source
+[13.07.2017 | 08:59:16] [CLI_INFO  ]                             MuDi.Cli.exe PwrCtrl getPwrSrc  
+[13.07.2017 | 08:59:16] [DEBUG     ]  [   General Operation]  Platform in AcDc power source, and in Os
+[13.07.2017 | 08:59:16] [INFO      ]  [   General Operation]  Finish recovery flow
+[13.07.2017 | 08:59:16] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 08:59:16] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 08:59:16] [CLI_INFO  ]                             PMSP.Cli.exe UserFiles\Scripts\Basic\G3Test.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[13.07.2017 | 08:59:16] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[13.07.2017 | 08:59:16] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[13.07.2017 | 08:59:16] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 08:59:16] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_01\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_01\3&11583659&0&28
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_10\3&11583659&0&FD
+Device Name: SoundWire Bus, Device ID: INTELAUDIO\SDW_ROOT\5&2F21C8F&1
+Device Name: SoundWire device, Device ID: INTELAUDIO\LINKTYPE_05&DEVTYPE_05&VEN_8086&DEV_AE35&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0500
+Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_10\3&11583659&0&98
+Device Name: Generic Bluetooth Adapter, Device ID: USB\VID_8087&PID_0AAA\5&3406B811&0&10
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_10\3&11583659&0&B4
+Device Name: CannonLake SCS3: SD Card - 9DF5, Device ID: PCI\VEN_8086&DEV_9DF5&SUBSYS_72708086&REV_10\3&11583659&0&A5
+Device Name: Digital microphone device, Device ID: INTELAUDIO\LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0100
+Unknown Device Name, Device ID: ACPI\INT34BB\3&11583659&0
+[13.07.2017 | 08:59:16] [DEEP_DEBUG]  [  Windows Controller]  Got a few down-drivers
+[13.07.2017 | 08:59:16] [SUMMARY   ]  [        Test: G3Test]  ===== Run iteration number 1 =====
+[13.07.2017 | 08:59:16] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:16] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:17] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:17] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:17] [INFO      ]  [        Test: G3Test]  Step DALAliveness is performing...
+[13.07.2017 | 08:59:17] [INFO      ]  [   DALAliveness Step]  Starting to run external script
+[13.07.2017 | 08:59:17] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DALAliveness\DALaliveness.exe  
+[13.07.2017 | 08:59:17] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DALAliveness\DALaliveness.exe    
+[13.07.2017 | 08:59:18] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 08:59:18] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+[13.07.2017 | 08:59:18] [DEBUG     ]  [   DALAliveness Step]  The output of DALAliveness is Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+
+[13.07.2017 | 08:59:18] [INFO      ]  [   DALAliveness Step]  The DALAliveness passed successfully
+[13.07.2017 | 08:59:18] [DEBUG     ]  [   DALAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 08:59:28] [INFO      ]  [        Test: G3Test]  Step DALAliveness passed with status: Passed
+[13.07.2017 | 08:59:28] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:28] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:28] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:28] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:28] [INFO      ]  [        Test: G3Test]  Step PTTAliveness is performing...
+[13.07.2017 | 08:59:28] [INFO      ]  [   PTTAliveness Step]  Starting to run external script
+[13.07.2017 | 08:59:28] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\PTTAliveness\run.bat  
+[13.07.2017 | 08:59:28] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\PTTAliveness\run.bat    
+[13.07.2017 | 08:59:32] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 08:59:32] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0
+[13.07.2017 | 08:59:32] [DEBUG     ]  [   PTTAliveness Step]  The output of PTTAliveness is 
+C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0 
+
+[13.07.2017 | 08:59:32] [INFO      ]  [   PTTAliveness Step]  The PTTAliveness passed successfully
+[13.07.2017 | 08:59:32] [DEBUG     ]  [   PTTAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 08:59:42] [INFO      ]  [        Test: G3Test]  Step PTTAliveness passed with status: Passed
+[13.07.2017 | 08:59:42] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:42] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:42] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:42] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:42] [INFO      ]  [        Test: G3Test]  Step G3 is performing...
+[13.07.2017 | 08:59:42] [INFO      ]  [             G3 Step]  Begin perform G3 
+[13.07.2017 | 08:59:42] [DEBUG     ]  [        Power Device]  Set power source to G3
+[13.07.2017 | 08:59:42] [CLI_INFO  ]                             MuDi.Cli.exe PwrCtrl setPwrSrc G3 
+[13.07.2017 | 08:59:42] [INFO      ]  [             G3 Step]  Finish perform G3 successfully
+[13.07.2017 | 08:59:42] [INFO      ]  [             G3 Step]  Connectivity checking is begining
+[13.07.2017 | 08:59:42] [DEBUG     ]  [             G3 Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 08:59:42] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 08:59:42] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 08:59:42] [TRACE     ]  [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 08:59:42] [DEEP_DEBUG]  [        Power Device]  Current system state isn't G3 it is: S0
+[13.07.2017 | 08:59:43] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 08:59:43] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 08:59:43] [TRACE     ]  [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 08:59:43] [DEEP_DEBUG]  [        Power Device]  Current system state isn't G3 it is: S0
+[13.07.2017 | 08:59:43] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 08:59:43] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 08:59:43] [TRACE     ]  [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 08:59:43] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 08:59:43] [DEBUG     ]  [             G3 Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 08:59:44] [DEBUG     ]  [             G3 Step]   Check Platform Isn't in OS is beginning...
+[13.07.2017 | 08:59:44] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:00:24] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:00:24] [DEBUG     ]  [             G3 Step]  Check Platform Isn't in OS passed successfull
+[13.07.2017 | 09:00:24] [DEBUG     ]  [             G3 Step]   Save System State Operation is beginning...
+[13.07.2017 | 09:00:24] [TRACE     ]  [    Condition Checks]  Last Boot Type set to: 'G3'
+[13.07.2017 | 09:00:24] [DEBUG     ]  [             G3 Step]  Save System State Operation passed successfull
+[13.07.2017 | 09:00:24] [INFO      ]  [             G3 Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:00:24] [INFO      ]  [             G3 Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:00:24] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:00:24] [DEEP_DEBUG]  [        Power Device]  Check platform stayed stable in last state  G3\ MeOff
+[13.07.2017 | 09:00:24] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:00:24] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:24] [TRACE     ]  [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:00:24] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 09:00:24] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:00:24] [DEBUG     ]  [         Post Checks]  Condition Check DUT lost ping is beginning...
+[13.07.2017 | 09:00:24] [DEBUG     ]  [   General Operation]  Run command line
+[13.07.2017 | 09:00:24] [DEEP_DEBUG]                             ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:00:27] [DEBUG     ]  [   General Operation]  Finish running
+[13.07.2017 | 09:00:27] [TRACE     ]  [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Request timed out.
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+[13.07.2017 | 09:00:27] [DEBUG     ]  [         Post Checks]  Condition Check DUT lost ping finished with status Passed
+[13.07.2017 | 09:00:27] [INFO      ]  [             G3 Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:00:37] [INFO      ]  [        Test: G3Test]  Step G3 passed with status: Passed
+[13.07.2017 | 09:00:37] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:00:37] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:00:37] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:00:37] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:00:37] [INFO      ]  [        Test: G3Test]  Step AcDc is performing...
+[13.07.2017 | 09:00:37] [INFO      ]  [           AcDc Step]  Begin perform AcDc
+[13.07.2017 | 09:00:37] [DEBUG     ]  [        Power Device]  Set power source to AcDc
+[13.07.2017 | 09:00:37] [CLI_INFO  ]                             MuDi.Cli.exe PwrCtrl setPwrSrc AcDc 
+[13.07.2017 | 09:00:37] [INFO      ]  [           AcDc Step]  Finish perform AcDc successfully
+[13.07.2017 | 09:00:37] [INFO      ]  [           AcDc Step]  Connectivity checking is begining
+[13.07.2017 | 09:00:37] [DEBUG     ]  [           AcDc Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 09:00:37] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:00:37] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:37] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:00:37] [DEEP_DEBUG]  [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:00:38] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:00:38] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:38] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:00:38] [DEEP_DEBUG]  [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:00:39] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:00:39] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:39] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:00:39] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:00:39] [DEBUG     ]  [           AcDc Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 09:00:39] [DEBUG     ]  [           AcDc Step]   Check Platform In OS is beginning...
+[13.07.2017 | 09:00:39] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:01:19] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:01:19] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:01:19] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 09:01:19] [DEBUG     ]  [           AcDc Step]  Check Platform In OS passed successfull
+[13.07.2017 | 09:01:19] [DEBUG     ]  [           AcDc Step]   Check Last Boot Type is beginning...
+[13.07.2017 | 09:01:19] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};  
+[13.07.2017 | 09:01:19] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};    
+[13.07.2017 | 09:01:22] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:22] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: ProviderName: Microsoft-Windows-Kernel-Boot
+
+TimeCreated                     Id LevelDisplayName Message                    
+-----------                     -- ---------------- -------                    
+9/8/2085 5:33:46 AM             27 Information      The boot type was 0x0.
+[13.07.2017 | 09:01:22] [DEBUG     ]  [  Windows Controller]  last boot type index was: 0
+[13.07.2017 | 09:01:22] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}} 
+[13.07.2017 | 09:01:22] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}   
+[13.07.2017 | 09:01:24] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:24] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: LastBootUpTime     
+--------------     
+9/8/2085 5:33:46 AM
+[13.07.2017 | 09:01:24] [TRACE     ]  [    Condition Checks]  Last Boot Type was: 'S5', at 9/8/2085 5:33:46 AM
+[13.07.2017 | 09:01:24] [DEBUG     ]  [           AcDc Step]  Check Last Boot Type passed successfull
+[13.07.2017 | 09:01:24] [INFO      ]  [           AcDc Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:01:24] [INFO      ]  [           AcDc Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:01:24] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:01:24] [DEEP_DEBUG]  [        Power Device]  Check platform stayed stable in last state  S0\ MeOn
+[13.07.2017 | 09:01:24] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:01:24] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:01:24] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:01:24] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:01:24] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:01:24] [DEBUG     ]  [         Post Checks]  Condition Check DUT response to ping is beginning...
+[13.07.2017 | 09:01:24] [DEBUG     ]  [   General Operation]  Run command line
+[13.07.2017 | 09:01:24] [DEEP_DEBUG]                             ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:01:24] [DEBUG     ]  [   General Operation]  Finish running
+[13.07.2017 | 09:01:24] [TRACE     ]  [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Reply from 192.168.1.253: bytes=32 time=2ms TTL=128
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 2ms, Average = 2ms
+[13.07.2017 | 09:01:24] [DEBUG     ]  [         Post Checks]  Condition Check DUT response to ping finished with status Passed
+[13.07.2017 | 09:01:24] [DEBUG     ]  [         Post Checks]  Condition Check FW Status is beginning...
+[13.07.2017 | 09:01:24] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts 
+[13.07.2017 | 09:01:24] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts   
+[13.07.2017 | 09:01:24] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:24] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Status Register1: 0x90000255
+FW Status Register2: 0x80110106
+FW Status Register3: 0x00000020
+FW Status Register4: 0x00004004
+FW Status Register5: 0x00000000
+FW Status Register6: 0x40400000
+
+  CurrentState:                         Normal
+  ManufacturingMode:                    Enabled
+  FlashPartition:                       Valid
+  OperationalState:                     CM0 with UMA
+  InitComplete:                         Complete
+  BUPLoadState:                         Success
+  ErrorCode:                            No Error
+  ModeOfOperation:                      Normal
+  SPI Flash Log:                        Present
+  Phase:                                Maestro
+  ME File System Corrupted:             No
+  FPF and ME Config Status:             Committed
+[13.07.2017 | 09:01:24] [DEBUG     ]  [    Condition Checks]  Fw status is: '0x80110106'
+[13.07.2017 | 09:01:24] [TRACE     ]  [    Condition Checks]  FW status checking accoridng G3 state
+[13.07.2017 | 09:01:24] [DEBUG     ]  [         Post Checks]  Condition Check FW Status finished with status Passed
+[13.07.2017 | 09:01:24] [DEBUG     ]  [         Post Checks]  Condition Check FW Response is beginning...
+[13.07.2017 | 09:01:24] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION 
+[13.07.2017 | 09:01:24] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION   
+[13.07.2017 | 09:01:25] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:25] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Version: 12.0.0.1006 LP
+[13.07.2017 | 09:01:25] [DEBUG     ]  [    Condition Checks]  Fw version is: '12.0.0.1006'
+[13.07.2017 | 09:01:25] [DEBUG     ]  [         Post Checks]  Condition Check FW Response finished with status Passed
+[13.07.2017 | 09:01:25] [DEBUG     ]  [         Post Checks]  Condition Check Device Manager Status is beginning...
+[13.07.2017 | 09:01:25] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[13.07.2017 | 09:01:25] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[13.07.2017 | 09:01:26] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:26] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_01\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_01\3&11583659&0&28
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_10\3&11583659&0&FD
+Device Name: SoundWire Bus, Device ID: INTELAUDIO\SDW_ROOT\5&2F21C8F&1
+Device Name: SoundWire device, Device ID: INTELAUDIO\LINKTYPE_05&DEVTYPE_05&VEN_8086&DEV_AE35&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0500
+Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_10\3&11583659&0&98
+Device Name: Generic Bluetooth Adapter, Device ID: USB\VID_8087&PID_0AAA\5&3406B811&0&10
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_10\3&11583659&0&B4
+Device Name: CannonLake SCS3: SD Card - 9DF5, Device ID: PCI\VEN_8086&DEV_9DF5&SUBSYS_72708086&REV_10\3&11583659&0&A5
+Device Name: Digital microphone device, Device ID: INTELAUDIO\LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0100
+Unknown Device Name, Device ID: ACPI\INT34BB\3&11583659&0
+[13.07.2017 | 09:01:26] [DEEP_DEBUG]  [  Windows Controller]  Got a few down-drivers
+[13.07.2017 | 09:01:26] [DEBUG     ]  [    Condition Checks]  There are a few down drivers
+[13.07.2017 | 09:01:26] [DEBUG     ]  [         Post Checks]  Condition Check Device Manager Status finished with status Passed
+[13.07.2017 | 09:01:26] [INFO      ]  [           AcDc Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:01:36] [INFO      ]  [        Test: G3Test]  Step AcDc passed with status: Passed
+[13.07.2017 | 09:01:36] [SUMMARY   ]  [        Test: G3Test]  ===== Iteration number 1 passed successfully =====
+[13.07.2017 | 09:01:36] [SUMMARY   ]  [        Test: G3Test]  ===== Run iteration number 2 =====
+[13.07.2017 | 09:01:36] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:36] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:36] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:36] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:36] [INFO      ]  [        Test: G3Test]  Step DALAliveness is performing...
+[13.07.2017 | 09:01:36] [INFO      ]  [   DALAliveness Step]  Starting to run external script
+[13.07.2017 | 09:01:36] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DALAliveness\DALaliveness.exe  
+[13.07.2017 | 09:01:36] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DALAliveness\DALaliveness.exe    
+[13.07.2017 | 09:01:37] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:37] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+[13.07.2017 | 09:01:37] [DEBUG     ]  [   DALAliveness Step]  The output of DALAliveness is Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+
+[13.07.2017 | 09:01:37] [INFO      ]  [   DALAliveness Step]  The DALAliveness passed successfully
+[13.07.2017 | 09:01:37] [DEBUG     ]  [   DALAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 09:01:47] [INFO      ]  [        Test: G3Test]  Step DALAliveness passed with status: Passed
+[13.07.2017 | 09:01:47] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:47] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:47] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:47] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:47] [INFO      ]  [        Test: G3Test]  Step PTTAliveness is performing...
+[13.07.2017 | 09:01:47] [INFO      ]  [   PTTAliveness Step]  Starting to run external script
+[13.07.2017 | 09:01:47] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\PTTAliveness\run.bat  
+[13.07.2017 | 09:01:47] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\PTTAliveness\run.bat    
+[13.07.2017 | 09:01:50] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:50] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0
+[13.07.2017 | 09:01:50] [DEBUG     ]  [   PTTAliveness Step]  The output of PTTAliveness is 
+C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0 
+
+[13.07.2017 | 09:01:50] [INFO      ]  [   PTTAliveness Step]  The PTTAliveness passed successfully
+[13.07.2017 | 09:01:50] [DEBUG     ]  [   PTTAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 09:02:00] [INFO      ]  [        Test: G3Test]  Step PTTAliveness passed with status: Passed
+[13.07.2017 | 09:02:00] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:00] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:00] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:00] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:00] [INFO      ]  [        Test: G3Test]  Step G3 is performing...
+[13.07.2017 | 09:02:00] [INFO      ]  [             G3 Step]  Begin perform G3 
+[13.07.2017 | 09:02:00] [DEBUG     ]  [        Power Device]  Set power source to G3
+[13.07.2017 | 09:02:00] [CLI_INFO  ]                             MuDi.Cli.exe PwrCtrl setPwrSrc G3 
+[13.07.2017 | 09:02:00] [INFO      ]  [             G3 Step]  Finish perform G3 successfully
+[13.07.2017 | 09:02:00] [INFO      ]  [             G3 Step]  Connectivity checking is begining
+[13.07.2017 | 09:02:00] [DEBUG     ]  [             G3 Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 09:02:00] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:02:00] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:00] [TRACE     ]  [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:02:00] [DEEP_DEBUG]  [        Power Device]  Current system state isn't G3 it is: S0
+[13.07.2017 | 09:02:01] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:02:01] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:01] [TRACE     ]  [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:02:01] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 09:02:01] [DEBUG     ]  [             G3 Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 09:02:01] [DEBUG     ]  [             G3 Step]   Check Platform Isn't in OS is beginning...
+[13.07.2017 | 09:02:01] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:02:41] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:02:41] [DEBUG     ]  [             G3 Step]  Check Platform Isn't in OS passed successfull
+[13.07.2017 | 09:02:41] [DEBUG     ]  [             G3 Step]   Save System State Operation is beginning...
+[13.07.2017 | 09:02:41] [TRACE     ]  [    Condition Checks]  Last Boot Type set to: 'G3'
+[13.07.2017 | 09:02:41] [DEBUG     ]  [             G3 Step]  Save System State Operation passed successfull
+[13.07.2017 | 09:02:41] [INFO      ]  [             G3 Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:02:41] [INFO      ]  [             G3 Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:02:41] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:02:41] [DEEP_DEBUG]  [        Power Device]  Check platform stayed stable in last state  G3\ MeOff
+[13.07.2017 | 09:02:41] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:02:41] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:41] [TRACE     ]  [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:02:41] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 09:02:41] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:02:41] [DEBUG     ]  [         Post Checks]  Condition Check DUT lost ping is beginning...
+[13.07.2017 | 09:02:41] [DEBUG     ]  [   General Operation]  Run command line
+[13.07.2017 | 09:02:41] [DEEP_DEBUG]                             ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:02:45] [DEBUG     ]  [   General Operation]  Finish running
+[13.07.2017 | 09:02:45] [TRACE     ]  [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Request timed out.
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+[13.07.2017 | 09:02:45] [DEBUG     ]  [         Post Checks]  Condition Check DUT lost ping finished with status Passed
+[13.07.2017 | 09:02:45] [INFO      ]  [             G3 Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:02:55] [INFO      ]  [        Test: G3Test]  Step G3 passed with status: Passed
+[13.07.2017 | 09:02:55] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:55] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:55] [DEEP_DEBUG]  [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:55] [CLI_INFO  ]                             MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:55] [INFO      ]  [        Test: G3Test]  Step AcDc is performing...
+[13.07.2017 | 09:02:55] [INFO      ]  [           AcDc Step]  Begin perform AcDc
+[13.07.2017 | 09:02:55] [DEBUG     ]  [        Power Device]  Set power source to AcDc
+[13.07.2017 | 09:02:55] [CLI_INFO  ]                             MuDi.Cli.exe PwrCtrl setPwrSrc AcDc 
+[13.07.2017 | 09:02:55] [INFO      ]  [           AcDc Step]  Finish perform AcDc successfully
+[13.07.2017 | 09:02:55] [INFO      ]  [           AcDc Step]  Connectivity checking is begining
+[13.07.2017 | 09:02:55] [DEBUG     ]  [           AcDc Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 09:02:55] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:02:55] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:55] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:02:55] [DEEP_DEBUG]  [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:02:56] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:02:56] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:56] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:02:56] [DEEP_DEBUG]  [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:02:56] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:02:56] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:56] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:02:57] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:02:57] [DEBUG     ]  [           AcDc Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 09:02:57] [DEBUG     ]  [           AcDc Step]   Check Platform In OS is beginning...
+[13.07.2017 | 09:02:57] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:03:37] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:03:37] [DEEP_DEBUG]  [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:03:37] [DEEP_DEBUG]  [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 09:03:37] [DEBUG     ]  [           AcDc Step]  Check Platform In OS passed successfull
+[13.07.2017 | 09:03:37] [DEBUG     ]  [           AcDc Step]   Check Last Boot Type is beginning...
+[13.07.2017 | 09:03:37] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};  
+[13.07.2017 | 09:03:37] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};    
+[13.07.2017 | 09:03:40] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:40] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: ProviderName: Microsoft-Windows-Kernel-Boot
+
+TimeCreated                     Id LevelDisplayName Message                    
+-----------                     -- ---------------- -------                    
+9/8/2085 5:36:04 AM             27 Information      The boot type was 0x0.
+[13.07.2017 | 09:03:40] [DEBUG     ]  [  Windows Controller]  last boot type index was: 0
+[13.07.2017 | 09:03:40] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}} 
+[13.07.2017 | 09:03:40] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}   
+[13.07.2017 | 09:03:42] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:42] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: LastBootUpTime     
+--------------     
+9/8/2085 5:36:04 AM
+[13.07.2017 | 09:03:42] [TRACE     ]  [    Condition Checks]  Last Boot Type was: 'S5', at 9/8/2085 5:36:04 AM
+[13.07.2017 | 09:03:42] [DEBUG     ]  [           AcDc Step]  Check Last Boot Type passed successfull
+[13.07.2017 | 09:03:42] [INFO      ]  [           AcDc Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:03:42] [INFO      ]  [           AcDc Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:03:42] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:03:42] [DEEP_DEBUG]  [        Power Device]  Check platform stayed stable in last state  S0\ MeOn
+[13.07.2017 | 09:03:42] [DEEP_DEBUG]  [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:03:42] [CLI_INFO  ]                             MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:03:42] [TRACE     ]  [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:03:42] [DEEP_DEBUG]  [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:03:42] [DEBUG     ]  [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:03:42] [DEBUG     ]  [         Post Checks]  Condition Check DUT response to ping is beginning...
+[13.07.2017 | 09:03:42] [DEBUG     ]  [   General Operation]  Run command line
+[13.07.2017 | 09:03:42] [DEEP_DEBUG]                             ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:03:42] [DEBUG     ]  [   General Operation]  Finish running
+[13.07.2017 | 09:03:42] [TRACE     ]  [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Reply from 192.168.1.253: bytes=32 time=2ms TTL=128
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 2ms, Average = 2ms
+[13.07.2017 | 09:03:42] [DEBUG     ]  [         Post Checks]  Condition Check DUT response to ping finished with status Passed
+[13.07.2017 | 09:03:42] [DEBUG     ]  [         Post Checks]  Condition Check FW Status is beginning...
+[13.07.2017 | 09:03:42] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts 
+[13.07.2017 | 09:03:42] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts   
+[13.07.2017 | 09:03:42] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:42] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Status Register1: 0x90000255
+FW Status Register2: 0x80110106
+FW Status Register3: 0x00000020
+FW Status Register4: 0x00004004
+FW Status Register5: 0x00000000
+FW Status Register6: 0x40400000
+
+  CurrentState:                         Normal
+  ManufacturingMode:                    Enabled
+  FlashPartition:                       Valid
+  OperationalState:                     CM0 with UMA
+  InitComplete:                         Complete
+  BUPLoadState:                         Success
+  ErrorCode:                            No Error
+  ModeOfOperation:                      Normal
+  SPI Flash Log:                        Present
+  Phase:                                Maestro
+  ME File System Corrupted:             No
+  FPF and ME Config Status:             Committed
+[13.07.2017 | 09:03:42] [DEBUG     ]  [    Condition Checks]  Fw status is: '0x80110106'
+[13.07.2017 | 09:03:42] [TRACE     ]  [    Condition Checks]  FW status checking accoridng G3 state
+[13.07.2017 | 09:03:42] [DEBUG     ]  [         Post Checks]  Condition Check FW Status finished with status Passed
+[13.07.2017 | 09:03:42] [DEBUG     ]  [         Post Checks]  Condition Check FW Response is beginning...
+[13.07.2017 | 09:03:42] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION 
+[13.07.2017 | 09:03:42] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION   
+[13.07.2017 | 09:03:44] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:44] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Version: 12.0.0.1006 LP
+[13.07.2017 | 09:03:44] [DEBUG     ]  [    Condition Checks]  Fw version is: '12.0.0.1006'
+[13.07.2017 | 09:03:44] [DEBUG     ]  [         Post Checks]  Condition Check FW Response finished with status Passed
+[13.07.2017 | 09:03:44] [DEBUG     ]  [         Post Checks]  Condition Check Device Manager Status is beginning...
+[13.07.2017 | 09:03:44] [DEBUG     ]  [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[13.07.2017 | 09:03:44] [CLI_INFO  ]                             xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[13.07.2017 | 09:03:44] [DEBUG     ]  [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:44] [TRACE     ]  [xOSa Remote Executer]  Output from running command line: Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_01\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_01\3&11583659&0&28
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_10\3&11583659&0&FD
+Device Name: SoundWire Bus, Device ID: INTELAUDIO\SDW_ROOT\5&2F21C8F&1
+Device Name: SoundWire device, Device ID: INTELAUDIO\LINKTYPE_05&DEVTYPE_05&VEN_8086&DEV_AE35&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0500
+Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_10\3&11583659&0&98
+Device Name: Generic Bluetooth Adapter, Device ID: USB\VID_8087&PID_0AAA\5&3406B811&0&10
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_10\3&11583659&0&B4
+Device Name: CannonLake SCS3: SD Card - 9DF5, Device ID: PCI\VEN_8086&DEV_9DF5&SUBSYS_72708086&REV_10\3&11583659&0&A5
+Device Name: Digital microphone device, Device ID: INTELAUDIO\LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0100
+Unknown Device Name, Device ID: ACPI\INT34BB\3&11583659&0
+[13.07.2017 | 09:03:44] [DEEP_DEBUG]  [  Windows Controller]  Got a few down-drivers
+[13.07.2017 | 09:03:44] [DEBUG     ]  [    Condition Checks]  There are a few down drivers
+[13.07.2017 | 09:03:44] [DEBUG     ]  [         Post Checks]  Condition Check Device Manager Status finished with status Passed
+[13.07.2017 | 09:03:44] [INFO      ]  [           AcDc Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:03:54] [INFO      ]  [        Test: G3Test]  Step AcDc passed with status: Passed
+[13.07.2017 | 09:03:54] [SUMMARY   ]  [        Test: G3Test]  ===== Iteration number 2 passed successfully =====
+[13.07.2017 | 09:03:54] [SUMMARY_PASS]  [        Test: G3Test]  ===== Finish run 2 iterations successfully =====
+[13.07.2017 | 09:03:54] [SUMMARY   ]  [      Test Execution]  ========= Finish run Test: G3Test =====

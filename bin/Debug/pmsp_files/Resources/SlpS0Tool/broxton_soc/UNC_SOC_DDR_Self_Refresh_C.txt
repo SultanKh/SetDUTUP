@@ -1,0 +1,266 @@
+##########################################################################
+# SEP Uncore Event File: UNC_SOC_DDR_Self_refresh.txt
+# Copyright (c) 2016 Intel Corporation. All rights reserved.
+# Events: PRIVATE - INTEL CONFIDENTIAL - FOR INTEL INTERNAL USE ONLY
+# Created: Wed Feb 17 2016
+# Target: BXT-B0
+# Revision: 0.9-5.1.0.3
+##########################################################################
+
+
+# EVENT INFORMATION
+
+# GROUP_ID         : 70543901
+# GROUP_NAME       : UNC_SOC_DDR_Self_Refresh
+# GROUP_PATH       : /SEP/PUBLIC/GROUPS/ - 1348
+# GROUP_DESC       : Counts the number of clock cycles that memory is in self-refresh.
+# GROUP_TAG        : 
+# EVENT_ID         : 70543861
+# EVENT_NAME       : DDR0_Self_Refresh
+# EVENT_PATH       : /SEP/PUBLIC/EVENTS/DUNIT/DUNIT8/ - 1357
+# EVENT_DESC       : Counts the number of cycles that the DDR unit spends in self-imposed self-refresh.
+# EVENT_EXPRESSION : /smca/par_ddrw/lpddrdunitw_wrapper_top/dunit8_top/dunit/dunitc/dmaint/mnt_dyn_in_sr == 1'b1 && !/smca/par_ddrw/lpddrdunitw_wrapper_top/dunit8_top/dunit/dunitc/dreq/darb/darb_read == 1'b1
+# EVENT_TAG        : 
+# EVENT_COUNTER    : 0
+# EVENT_ID         : 70543871
+# EVENT_NAME       : DDR1_Self_Refresh
+# EVENT_PATH       : /SEP/PUBLIC/EVENTS/DUNIT/DUNIT9/ - 1358
+# EVENT_DESC       : Counts the number of cycles that the DDR unit spends in self-imposed self-refresh.
+# EVENT_EXPRESSION : /smca/par_2lm/lpddrdunitn_wrapper_top/dunit9_top/dunit/dunitc/dmaint/mnt_dyn_in_sr == 1'b1 && !/smca/par_2lm/lpddrdunitn_wrapper_top/dunit9_top/dunit/dunitc/dreq/darb/darb_read == 1'b1
+# EVENT_TAG        : 
+# EVENT_COUNTER    : 1
+# EVENT_ID         : 70543841
+# EVENT_NAME       : DDR2_Self_Refresh
+# EVENT_PATH       : /SEP/PUBLIC/EVENTS/DUNIT/DUNIT10/ - 1355
+# EVENT_DESC       : Counts the number of cycles that the DDR unit spends in self-imposed self-refresh.
+# EVENT_EXPRESSION : /smca/par_psf2/lpddrdunite_wrapper_top/dunit10_top/dunit/dunitc/dmaint/mnt_dyn_in_sr == 1'b1 && !/smca/par_psf2/lpddrdunite_wrapper_top/dunit10_top/dunit/dunitc/dreq/darb/darb_read == 1'b1
+# EVENT_TAG        : 
+# EVENT_COUNTER    : 2
+# EVENT_ID         : 70543851
+# EVENT_NAME       : DDR3_Self_Refresh
+# EVENT_PATH       : /SEP/PUBLIC/EVENTS/DUNIT/DUNIT11/ - 1356
+# EVENT_DESC       : Counts the number of cycles that the DDR unit spends in self-imposed self-refresh.
+# EVENT_EXPRESSION : /smca/par_2lm/lpddrdunits_wrapper_top/dunit11_top/dunit/dunitc/dmaint/mnt_dyn_in_sr == 1'b1 && !/smca/par_2lm/lpddrdunits_wrapper_top/dunit11_top/dunit/dunitc/dreq/darb/darb_read == 1'b1
+# EVENT_TAG        : 
+# EVENT_COUNTER    : 3
+# CLOCK_COUNTER    : 4
+
+# HEADER	CFGTYPE	BUS_NUMBER	DEVICE_NUMBER	FUNC_NUMBER	REG_SIZE	OPERATION	BARNAME	OFFSET	VALUE	MASK
+#<CFGTYPE-MMIO/PCICFG>	<BUS_NUMBER>	<DEVICE_NUMBER>	<FUNC_NUMBER>	<REGISTER_SIZE>	<READ/WRITE/RMW operation>	<BARNAME>	<OFFSET>	<VALUE>	<MASK>
+
+# VISA CONFIGURATION
+
+# NPKDSD
+MEM	0	0	2	32	WRITE	NPKBAR	0x00000090	0x00000001	0xFFFFFFFF
+# NPKDSC
+MEM	0	0	2	32	WRITE	NPKBAR	0x00000080	0x00000000	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00020080	0x00000001	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00020084	0x00000001	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00020088	0x00000102	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane2
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002008c	0x00000203	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane3
+MEM	0	0	2	32	WRITE	NPKBAR	0x00020090	0x00000304	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane4
+MEM	0	0	2	32	WRITE	NPKBAR	0x00020094	0x00000405	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane5
+MEM	0	0	2	32	WRITE	NPKBAR	0x00020098	0x00000506	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane6
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002009c	0x00000a0b	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_lane7
+MEM	0	0	2	32	WRITE	NPKBAR	0x000200a0	0x00000b0c	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_xbar0
+MEM	0	0	2	32	WRITE	NPKBAR	0x000200ac	0x05003004	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_xbar1
+MEM	0	0	2	32	WRITE	NPKBAR	0x000200b0	0x0b00901c	0xFFFFFFFF
+# /mdu_clm/i_mdu_clm_xbar2
+MEM	0	0	2	32	WRITE	NPKBAR	0x000200b4	0x0000f034	0xFFFFFFFF
+# /smca/par_2lm/lpddrdunitn_wrapper_top/dunit9_top/dunit_visa_ulm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00027100	0x00000001	0xFFFFFFFF
+# /smca/par_2lm/lpddrdunitn_wrapper_top/dunit9_top/dunit_visa_ulm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00027104	0x00000001	0xFFFFFFFF
+# /smca/par_2lm/lpddrdunits_wrapper_top/dunit11_top/dunit_visa_ulm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00026c80	0x00000001	0xFFFFFFFF
+# /smca/par_2lm/lpddrdunits_wrapper_top/dunit11_top/dunit_visa_ulm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00026c84	0x00000001	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm/i_pcs_cdu_2lm_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b880	0x00000001	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm/i_pcs_cdu_2lm_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b884	0x0000060c	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm/i_pcs_cdu_2lm_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b888	0x0000060d	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm2/i_pcs_cdu_2lm_plm2_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b900	0x00000001	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm2/i_pcs_cdu_2lm_plm2_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b904	0x00000001	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm2/i_pcs_cdu_2lm_plm2_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b908	0x00000102	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm2/i_pcs_cdu_2lm_plm2_lane2
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b90c	0x00000809	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm2/i_pcs_cdu_2lm_plm2_lane3
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b910	0x0000090a	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm2/i_pcs_cdu_2lm_plm2_lane4
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b914	0x00001518	0xFFFFFFFF
+# /smca/par_2lm/pcs_cdu_2lm/pcs_cdu_2lm_plm2/i_pcs_cdu_2lm_plm2_lane5
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b918	0x00001519	0xFFFFFFFF
+# /smca/par_ccp_cci/pcs_cdu_ccp_cci/pcs_cdu_ccp_cci_plm/i_pcs_cdu_ccp_cci_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ae00	0x00000001	0xFFFFFFFF
+# /smca/par_ccp_cci/pcs_cdu_ccp_cci/pcs_cdu_ccp_cci_plm/i_pcs_cdu_ccp_cci_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ae04	0x00000203	0xFFFFFFFF
+# /smca/par_ccp_cci/pcs_cdu_ccp_cci/pcs_cdu_ccp_cci_plm/i_pcs_cdu_ccp_cci_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ae08	0x00000304	0xFFFFFFFF
+# /smca/par_ddrw/lpddrdunitw_wrapper_top/dunit8_top/dunit_visa_ulm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00027080	0x00000001	0xFFFFFFFF
+# /smca/par_ddrw/lpddrdunitw_wrapper_top/dunit8_top/dunit_visa_ulm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00027084	0x00000001	0xFFFFFFFF
+# /smca/par_ddrw/pcs_cdu_ddrw/pcs_cdu_ddrw_plm/i_pcs_cdu_ddrw_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b580	0x00000001	0xFFFFFFFF
+# /smca/par_ddrw/pcs_cdu_ddrw/pcs_cdu_ddrw_plm/i_pcs_cdu_ddrw_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b584	0x00000001	0xFFFFFFFF
+# /smca/par_ddrw/pcs_cdu_ddrw/pcs_cdu_ddrw_plm/i_pcs_cdu_ddrw_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b588	0x00000002	0xFFFFFFFF
+# /smca/par_gmm/rdu_ne/rdu_ne_plm/i_rdu_ne_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024200	0x00000001	0xFFFFFFFF
+# /smca/par_gmm/rdu_ne/rdu_ne_plm/i_rdu_ne_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024204	0x00000405	0xFFFFFFFF
+# /smca/par_gmm/rdu_ne/rdu_ne_plm/i_rdu_ne_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024208	0x00000506	0xFFFFFFFF
+# /smca/par_hoffl/cdu_hoffl/cdu_ufsd_plm/i_cdu_ufsd_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024f00	0x00000001	0xFFFFFFFF
+# /smca/par_hoffl/cdu_hoffl/cdu_ufsd_plm/i_cdu_ufsd_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024f04	0x00000405	0xFFFFFFFF
+# /smca/par_hoffl/cdu_hoffl/cdu_ufsd_plm/i_cdu_ufsd_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024f08	0x00000506	0xFFFFFFFF
+# /smca/par_psf0/pcs_cdu_psf0/pcs_cdu_psf0_plm/i_pcs_cdu_psf0_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b400	0x00000001	0xFFFFFFFF
+# /smca/par_psf0/pcs_cdu_psf0/pcs_cdu_psf0_plm/i_pcs_cdu_psf0_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b404	0x00000001	0xFFFFFFFF
+# /smca/par_psf0/pcs_cdu_psf0/pcs_cdu_psf0_plm/i_pcs_cdu_psf0_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002b408	0x00000102	0xFFFFFFFF
+# /smca/par_psf1/cdu_psf1/cdu_psf1_plm/i_cdu_psf1_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ba80	0x00000001	0xFFFFFFFF
+# /smca/par_psf1/cdu_psf1/cdu_psf1_plm/i_cdu_psf1_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ba84	0x00000407	0xFFFFFFFF
+# /smca/par_psf1/cdu_psf1/cdu_psf1_plm/i_cdu_psf1_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ba88	0x00000508	0xFFFFFFFF
+# /smca/par_psf2/cdu_psf2/cdu_psf2_plm/i_cdu_psf2_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ba00	0x00000001	0xFFFFFFFF
+# /smca/par_psf2/cdu_psf2/cdu_psf2_plm/i_cdu_psf2_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ba04	0x00000001	0xFFFFFFFF
+# /smca/par_psf2/cdu_psf2/cdu_psf2_plm/i_cdu_psf2_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0002ba08	0x00000002	0xFFFFFFFF
+# /smca/par_psf2/lpddrdunite_wrapper_top/dunit10_top/dunit_visa_ulm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00026c00	0x00000001	0xFFFFFFFF
+# /smca/par_psf2/lpddrdunite_wrapper_top/dunit10_top/dunit_visa_ulm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00026c04	0x00000001	0xFFFFFFFF
+# /smca/par_psf3/cdu_psf3/cdu_psf3_plm/i_cdu_psf3_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024900	0x00000001	0xFFFFFFFF
+# /smca/par_psf3/cdu_psf3/cdu_psf3_plm/i_cdu_psf3_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024904	0x00000609	0xFFFFFFFF
+# /smca/par_psf3/cdu_psf3/cdu_psf3_plm/i_cdu_psf3_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024908	0x0000070a	0xFFFFFFFF
+# /smca/par_psf4/rdu_nw/rdu_nw_plm/i_rdu_nw_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024400	0x00000001	0xFFFFFFFF
+# /smca/par_psf4/rdu_nw/rdu_nw_plm/i_rdu_nw_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024404	0x00000001	0xFFFFFFFF
+# /smca/par_psf4/rdu_nw/rdu_nw_plm/i_rdu_nw_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024408	0x00000102	0xFFFFFFFF
+# /smca/par_sramlpio/cdu_sramlpio/cdu_sramlpio_plm/i_cdu_sramlpio_plm_ctrl
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024880	0x00000001	0xFFFFFFFF
+# /smca/par_sramlpio/cdu_sramlpio/cdu_sramlpio_plm/i_cdu_sramlpio_plm_lane0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024884	0x00000203	0xFFFFFFFF
+# /smca/par_sramlpio/cdu_sramlpio/cdu_sramlpio_plm/i_cdu_sramlpio_plm_lane1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00024888	0x00000304	0xFFFFFFFF
+# SCRPD0
+MEM	0	0	2	32	WRITE	NPKBAR	0x000000e0	0x01000000	0xFFFFFFFF
+
+# CHAP CONFIGURATION
+
+# SDC
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005000	0x00008000	0xFFFFFFFF
+# SOCHAPPKTCTRL
+MEM	0	0	2	32	WRITE	NPKBAR	0x000050a8	0x00000000	0xFFFFFFFF
+# CEC_0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005008	0x003f80C2	0xFFFFFFFF
+# CEC_1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000500c	0x00cf20C2	0xFFFFFFFF
+# CEC_2
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005010	0x00f308C2	0xFFFFFFFF
+# CEC_3
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005014	0x00fc02C2	0xFFFFFFFF
+# CEC_4
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005018	0x000000C3	0xFFFFFFFF
+# CEC_5
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000501c	0x00000000	0xFFFFFFFF
+# CEC_6
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005020	0x00000000	0xFFFFFFFF
+# CEC_7
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005024	0x00000000	0xFFFFFFFF
+# SOCHAPDATA_0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005034	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005030	0x10000000	0xFFFFFFFF
+# SOCHAPEV_0
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000502c	0x00000120	0xFFFFFFFF
+# SOCHAPCMD_0
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005028	0x00150000	0xFFFFFFFF
+# SOCHAPDATA_1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005044	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005040	0x10000000	0xFFFFFFFF
+# SOCHAPEV_1
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000503c	0x00000121	0xFFFFFFFF
+# SOCHAPCMD_1
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005038	0x00150000	0xFFFFFFFF
+# SOCHAPDATA_2
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005054	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_2
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005050	0x10000000	0xFFFFFFFF
+# SOCHAPEV_2
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000504c	0x00000122	0xFFFFFFFF
+# SOCHAPCMD_2
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005048	0x00150000	0xFFFFFFFF
+# SOCHAPDATA_3
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005064	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_3
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005060	0x10000000	0xFFFFFFFF
+# SOCHAPEV_3
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000505c	0x00000123	0xFFFFFFFF
+# SOCHAPCMD_3
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005058	0x00150000	0xFFFFFFFF
+# SOCHAPDATA_4
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005074	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_4
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005070	0x00000000	0xFFFFFFFF
+# SOCHAPEV_4
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000506c	0x00000124	0xFFFFFFFF
+# SOCHAPCMD_4
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005068	0x00150000	0xFFFFFFFF
+# SOCHAPDATA_5
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005084	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_5
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005080	0x00000000	0xFFFFFFFF
+# SOCHAPEV_5
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000507c	0x00000000	0xFFFFFFFF
+# SOCHAPCMD_5
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005078	0x00100000	0xFFFFFFFF
+# SOCHAPDATA_6
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005094	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_6
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005090	0x00000000	0xFFFFFFFF
+# SOCHAPEV_6
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000508c	0x00000000	0xFFFFFFFF
+# SOCHAPCMD_6
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005088	0x00100000	0xFFFFFFFF
+# SOCHAPDATA_7
+MEM	0	0	2	32	WRITE	NPKBAR	0x000050a4	0x00000000	0xFFFFFFFF
+# SOCHAPSTAT_7
+MEM	0	0	2	32	WRITE	NPKBAR	0x000050a0	0x00000000	0xFFFFFFFF
+# SOCHAPEV_7
+MEM	0	0	2	32	WRITE	NPKBAR	0x0000509c	0x00000000	0xFFFFFFFF
+# SOCHAPCMD_7
+MEM	0	0	2	32	WRITE	NPKBAR	0x00005098	0x00100000	0xFFFFFFFF
+

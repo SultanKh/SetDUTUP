@@ -1,0 +1,115 @@
+# -->START EXCLUDE FROM EXTERNAL
+#**********************************************************************
+#                                                                      *
+#                          INTEL CONFIDENTIAL                          *
+#                                                                      *
+#  Copyright (c) 2016 Intel Corporation All Rights Reserved.           *
+#  The source code contained or described herein and all documents     *
+#  related to the source code ("Material") are owned by Intel          *
+#  Corporation or its suppliers or licensors. Title to the Material    *
+#  remains with Intel Corporation or its suppliers and licensors. The  *
+#  Material contains trade secrets and proprietary and confidential    *
+#  information of Intel or its suppliers and licensors. The Material   *
+#  is protected by worldwide copyright and trade secret laws and treaty*
+#  provisions. No part of the Material may be used, copied, reproduced,*
+#  modified, published, uploaded, posted, transmitted, distributed, or *
+#  disclosed in any way without Intel’s prior express written          *
+#  permission.                                                         *
+#                                                                      *
+#  No license under any patent, copyright, trade secret or other       *
+#  intellectual property right is granted to or conferred upon you by  *
+#  disclosure or delivery of the Materials, either expressly, by       *
+#  implication, inducement, estoppel or otherwise. Any license under   *
+#  such intellectual property rights must be express and approved by   *
+#  Intel in writing.                                                   *
+#                                                                      *
+# **********************************************************************
+
+# -->START EXCLUDE FROM NDA
+
+#-------------------------------------------------------------------------------
+# Cannon Lake PCH-LP (CNP-LP)
+#-------------------------------------------------------------------------------
+
+CNP-LP_ACCUM_SD4-PLL_MMIO_ADDRESS=0x30
+CNP-LP_ACCUM_SD4-PLL__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_SD4-PLL__METHOD=DIFF
+CNP-LP_ACCUM_SD4-PLL__DESCRIPTION=SD4 PLL is active (On)
+
+CNP-LP_ACCUM_LPSS_MMIO_ADDRESS=0x150
+CNP-LP_ACCUM_LPSS__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_LPSS__METHOD=DIFF
+CNP-LP_ACCUM_LPSS__DESCRIPTION=LPSS is active (On)
+
+CNP-LP_ACCUM_AUDIO-CORE2-HF_MMIO_ADDRESS=0x1B4
+CNP-LP_ACCUM_AUDIO-CORE2-HF__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_AUDIO-CORE2-HF__METHOD=DIFF
+CNP-LP_ACCUM_AUDIO-CORE2-HF__DESCRIPTION=DSP Core 2 is active and running on the high speed clock sourced from Audio PLL.
+
+CNP-LP_ACCUM_AUDIO-CORE2-LF_MMIO_ADDRESS=0x1B8
+CNP-LP_ACCUM_AUDIO-CORE2-LF__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_AUDIO-CORE2-LF__METHOD=DIFF
+CNP-LP_ACCUM_AUDIO-CORE2-LF__DESCRIPTION=DSP Core 2 is active and running on the low speed clock sourced from XTAL OSC.
+
+CNP-LP_ACCUM_AUDIO-CORE3-HF_MMIO_ADDRESS=0x1BC
+CNP-LP_ACCUM_AUDIO-CORE3-HF__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_AUDIO-CORE3-HF__METHOD=DIFF
+CNP-LP_ACCUM_AUDIO-CORE3-HF__DESCRIPTION=DSP Core 3 is active and running on the high speed clock sourced from Audio PLL.
+
+CNP-LP_ACCUM_AUDIO-CORE3-LF_MMIO_ADDRESS=0x1C0
+CNP-LP_ACCUM_AUDIO-CORE3-LF__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_AUDIO-CORE3-LF__METHOD=DIFF
+CNP-LP_ACCUM_AUDIO-CORE3-LF__DESCRIPTION=DSP Core 3 is active and running on the low speed clock sourced from XTAL OSC.
+
+CNP-LP_ACCUM_CNVi-PLL_MMIO_ADDRESS=0x1C4
+CNP-LP_ACCUM_CNVi-PLL__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_CNVi-PLL__METHOD=DIFF
+CNP-LP_ACCUM_CNVi-PLL__DESCRIPTION=CNVi PLL is active (On)
+
+CNP-LP_ACCUM_MAIN-CRO_MMIO_ADDRESS=0x1C8
+CNP-LP_ACCUM_MAIN-CRO__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_MAIN-CRO__METHOD=DIFF
+CNP-LP_ACCUM_MAIN-CRO__DESCRIPTION=Main CRO is active (On)
+
+CNP-LP_ACCUM_DSP-CRO_MMIO_ADDRESS=0x1CC
+CNP-LP_ACCUM_DSP-CRO__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_DSP-CRO__METHOD=DIFF
+CNP-LP_ACCUM_DSP-CRO__DESCRIPTION=DSP CRO is active (On)
+
+CNP-LP_ACCUM_XTAL-OSC_MMIO_ADDRESS=0x1D0
+CNP-LP_ACCUM_XTAL-OSC__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_XTAL-OSC__METHOD=DIFF
+CNP-LP_ACCUM_XTAL__DESCRIPTION=XTAL OSC is active (On)
+
+CNP-LP_ACCUM_CNVi-Wi-Fi_MMIO_ADDRESS=0x1D4
+CNP-LP_ACCUM_CNVi-Wi-Fi__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_CNVi-Wi-Fi__METHOD=DIFF
+CNP-LP_ACCUM_CNVi-Wi-Fi__DESCRIPTION=WiFi component of CNVI is active (On)
+
+CNP-LP_ACCUM_CNVi-BT_MMIO_ADDRESS=0x1D8
+CNP-LP_ACCUM_CNVi-BT__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_CNVi-BT__METHOD=DIFF
+CNP-LP_ACCUM_CNVi-BT__DESCRIPTION=Bluetooth component of CNVi is active (On)
+
+CNP-LP_ACCUM_CNVi-GNSS_MMIO_ADDRESS=0x1DC
+CNP-LP_ACCUM_CNVi-GNSS__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_CNVi-GNSS__METHOD=DIFF
+CNP-LP_ACCUM_CNVi-GNSS__DESCRIPTION=GNSS component of CNVi is active (On)
+
+CNP-LP_ACCUM_CNVi-MFUART_MMIO_ADDRESS=0x1E0
+CNP-LP_ACCUM_CNVi-MFUART__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_CNVi-MFUART__METHOD=DIFF
+CNP-LP_ACCUM_CNVi-MFUART__DESCRIPTION=MFUART component of CNVi is active (On)
+
+CNP-LP_ACCUM_CNVi-DPHY-Rx_MMIO_ADDRESS=0x1E4
+CNP-LP_ACCUM_CNVi-DPHY-Rx__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_CNVi-DPHY-Rx__METHOD=DIFF
+CNP-LP_ACCUM_CNVi-DPHY-Rx__DESCRIPTION=Rx component of DPHY is active (On)
+
+CNP-LP_ACCUM_CNVi-DPHY-Tx_MMIO_ADDRESS=0x1E8
+CNP-LP_ACCUM_CNVi-DPHY-Tx__CONSTANT-MASK=0xFFFFFFFF
+CNP-LP_ACCUM_CNVi-DPHY-Tx__METHOD=DIFF
+CNP-LP_ACCUM_CNVi-DPHY-Tx__DESCRIPTION=Tx component of DPHY is active (On)
+
+# <--END EXCLUDE FROM NDA
+# <--END EXCLUDE FROM EXTERNAL

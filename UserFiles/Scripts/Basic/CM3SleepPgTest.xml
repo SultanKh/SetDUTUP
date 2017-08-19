@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CM3SleepPgTest</Name>
+  <NumberOfIterations xsi:nil="true" />
+  <StepsArray>
+  <Step>
+      <Operation>ExternalScript</Operation>
+      <StepParameters xsi:type="ExternalStepParameter">
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>Default</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+        <Name>DALAliveness</Name>
+        <ExternalScriptPath>UserFiles\Externals\DALAliveness.xml</ExternalScriptPath>
+        <ExecutionArgs />
+        <FailEntrieTest>false</FailEntrieTest>
+        <PassedOnReturnCode>true</PassedOnReturnCode>
+        <PassedReturnCode>0</PassedReturnCode>
+        <PassedOnReturnString>false</PassedOnReturnString>
+        <PassedReturnString />
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>ExternalScript</Operation>
+      <StepParameters xsi:type="ExternalStepParameter">
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>Default</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+        <Name>PTTAliveness</Name>
+        <ExternalScriptPath>UserFiles\Externals\PTTAliveness.xml</ExternalScriptPath>
+        <ExecutionArgs />
+        <FailEntrieTest>false</FailEntrieTest>
+        <PassedOnReturnCode>true</PassedOnReturnCode>
+        <PassedReturnCode>0</PassedReturnCode>
+        <PassedOnReturnString>false</PassedOnReturnString>
+        <PassedReturnString />
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>Sleep</Operation>
+      <StepParameters>
+        <PostState>
+          <SystemState>S3</SystemState>
+          <MeState>MeOn</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>WaitIdleTime</Operation>
+      <StepParameters>
+        <PostState>
+          <SystemState>S3</SystemState>
+          <MeState>MeOff</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>PowerBtn</Operation>
+      <StepParameters>
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>MeOn</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+      </StepParameters>
+    </Step>
+  </StepsArray>
+</TestDefinition>

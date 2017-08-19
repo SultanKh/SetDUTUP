@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ConnectedStandbyTest</Name>
+  <NumberOfIterations xsi:nil="true" />
+  <StepsArray>
+    <Step>
+      <Operation>ExternalScript</Operation>
+      <StepParameters xsi:type="ExternalStepParameter">
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>Default</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+        <Name>DALAliveness</Name>
+        <ExternalScriptPath>UserFiles\Externals\DALAliveness.xml</ExternalScriptPath>
+        <ExecutionArgs />
+        <FailEntrieTest>false</FailEntrieTest>
+        <PassedOnReturnCode>true</PassedOnReturnCode>
+        <PassedReturnCode>0</PassedReturnCode>
+        <PassedOnReturnString>false</PassedOnReturnString>
+        <PassedReturnString />
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>ExternalScript</Operation>
+      <StepParameters xsi:type="ExternalStepParameter">
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>Default</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+        <Name>PTTAliveness</Name>
+        <ExternalScriptPath>UserFiles\Externals\PTTAliveness.xml</ExternalScriptPath>
+        <ExecutionArgs />
+        <FailEntrieTest>false</FailEntrieTest>
+        <PassedOnReturnCode>true</PassedOnReturnCode>
+        <PassedReturnCode>0</PassedReturnCode>
+        <PassedOnReturnString>false</PassedOnReturnString>
+        <PassedReturnString />
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>EnterConnectedStandby</Operation>
+      <StepParameters xsi:type="EnterConnectedStandbyStepParameter">
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>Default</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+        <CheckingTime>60</CheckingTime>
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>Wait</Operation>
+      <StepParameters xsi:type="WaitStepParameter">
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>Default</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+        <Duration>60</Duration>
+      </StepParameters>
+    </Step>
+    <Step>
+      <Operation>ParseConnectedStandby</Operation>
+      <StepParameters xsi:type="ParseConnectedStandbyStepParameter">
+        <PostState>
+          <SystemState>S0</SystemState>
+          <MeState>Default</MeState>
+          <PhyState>Default</PhyState>
+        </PostState>
+        <PostTimeout xsi:nil="true" />
+        <PassingPercent>50</PassingPercent>
+      </StepParameters>
+    </Step>
+  </StepsArray>
+</TestDefinition>

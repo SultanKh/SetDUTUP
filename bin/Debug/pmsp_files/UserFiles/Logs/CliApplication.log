@@ -1,0 +1,884 @@
+[23.07.2017 | 01:49:26] [   TRACE] [           XML Utils]  Failed to deserialze execution file- stae: Could not find file 'C:\Program Files\Intel Power Managment Script Player\stae'.
+[23.07.2017 | 01:49:28] [   TRACE] [           XML Utils]  Failed to deserialze execution file- state: Could not find file 'C:\Program Files\Intel Power Managment Script Player\state'.
+[31.07.2017 | 13:56:44] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\Administrator.SERVER\Desktop\pmsp_files\UserFiles\Scripts\Basic\G3Test.xml: Object reference not set to an instance of an object.
+[31.07.2017 | 13:56:44] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[31.07.2017 | 13:56:44] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[31.07.2017 | 13:56:44] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[31.07.2017 | 13:56:44] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[31.07.2017 | 13:56:44] [   TRACE] Begin play async test execution
+[31.07.2017 | 13:56:44] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[31.07.2017 | 13:56:44] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Consumer. (Windowsx64) 
+[31.07.2017 | 13:56:44] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[31.07.2017 | 13:56:44] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[31.07.2017 | 13:56:44] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[31.07.2017 | 13:56:44] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[31.07.2017 | 13:56:44] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[31.07.2017 | 13:56:44] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[31.07.2017 | 14:02:23] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\Administrator.SERVER\Desktop\pmsp_files\UserFiles\Scripts\Basic\G3Test.xml: Object reference not set to an instance of an object.
+[31.07.2017 | 14:02:25] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[31.07.2017 | 14:02:25] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[31.07.2017 | 14:02:25] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[31.07.2017 | 14:02:25] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[31.07.2017 | 14:02:25] [   TRACE] Begin play async test execution
+[31.07.2017 | 14:02:25] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Consumer. (Windowsx64) 
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[31.07.2017 | 14:02:25] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  == Verify Platform in OS
+[31.07.2017 | 14:02:25] [    INFO] [   General Operation]  Begin recovery flow...
+[31.07.2017 | 14:02:25] [   DEBUG] [        Power Device]  Get power source
+[31.07.2017 | 14:02:25] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[31.07.2017 | 14:02:25] [   DEBUG] [   General Operation]  Platorm is not in AcDc state (in Ac state). move to AcDc--
+[31.07.2017 | 14:02:25] [   DEBUG] [        Power Device]  Set power source to AcDc
+[31.07.2017 | 14:02:25] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl setPwrSrc AcDc 
+[31.07.2017 | 14:02:25] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[31.07.2017 | 14:07:03] [   TRACE] [           XML Utils]  Failed to deserialze execution file- -c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\-c'.
+[31.07.2017 | 14:07:10] [   TRACE] [           XML Utils]  Failed to deserialze execution file- -c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\-c'.
+[31.07.2017 | 14:07:15] [   TRACE] [           XML Utils]  Failed to deserialze execution file- -c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\-c'.
+[31.07.2017 | 14:07:56] [   TRACE] [           XML Utils]  Failed to deserialze execution file- c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\c'.
+[01.08.2017 | 17:58:24] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\Documents\Visual Studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\G3Test.xml: Object reference not set to an instance of an object.
+[01.08.2017 | 17:58:26] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[01.08.2017 | 17:58:26] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[01.08.2017 | 17:58:26] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[01.08.2017 | 17:58:26] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[01.08.2017 | 17:58:26] [   TRACE] Begin play async test execution
+[01.08.2017 | 17:58:26] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[01.08.2017 | 17:58:26] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, PowerPolicy2. (Windowsx64) 
+[01.08.2017 | 17:58:26] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[01.08.2017 | 17:58:26] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[01.08.2017 | 17:58:26] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[01.08.2017 | 17:58:27] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 17:58:27] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 17:58:27] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 17:58:27] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 17:58:27] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 17:58:27] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 17:58:27] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[01.08.2017 | 17:58:27] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[01.08.2017 | 17:58:27] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[01.08.2017 | 18:54:17] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[01.08.2017 | 18:54:18] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[01.08.2017 | 18:54:18] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[01.08.2017 | 18:54:18] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[01.08.2017 | 18:54:18] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[01.08.2017 | 18:54:18] [   TRACE] Begin play async test execution
+[01.08.2017 | 18:54:18] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[01.08.2017 | 18:54:18] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, PowerPolicy2. (Windowsx64) 
+[01.08.2017 | 18:54:18] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[01.08.2017 | 18:54:18] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[01.08.2017 | 18:54:18] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[01.08.2017 | 18:54:18] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 18:54:18] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 18:54:18] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 18:54:18] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 18:54:19] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 18:54:19] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 18:54:19] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[01.08.2017 | 18:54:19] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[01.08.2017 | 18:54:19] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[01.08.2017 | 19:34:06] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:34:53] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:35:24] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:35:30] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:36:42] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:38:49] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:39:22] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:39:28] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual: Could not find file 'C:\Users\skhelaix\documents\visual'.
+[01.08.2017 | 19:40:22] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[01.08.2017 | 19:40:23] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[01.08.2017 | 19:40:23] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[01.08.2017 | 19:40:23] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[01.08.2017 | 19:40:23] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[01.08.2017 | 19:40:23] [   TRACE] Begin play async test execution
+[01.08.2017 | 19:40:23] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[01.08.2017 | 19:40:23] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, PowerPolicy2. (Windowsx64) 
+[01.08.2017 | 19:40:23] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[01.08.2017 | 19:40:23] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[01.08.2017 | 19:40:23] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[01.08.2017 | 19:40:23] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:40:23] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:40:23] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:40:23] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:40:24] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:40:24] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:40:24] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[01.08.2017 | 19:40:24] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[01.08.2017 | 19:40:24] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[01.08.2017 | 19:42:05] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[01.08.2017 | 19:42:06] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[01.08.2017 | 19:42:06] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[01.08.2017 | 19:42:06] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[01.08.2017 | 19:42:06] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[01.08.2017 | 19:42:06] [   TRACE] Begin play async test execution
+[01.08.2017 | 19:42:06] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[01.08.2017 | 19:42:06] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, PowerPolicy2. (Windowsx64) 
+[01.08.2017 | 19:42:06] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[01.08.2017 | 19:42:06] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[01.08.2017 | 19:42:06] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[01.08.2017 | 19:42:07] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:42:07] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:42:07] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:42:07] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:42:07] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:42:07] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:42:07] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[01.08.2017 | 19:42:07] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[01.08.2017 | 19:42:07] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[01.08.2017 | 19:42:52] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[01.08.2017 | 19:42:53] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[01.08.2017 | 19:42:53] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[01.08.2017 | 19:42:53] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[01.08.2017 | 19:42:53] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[01.08.2017 | 19:42:53] [   TRACE] Begin play async test execution
+[01.08.2017 | 19:42:53] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[01.08.2017 | 19:42:53] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, PowerPolicy2. (Windowsx64) 
+[01.08.2017 | 19:42:53] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[01.08.2017 | 19:42:53] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[01.08.2017 | 19:42:53] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[01.08.2017 | 19:42:53] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:42:53] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:42:54] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:42:54] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:42:54] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:42:54] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:42:54] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[01.08.2017 | 19:42:54] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[01.08.2017 | 19:42:54] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[01.08.2017 | 19:43:41] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[01.08.2017 | 19:43:42] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[01.08.2017 | 19:43:42] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[01.08.2017 | 19:43:42] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[01.08.2017 | 19:43:42] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[01.08.2017 | 19:43:42] [   TRACE] Begin play async test execution
+[01.08.2017 | 19:43:42] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[01.08.2017 | 19:43:42] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, PowerPolicy2. (Windowsx64) 
+[01.08.2017 | 19:43:42] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[01.08.2017 | 19:43:42] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[01.08.2017 | 19:43:42] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[01.08.2017 | 19:43:42] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:43:42] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:43:42] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:43:42] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:43:42] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[01.08.2017 | 19:43:42] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[01.08.2017 | 19:43:42] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[01.08.2017 | 19:43:42] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[01.08.2017 | 19:43:42] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[02.08.2017 | 11:21:03] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[02.08.2017 | 11:21:05] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[02.08.2017 | 11:21:05] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[02.08.2017 | 11:21:05] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[02.08.2017 | 11:21:05] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[02.08.2017 | 11:21:05] [   TRACE] Begin play async test execution
+[02.08.2017 | 11:21:05] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[02.08.2017 | 11:21:05] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.144] , Consumer. (Windowsx64) 
+[02.08.2017 | 11:21:05] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[02.08.2017 | 11:21:05] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[02.08.2017 | 11:21:05] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[02.08.2017 | 11:21:06] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 11:21:06] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 11:21:06] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 11:21:06] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 11:21:06] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 11:21:06] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 11:21:06] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[02.08.2017 | 11:21:06] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[02.08.2017 | 11:21:06] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[02.08.2017 | 12:41:22] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S4CM3PgTest.xml: Object reference not set to an instance of an object.
+[02.08.2017 | 12:41:23] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[02.08.2017 | 12:41:23] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[02.08.2017 | 12:41:23] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[02.08.2017 | 12:41:23] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[02.08.2017 | 12:41:23] [   TRACE] Begin play async test execution
+[02.08.2017 | 12:41:23] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[02.08.2017 | 12:41:23] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.144] , Consumer. (Windowsx64) 
+[02.08.2017 | 12:41:23] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[02.08.2017 | 12:41:23] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[02.08.2017 | 12:41:23] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[02.08.2017 | 12:41:24] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 12:41:24] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 12:41:24] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 12:41:24] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 12:41:24] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 12:41:24] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 12:41:24] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[02.08.2017 | 12:41:24] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[02.08.2017 | 12:41:24] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[02.08.2017 | 12:41:38] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S4CM3PgTest.xml: Object reference not set to an instance of an object.
+[02.08.2017 | 12:41:39] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[02.08.2017 | 12:41:39] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[02.08.2017 | 12:41:39] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[02.08.2017 | 12:41:39] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[02.08.2017 | 12:41:39] [   TRACE] Begin play async test execution
+[02.08.2017 | 12:41:39] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[02.08.2017 | 12:41:39] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.144] , Consumer. (Windowsx64) 
+[02.08.2017 | 12:41:39] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[02.08.2017 | 12:41:39] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[02.08.2017 | 12:41:39] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[02.08.2017 | 12:41:39] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 12:41:39] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 12:41:39] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 12:41:39] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 12:41:39] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 12:41:39] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 12:41:39] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[02.08.2017 | 12:41:39] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[02.08.2017 | 12:41:39] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[02.08.2017 | 23:18:14] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[02.08.2017 | 23:18:17] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[02.08.2017 | 23:18:17] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[02.08.2017 | 23:18:17] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[02.08.2017 | 23:18:17] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[02.08.2017 | 23:18:17] [   TRACE] Begin play async test execution
+[02.08.2017 | 23:18:17] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[02.08.2017 | 23:18:17] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [127.0.0.1] , Consumer. (Windowsx64) 
+[02.08.2017 | 23:18:17] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[02.08.2017 | 23:18:17] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[02.08.2017 | 23:18:17] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[02.08.2017 | 23:18:18] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:18:18] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:18:18] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:18:18] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:18:18] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:18:18] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:18:18] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[02.08.2017 | 23:18:18] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[02.08.2017 | 23:18:18] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[02.08.2017 | 23:19:45] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[02.08.2017 | 23:19:46] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[02.08.2017 | 23:19:46] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[02.08.2017 | 23:19:46] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[02.08.2017 | 23:19:46] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[02.08.2017 | 23:19:46] [   TRACE] Begin play async test execution
+[02.08.2017 | 23:19:46] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[02.08.2017 | 23:19:46] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [127.0.0.1] , Consumer. (Windowsx64) 
+[02.08.2017 | 23:19:46] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[02.08.2017 | 23:19:46] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[02.08.2017 | 23:19:46] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[02.08.2017 | 23:19:46] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:19:46] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:19:46] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:19:46] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:19:47] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:19:47] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:19:47] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[02.08.2017 | 23:19:47] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[02.08.2017 | 23:19:47] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[02.08.2017 | 23:19:51] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[02.08.2017 | 23:19:52] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[02.08.2017 | 23:19:52] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[02.08.2017 | 23:19:52] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[02.08.2017 | 23:19:52] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[02.08.2017 | 23:19:52] [   TRACE] Begin play async test execution
+[02.08.2017 | 23:19:52] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[02.08.2017 | 23:19:52] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [127.0.0.1] , Consumer. (Windowsx64) 
+[02.08.2017 | 23:19:52] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[02.08.2017 | 23:19:52] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[02.08.2017 | 23:19:52] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[02.08.2017 | 23:19:52] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:19:52] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:19:52] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:19:52] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:19:52] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:19:52] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:19:52] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[02.08.2017 | 23:19:52] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[02.08.2017 | 23:19:52] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[02.08.2017 | 23:20:00] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[02.08.2017 | 23:20:01] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[02.08.2017 | 23:20:01] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[02.08.2017 | 23:20:01] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[02.08.2017 | 23:20:01] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[02.08.2017 | 23:20:01] [   TRACE] Begin play async test execution
+[02.08.2017 | 23:20:01] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[02.08.2017 | 23:20:01] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [127.0.0.1] , Consumer. (Windowsx64) 
+[02.08.2017 | 23:20:01] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[02.08.2017 | 23:20:01] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[02.08.2017 | 23:20:01] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[02.08.2017 | 23:20:02] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:20:02] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:20:02] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:20:02] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:20:02] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[02.08.2017 | 23:20:02] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[02.08.2017 | 23:20:02] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[02.08.2017 | 23:20:02] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[02.08.2017 | 23:20:02] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[03.08.2017 | 11:20:34] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\Documents\Visual Studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[03.08.2017 | 11:20:36] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[03.08.2017 | 11:20:36] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[03.08.2017 | 11:20:36] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[03.08.2017 | 11:20:36] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[03.08.2017 | 11:20:36] [   TRACE] Begin play async test execution
+[03.08.2017 | 11:20:36] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[03.08.2017 | 11:20:36] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [127.0.0.1] , Consumer. (Windowsx64) 
+[03.08.2017 | 11:20:36] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[03.08.2017 | 11:20:36] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[03.08.2017 | 11:20:36] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[03.08.2017 | 11:20:36] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:20:36] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:20:36] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:20:36] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:20:36] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:20:36] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:20:36] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[03.08.2017 | 11:20:36] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[03.08.2017 | 11:20:36] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[03.08.2017 | 11:31:37] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[03.08.2017 | 11:31:39] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[03.08.2017 | 11:31:39] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[03.08.2017 | 11:31:39] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[03.08.2017 | 11:31:39] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[03.08.2017 | 11:31:39] [   TRACE] Begin play async test execution
+[03.08.2017 | 11:31:39] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[03.08.2017 | 11:31:39] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [127.0.0.1] , Consumer. (Windowsx64) 
+[03.08.2017 | 11:31:39] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[03.08.2017 | 11:31:39] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[03.08.2017 | 11:31:39] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[03.08.2017 | 11:31:39] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:31:39] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:31:39] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:31:39] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:31:40] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:31:40] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:31:40] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[03.08.2017 | 11:31:40] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[03.08.2017 | 11:31:40] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[03.08.2017 | 11:32:45] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[03.08.2017 | 11:32:47] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[03.08.2017 | 11:32:47] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[03.08.2017 | 11:32:47] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[03.08.2017 | 11:32:47] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[03.08.2017 | 11:32:47] [   TRACE] Begin play async test execution
+[03.08.2017 | 11:32:47] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[03.08.2017 | 11:32:47] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [10.12.1.253] , Consumer. (Windowsx64) 
+[03.08.2017 | 11:32:47] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[03.08.2017 | 11:32:47] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[03.08.2017 | 11:32:47] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[03.08.2017 | 11:32:47] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:32:47] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:32:48] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:32:48] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:32:48] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[03.08.2017 | 11:32:48] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[03.08.2017 | 11:32:48] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[03.08.2017 | 11:32:48] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[03.08.2017 | 11:32:48] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[07.08.2017 | 11:40:59] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:02] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[07.08.2017 | 11:41:02] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[07.08.2017 | 11:41:02] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[07.08.2017 | 11:41:02] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[07.08.2017 | 11:41:02] [   TRACE] Begin play async test execution
+[07.08.2017 | 11:41:02] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[07.08.2017 | 11:41:02] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.252] , Consumer. (Windowsx64) 
+[07.08.2017 | 11:41:02] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[07.08.2017 | 11:41:02] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[07.08.2017 | 11:41:02] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[07.08.2017 | 11:41:02] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[07.08.2017 | 11:41:02] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[07.08.2017 | 11:41:03] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[07.08.2017 | 11:41:03] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[07.08.2017 | 11:41:03] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[07.08.2017 | 11:41:03] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[07.08.2017 | 11:41:03] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[07.08.2017 | 11:41:03] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[07.08.2017 | 11:41:03] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[07.08.2017 | 11:41:06] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\CM3SleepPgTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:08] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\ColdResetTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:09] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\ConnectedStandbyTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:10] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\CseResetTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:11] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\G3Test.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:11] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\GlobalReset.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:12] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\HibernateTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:13] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\PgTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:13] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S3CM3PgTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:14] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S3DcTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:15] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S3DeepSleepTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:15] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S4CM3PgTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:16] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S4DcTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:16] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S4DeepSleepTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:17] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[07.08.2017 | 11:41:17] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[07.08.2017 | 11:41:17] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[07.08.2017 | 11:41:18] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[07.08.2017 | 11:41:18] [   TRACE] Begin play async test execution
+[07.08.2017 | 11:41:18] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[07.08.2017 | 11:41:18] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.252] , Consumer. (Windowsx64) 
+[07.08.2017 | 11:41:18] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[07.08.2017 | 11:41:18] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[07.08.2017 | 11:41:18] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[07.08.2017 | 11:41:18] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[07.08.2017 | 11:41:18] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[07.08.2017 | 11:41:18] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[07.08.2017 | 11:41:19] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[07.08.2017 | 11:41:19] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[07.08.2017 | 11:41:19] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[07.08.2017 | 11:41:19] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[07.08.2017 | 11:41:19] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[07.08.2017 | 11:41:19] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[07.08.2017 | 11:41:20] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S5CM3PgTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:21] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S5DcTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:22] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\S5DeepSleepTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:23] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\ShutdownTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:24] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[07.08.2017 | 11:41:24] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[07.08.2017 | 11:41:24] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[07.08.2017 | 11:41:24] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[07.08.2017 | 11:41:24] [   TRACE] Begin play async test execution
+[07.08.2017 | 11:41:24] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[07.08.2017 | 11:41:24] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.252] , Consumer. (Windowsx64) 
+[07.08.2017 | 11:41:24] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[07.08.2017 | 11:41:24] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[07.08.2017 | 11:41:24] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[07.08.2017 | 11:41:24] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[07.08.2017 | 11:41:24] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[07.08.2017 | 11:41:24] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\SleepTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:25] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\UpwrTest.xml: Object reference not set to an instance of an object.
+[07.08.2017 | 11:41:26] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\WarmResetTest.xml: Object reference not set to an instance of an object.
+[08.08.2017 | 14:19:34] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[08.08.2017 | 14:19:36] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[08.08.2017 | 14:19:36] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[08.08.2017 | 14:19:36] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[08.08.2017 | 14:19:36] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[08.08.2017 | 14:19:36] [   TRACE] Begin play async test execution
+[08.08.2017 | 14:19:36] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[08.08.2017 | 14:19:36] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.252] , Consumer. (Windowsx64) 
+[08.08.2017 | 14:19:36] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[08.08.2017 | 14:19:36] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[08.08.2017 | 14:19:36] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[08.08.2017 | 14:19:37] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:19:37] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:19:37] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:19:37] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:19:37] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:19:37] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:19:37] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[08.08.2017 | 14:19:37] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[08.08.2017 | 14:19:37] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[08.08.2017 | 14:43:12] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[08.08.2017 | 14:43:12] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\documents\visual studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\CM3SleepPgTest.xml: Object reference not set to an instance of an object.
+[08.08.2017 | 14:43:14] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[08.08.2017 | 14:43:14] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[08.08.2017 | 14:43:14] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[08.08.2017 | 14:43:14] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml 
+[08.08.2017 | 14:43:14] [   TRACE] Begin play async test execution
+[08.08.2017 | 14:43:14] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[08.08.2017 | 14:43:14] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [134.134.134.2] , Corporate, PowerPolicy2. (Windowsx64) 
+[08.08.2017 | 14:43:14] [    INFO] [      Test Execution]  Configuration File Path is: 
+[08.08.2017 | 14:43:14] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[08.08.2017 | 14:43:14] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[08.08.2017 | 14:43:14] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:43:14] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:43:14] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:43:14] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:43:15] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:43:15] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:43:15] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[08.08.2017 | 14:43:15] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[08.08.2017 | 14:43:15] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[08.08.2017 | 14:46:26] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\skhelaix\Documents\Visual Studio 2017\Projects\SetThisUp\SetThisUp\bin\Debug\pmsp_files\UserFiles\Scripts\Basic\BootTest.xml: Object reference not set to an instance of an object.
+[08.08.2017 | 14:46:26] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[08.08.2017 | 14:46:26] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[08.08.2017 | 14:46:26] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[08.08.2017 | 14:46:26] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[08.08.2017 | 14:46:26] [   TRACE] Begin play async test execution
+[08.08.2017 | 14:46:26] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[08.08.2017 | 14:46:26] [    INFO] [      Test Execution]  DUT Details: Desktop Desktop [192.168.1.252] , Consumer. (Windowsx64) 
+[08.08.2017 | 14:46:26] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[08.08.2017 | 14:46:26] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[08.08.2017 | 14:46:26] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[08.08.2017 | 14:46:27] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:46:27] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:46:27] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:46:27] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:46:27] [   ERROR] Error :ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+[08.08.2017 | 14:46:27] [   ERROR] An Execution failure occurred.
+System.ApplicationException: ERROR An error occurred while attempting to execute command
+No connected device has been found.
+
+   at APSCommon.Utils.ServiceConnectionMngr.ExecuteAllCommands(Byte[]& retByte)
+[08.08.2017 | 14:46:27] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[08.08.2017 | 14:46:27] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[08.08.2017 | 14:46:27] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====

@@ -1,0 +1,294 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="https://github.com/douglascrockford/JSON-js."></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document.body).ready(function() {
+        var logJsonDataId = "logTable";
+        var testCaseLogId = "testCaseLog";
+
+        var jsonText = $("#" + logJsonDataId).html();
+        jsonText = jsonText.substring(0, jsonText.length - 1) + "]";
+        jsonText = jsonText.replace(/\\/g, "\\\\");
+        jsonText = jsonText.replace(/\n/g, "");
+        jsonText = jsonText.replace(/\r/g, "");
+        jsonText = jsonText.replace(/\t+/g, " ");
+        var tests = JSON.parse(jsonText);
+        //alert((tests[0])["Name"]);
+
+        var flatedRows = jsonArrayToTestsArray(tests);
+        var dataTablesColumns = getDataTableColumns();
+
+        $('#' + testCaseLogId).DataTable({
+            paging: false,
+            dom: 'Bfrtip',
+            data: flatedRows,
+            columns: dataTablesColumns
+
+        });
+        getTestStatusAndSummary();
+
+        hideBelowLogLevel($('#logLevel option:selected').text());
+
+        $('#logLevel').on('change', function() {
+            var currentLevel = this.value;
+            hideBelowLogLevel(currentLevel);
+        });
+
+    });
+
+    function getTestStatusAndSummary() {
+
+        var title = "";
+        if ($(".SUMMARY_PASS").length > 0) {
+            title = "<h1 class=\"passedTitle\">Test Passed"
+        } else if ($(".SUMMARY_FAIL").length > 0) {
+            title = "<h1 class=\"failedTitle\">Test Failed";
+        } else if ($(".SUMMARY_SKIP").length > 0) {
+            title = "<h1 class=\"skippedTitle\">Test Skipped";
+        } else {
+            title = "<h1 class=\"runningTitle\">Test Running";
+        }
+        var testName = "TEST_NAME_HEADER";
+        title += ": " + testName + "</h1>";
+        // append to html the test status and messages sum
+        $("#logTitle").append(title);
+
+    }
+
+    var TRACE = "TRACE";
+    var DEEP_DEBUG = "DEEP_DEBUG";
+    var DEBUG = "DEBUG";
+    var INFO = "INFO";
+    var CLI_INFO = "CLI_INFO";
+    var WARN = "WARN";
+    var ERROR = "ERROR";
+    var FATAL = "FATAL";
+    var SUMMARY_P = "SAMMARY_PASS";
+    var SUMMARY_F = "SUMMARY_FAILED";
+    var SUMMARY_S = "SUMMARY_SKIPPED";
+    var SUMMARY = "SUMMARY";
+
+
+    var levelArray = {
+        TRACE: 1,
+        DEEP_DEBUG: 2,
+        DEBUG: 3,
+        CLI_INFO: 4,
+        INFO: 5,
+        WARN: 6,
+        ERROR: 7,
+        FATAL: 8,
+        SUMMARY_P: 9,
+        SUMMARY_F: 9,
+        SUMMARY_S: 9,
+        SUMMARY: 9
+    }
+
+    function hideBelowLogLevel(currentLevel) {
+        console.log(currentLevel);
+
+        var hideBelow = levelArray[currentLevel];
+        console.log(hideBelow);
+
+        Object.keys(levelArray).forEach(function(key, index) {
+            if (this[key] < hideBelow)
+                $("." + key).hide();
+            else
+                $("." + key).show();
+
+        }, levelArray);
+
+    }
+
+    function jsonArrayToTestsArray(jsonArray) {
+        var testsArray = Array();
+        $.each(jsonArray, function(key, item) {
+            var flattenedTest =
+            {
+                time: item["Date"],
+                level: item["Level"],
+                message: item["Message"],
+            };
+            testsArray.push(flattenedTest);
+        });
+        return testsArray;
+    }
+
+    function getDataTableColumns() {
+        var dataTableColumns = Array();
+
+        dataTableColumns.push(
+        {
+            title: "Date Time",
+            data: "time",
+            width: "200px",
+            "fnCreatedCell": function(nTd, sData, oData, iRow, iCol) {
+                $(nTd).addClass(oData["level"]);
+            }
+        });
+
+        dataTableColumns.push(
+        {
+            title: "Level",
+            data: "level",
+            width: "100px",
+            "fnCreatedCell": function(nTd, sData, oData, iRow, iCol) {
+                $(nTd).addClass(oData["level"]);
+            }
+        });
+
+        dataTableColumns.push(
+        {
+            title: "Log Data",
+            data: "message",
+            "fnCreatedCell": function(nTd, sData, oData, iRow, iCol) {
+                $(nTd).addClass(oData["level"]);
+            }
+        });
+        return dataTableColumns;
+    }
+
+</script>
+<style>
+    * {
+        font-family: Arial;
+    }
+
+    table {
+        font-size: 17px;
+        border-collapse: collapse;
+    }
+
+    td {
+        vertical-align: top;
+        font-family: Lucida Console;
+    }
+
+    a {
+        color: blue;
+    }
+
+    .button {
+        display: inline;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        padding-top: 0.4375em;
+        padding-right: 0.875em;
+        padding-bottom: 0.5em;
+        padding-left: 0.875em;
+        box-sizing: border-box;
+        box-shadow: 0 0 4px 2px #000000;
+        box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+        border-style: solid;
+        border-width: 1px;
+        cursor: pointer;
+        line-height: 1;
+        margin: 0 0 1.25em;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1em;
+        background-color: #4a4a4a;
+        border-color: #b57e36;
+        color: white;
+        width: 150px;
+    }
+
+    .failedTitle {
+        color: Red;
+        font-size: 500%;
+        font-weight: bold;
+    }
+
+    .passedTitle {
+        color: green;
+        font-size: 500%;
+        font-weight: bold;
+    }
+
+    .abortedTitle {
+        color: firebrick;
+        font-size: 500%;
+        font-weight: bold;
+    }
+
+    .runningTitle {
+        color: orange;
+        font-size: 500%;
+        font-weight: bold;
+    }
+
+    .testFailed, .testAborted {
+        color: Red;
+        font-size: 120%;
+        font-weight: bold;
+    }
+
+    .testPassed {
+        color: green;
+        font-size: 120%;
+        font-weight: bold;
+    }
+
+    .DEBUG {
+        color: #666666;
+    }
+
+    .DEEP_DEBUG {
+        color: #737373;
+    }
+
+    .TRACE {
+        color: #999999;
+    }
+
+    .CLI_INFO {
+        color: #00b3b3;
+    }
+
+    .WARN, .errorMenu_warn {
+        color: #ffbc00;
+    }
+
+    .SUMMARY_PASS {
+        color: white;
+        background-color: #00b33c;
+    }
+
+    .SUMMARY_FAIL {
+        color: white;
+        background-color: #e60000;
+    }
+    .ERROR, .fatal, .errorMenu_error, .errorMenu_fatal {
+        color: Red;
+    }
+</style>
+</head>
+<body>
+<div margin="5">
+    <h5 />
+    <span margin="10">
+        <b>Select Level</b>
+        <select name="logLevel" id="logLevel">
+            <option>TRACE</option>
+            <option>DEEP_DEBUG</option>
+            <option>DEBUG</option>
+            <option>CLI_INFO</option>
+            <option selected="selected">INFO</option>
+            <option>WARN</option>
+            <option>ERROR</option>
+            <option>SUMMARY</option>
+        </select>
+    </span>
+</div>
+<div id="logTitle">
+</div>
+<div id="summary">
+    <table id="testCaseLog" class="display" width="100%"></table>
+</div>
+<pre id="logTable" hidden="true">
+[

@@ -1,0 +1,211 @@
+<?xml version="1.0"?>
+<FwStatus_SKL>
+	<Operations>
+		<Operation Name="ResetBtn">
+		<Consumer>
+			<bit>6</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>9</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>9</bit>
+		</PowerPolicy2>
+	</Operation>
+	<Operation Name="OsReset">
+		<Consumer>
+			<bit>6</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>9</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>9</bit>
+		</PowerPolicy2>
+	</Operation>
+	<Operation Name="WarmReset">
+		<Consumer>
+			<bit>6</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>9</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>9</bit>
+		</PowerPolicy2>
+	</Operation>
+	<Operation Name="UpowerBtn">
+		<Consumer>
+			<bit>1</bit>
+			<bit>2</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>1</bit>
+			<bit>2</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>8</bit>
+		</PowerPolicy2>
+	</Operation>
+	<Operation Name="ColdReset">
+		<Consumer>
+			<bit>B</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>B</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>A</bit>
+		</PowerPolicy2>
+	</Operation>
+	<Operation Name="GlobalReset">
+		<All>
+			<bit>2</bit>
+			<bit>3</bit>
+		</All>
+	</Operation>
+	<Operation Name="CseReset">
+		<All>
+			<bit>4</bit>
+		</All>
+	</Operation>
+</Operations>
+<SystemStates>
+	<SystemState Name="S0" >
+		<All>
+			<bit>0</bit>
+			<bit>1</bit>
+			<bit>2</bit>
+			<bit>3</bit>
+			<bit>4</bit>
+			<bit>5</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>C</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="S3">
+		<Consumer>
+			<bit>0</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>0</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>8</bit>
+		</PowerPolicy2>
+	</SystemState>
+	<SystemState Name="S4">
+		<Consumer>
+			<bit>0</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>0</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>8</bit>
+		</PowerPolicy2>
+	</SystemState >
+	<SystemState Name="S5">
+		<Consumer>
+			<bit>0</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>0</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>8</bit>
+		</PowerPolicy2>
+	</SystemState>
+	<SystemState Name="G3">
+  		<All>
+			<bit>0</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="DS3">
+		<Consumer>
+			<bit>0</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>0</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>0</bit>
+			<bit>1</bit>
+			<bit>2</bit>
+			<bit>3</bit>
+			<bit>4</bit>
+			<bit>5</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>C</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</PowerPolicy2>
+	</SystemState>
+	<SystemState Name="DS4">
+ 		<Consumer>
+			<bit>0</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>0</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>0</bit>
+			<bit>1</bit>
+			<bit>2</bit>
+			<bit>3</bit>
+			<bit>4</bit>
+			<bit>5</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>C</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</PowerPolicy2>
+	</SystemState>
+	<SystemState Name="DS5">
+		<Consumer>
+			<bit>0</bit>
+		</Consumer>
+		<PowerPolicy1>
+			<bit>0</bit>
+		</PowerPolicy1>
+		<PowerPolicy2>
+			<bit>0</bit>
+			<bit>1</bit>
+			<bit>2</bit>
+			<bit>3</bit>
+			<bit>4</bit>
+			<bit>5</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>C</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</PowerPolicy2>
+	</SystemState>
+ </SystemStates>
+</FwStatus_SKL>

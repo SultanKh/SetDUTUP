@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestBrowser>
+  <Package Path="UserFiles\Scripts" IsChecked="false">
+    <Package Path="UserFiles\Scripts\Basic" IsChecked="false">
+      <Test Name="BootTest" Path="UserFiles\Scripts\Basic\BootTest.xml" IsChecked="false" />
+      <Test Name="G3Test" Path="UserFiles\Scripts\Basic\G3Test.xml" IsChecked="true" />
+      <Test Name="ShutdownTest" Path="UserFiles\Scripts\Basic\ShutdownTest.xml" IsChecked="false" />
+      <Test Name="SleepTest" Path="UserFiles\Scripts\Basic\SleepTest.xml" IsChecked="false" />
+      <Test Name="HibernateTest" Path="UserFiles\Scripts\Basic\HibernateTest.xml" IsChecked="false" />
+      <Test Name="UpwrTest" Path="UserFiles\Scripts\Basic\UpwrTest.xml" IsChecked="false" />
+      <Test Name="ColdResetTest" Path="UserFiles\Scripts\Basic\ColdResetTest.xml" IsChecked="false" />
+      <Test Name="WarmResetTest" Path="UserFiles\Scripts\Basic\WarmResetTest.xml" IsChecked="false" />
+      <Test Name="GlobalReset" Path="UserFiles\Scripts\Basic\GlobalReset.xml" IsChecked="false" />
+      <Test Name="CseResetTest" Path="UserFiles\Scripts\Basic\CseResetTest.xml" IsChecked="false" />
+      <Test Name="ConnectedStandbyTest" Path="UserFiles\Scripts\Basic\ConnectedStandbyTest.xml" IsChecked="false" />
+      <Test Name="PgTest" Path="UserFiles\Scripts\Basic\PgTest.xml" IsChecked="false" />
+      <Test Name="S3CM3PgTest" Path="UserFiles\Scripts\Basic\S3CM3PgTest.xml" IsChecked="false" />
+      <Test Name="S4CM3PgTest" Path="UserFiles\Scripts\Basic\S4CM3PgTest.xml" IsChecked="false" />
+      <Test Name="S5CM3PgTest" Path="UserFiles\Scripts\Basic\S5CM3PgTest.xml" IsChecked="false" />
+      <Test Name="S3DcTest" Path="UserFiles\Scripts\Basic\S3DcTest.xml" IsChecked="false" />
+      <Test Name="S4DcTest" Path="UserFiles\Scripts\Basic\S4DcTest.xml" IsChecked="false" />
+      <Test Name="S5DcTest" Path="UserFiles\Scripts\Basic\S5DcTest.xml" IsChecked="false" />
+      <Test Name="S3DeepSleepTest" Path="UserFiles\Scripts\Basic\S3DeepSleepTest.xml" IsChecked="false" />
+      <Test Name="S4DeepSleepTest" Path="UserFiles\Scripts\Basic\S4DeepSleepTest.xml" IsChecked="false" />
+      <Test Name="S5DeepSleepTest" Path="UserFiles\Scripts\Basic\S5DeepSleepTest.xml" IsChecked="false" />
+    </Package>
+  </Package>
+</TestBrowser>

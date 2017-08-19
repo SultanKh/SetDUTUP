@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<ArrayOfSignalEnumMapping xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SignalEnumMapping>
+    <Signal>
+      <SignalString>xxxx1110xxxxxxxxxxxxxxxx</SignalString>
+    </Signal>
+    <EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+    <EnumStringValue>S0</EnumStringValue>
+  </SignalEnumMapping>
+  <SignalEnumMapping>
+	<Signal>
+		<SignalString>xxxx0000xxxxxxxxxxxxxxxx</SignalString>
+	</Signal>
+	<EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+	<EnumStringValue>S5</EnumStringValue>
+	</SignalEnumMapping>
+  <SignalEnumMapping>
+    <Signal>
+      <SignalString>xxxx1100xxxxxxxxxxxxxxxx</SignalString>
+    </Signal>
+    <EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+    <EnumStringValue>S3</EnumStringValue>
+  </SignalEnumMapping>
+  <SignalEnumMapping>
+    <Signal>
+      <SignalString>xxxx1000xxxxxxxxxxxxxxxx</SignalString>
+    </Signal>
+    <EnumType>PowerDataStructure.SystemState, PowerDataStructure</EnumType>
+    <EnumStringValue>S4</EnumStringValue>
+  </SignalEnumMapping>
+  <SignalEnumMapping>
+    <Signal>
+      <SignalString>xxxx0001xxxxxxxxxxxxxxxx</SignalString>
+    </Signal>
+    <EnumType>PowerDataStructure.SystemState, PowerDataStructure </EnumType>
+    <EnumStringValue>G3</EnumStringValue>
+  </SignalEnumMapping>
+  <SignalEnumMapping>
+    <Signal>
+      <SignalString>xxx1xxxxxxxxxxxxxxxxxxxx</SignalString>
+    </Signal>
+    <EnumType>APSCommon.General.MeState, APSCommon</EnumType>
+    <EnumStringValue>MeOn</EnumStringValue>
+  </SignalEnumMapping>
+  <SignalEnumMapping>
+    <Signal>
+      <SignalString>xxx0xxxxxxxxxxxxxxxxxxxx</SignalString>
+    </Signal>
+    <EnumType>APSCommon.General.MeState, APSCommon</EnumType>
+    <EnumStringValue>MeOff</EnumStringValue>
+  </SignalEnumMapping>
+</ArrayOfSignalEnumMapping>

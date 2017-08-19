@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExternalScriptDefinition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>SensorAliveness</Name>
+  <ExecutionPath>UserFiles\Externals\ExecutionFiles\AlivnessTests\Sensors\SensorAlive.exe</ExecutionPath>
+  <Arguments />
+  <RunOnDut>true</RunOnDut>
+  <WaitForExit>true</WaitForExit>
+  <NumberOfSteps>0</NumberOfSteps>
+  <CopyAllFolder>true</CopyAllFolder>
+  <InteractWithDutDesktop>false</InteractWithDutDesktop>
+  <IsControllerPath>true</IsControllerPath>
+  <DelayAfterTest>0</DelayAfterTest>
+  <TestTimeout>0</TestTimeout>
+  <Path>UserFiles\Externals\SensorAliveness.xml</Path>
+</ExternalScriptDefinition>

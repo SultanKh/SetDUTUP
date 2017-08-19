@@ -1,0 +1,243 @@
+#***********************************************************************
+# -->START EXCLUDE FROM EXTERNAL
+#                                                                      *
+#                          INTEL CONFIDENTIAL                          *
+# <--END EXCLUDE FROM EXTERNAL
+#                                                                      *
+#  Copyright (c) 2013-2016 Intel Corporation All Rights Reserved.      *
+#                                                                      *
+#  No license (express or implied, by estoppel or otherwise) to any    *
+#  intellectual property rights is granted by this document. Intel     *
+#  disclaims all express and implied warranties, including without     *
+#  limitation, the implied warranties of merchantability, fitness for  *
+#  a particular purpose, and non-infringement, as well as any warranty *
+#  arising from course of performance, course of dealing, or usage in  *
+#  trade.                                                              *
+#                                                                      *
+#  This document contains information on products, services and/or     *
+#  processes in development. All information provided here is subject  *
+#  to change without notice. Contact your Intel representative to      *
+#  obtain the latest forecast, schedule, specifications and roadmaps.  *
+#  The products and services described may contain defects or errors   *
+#  known as errata which may cause deviations from published           *
+#  specifications. Current characterized errata are available on       *
+#  request.                                                            *
+#                                                                      *
+# **********************************************************************
+
+# -->START EXCLUDE FROM NDA
+#######
+# BXT #
+#######
+
+## PUNIT
+BXT_1)occ_PUNIT-TELEMETRY_CODE=0x8009
+BXT_1)occ_PCS-s0i3    _STARTING-BIT=0
+BXT_1)occ_PCS-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+BXT_1)occ_PCS-s0i3    _METHOD=DIFF
+BXT_1)occ_PCS-s0i3    _SCALE=1
+BXT_1)occ_PCS-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+BXT_1)occ_PCS-s0i3    _TIMELINE-FILE=s0i3_tl
+BXT_1)occ_PCS-s0i3    _OUTPUT-LABEL=PCS-s0i3 occ
+
+BXT_1)res_PUNIT-TELEMETRY_CODE=0x8408
+BXT_1)res_PCS-s0i3    _STARTING-BIT=0
+BXT_1)res_PCS-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+BXT_1)res_PCS-s0i3    _METHOD=DIFF
+BXT_1)res_PCS-s0i3    _SCALE=0.00000005208333
+BXT_1)res_PCS-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+BXT_1)res_PCS-s0i3    _TIMELINE-FILE=s0i3_tl
+BXT_1)res_PCS-s0i3    _OUTPUT-LABEL=PCS-s0i3 time
+BXT_1)res_PCS-s0i3    _COMMENT=PCS ready to enter s0i3 while IOSS not ready to enter s0i3 (IA module in MC7, L2 flushed, GT/I-Unit/Display in deep idle, memory in self-refresh)
+
+BXT_2)occ_PUNIT-TELEMETRY_CODE=0x800A
+BXT_2)occ_SoC-s0i3    _STARTING-BIT=0
+BXT_2)occ_SoC-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+BXT_2)occ_SoC-s0i3    _METHOD=DIFF
+BXT_2)occ_SoC-s0i3    _SCALE=1
+BXT_2)occ_SoC-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+BXT_2)occ_SoC-s0i3    _TIMELINE-FILE=s0i3_tl
+BXT_2)occ_SoC-s0i3    _OUTPUT-LABEL=SoC-s0i3 occ
+
+BXT_2)res_PUNIT-TELEMETRY_CODE=0x8409
+BXT_2)res_SoC-s0i3    _STARTING-BIT=0
+BXT_2)res_SoC-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+BXT_2)res_SoC-s0i3    _METHOD=DIFF
+BXT_2)res_SoC-s0i3    _SCALE=0.00000005208333
+BXT_2)res_SoC-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+BXT_2)res_SoC-s0i3    _TIMELINE-FILE=s0i3_tl
+BXT_2)res_SoC-s0i3    _OUTPUT-LABEL=SoC-s0i3 time
+BXT_2)res_SoC-s0i3    _COMMENT=SoC in s0i3 from PUNIT view (includes entry and exit latency)
+
+## PMC
+BXT_3)occ_PMC-TELEMETRY_CODE=0xC000
+BXT_3)occ_s0i3-total  _STARTING-BIT=0
+BXT_3)occ_s0i3-total  _CONSTANT-MASK=0xFFFFFFFF
+BXT_3)occ_s0i3-total  _METHOD=DIFF
+BXT_3)occ_s0i3-total  _SCALE=1
+BXT_3)occ_s0i3-total  _REPORTER=S0I3_RESIDENCY_REPORTER
+BXT_3)occ_s0i3-total  _TIMELINE-FILE=s0i3_tl
+BXT_3)occ_s0i3-total  _OUTPUT-LABEL=s0i3-total occ
+
+BXT_3)res_PMC-TELEMETRY_CODE=0xC800
+BXT_3)res_s0i3-total  _STARTING-BIT=0
+BXT_3)res_s0i3-total  _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+BXT_3)res_s0i3-total  _METHOD=DIFF
+BXT_3)res_s0i3-total  _SCALE=0.00000005208333
+BXT_3)res_s0i3-total  _REPORTER=S0I3_RESIDENCY_REPORTER
+BXT_3)res_s0i3-total  _TIMELINE-FILE=s0i3_tl
+BXT_3)res_s0i3-total  _OUTPUT-LABEL=s0i3-total time
+BXT_3)res_s0i3-total  _COMMENT=Time SoC in s0i3 (does not include entry and exit latency)
+
+#BXT_4)occ_PMC-TELEMETRY_CODE=0xC001
+#BXT_4)occ_s0i3-shallow_STARTING-BIT=0
+#BXT_4)occ_s0i3-shallow_CONSTANT-MASK=0xFFFFFFFF
+#BXT_4)occ_s0i3-shallow_METHOD=DIFF
+#BXT_4)occ_s0i3-shallow_SCALE=1
+#BXT_4)occ_s0i3-shallow_REPORTER=S0I3_RESIDENCY_REPORTER
+#BXT_4)occ_s0i3-shallow_TIMELINE-FILE=s0i3_tl
+#BXT_4)occ_s0i3-shallow_OUTPUT-LABEL=s0i3-shallow occ
+#
+#BXT_4)res_PMC-TELEMETRY_CODE=0xC801
+#BXT_4)res_s0i3-shallow_STARTING-BIT=0
+#BXT_4)res_s0i3-shallow_CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+#BXT_4)res_s0i3-shallow_METHOD=DIFF
+#BXT_4)res_s0i3-shallow_SCALE=0.00000005208333
+#BXT_4)res_s0i3-shallow_REPORTER=S0I3_RESIDENCY_REPORTER
+#BXT_4)res_s0i3-shallow_TIMELINE-FILE=s0i3_tl
+#BXT_4)res_s0i3-shallow_OUTPUT-LABEL=s0i3-shallow time
+#BXT_4)res_s0i3-shallow_COMMENT=SoC in s0i3 with clock trunks on
+#
+#BXT_5)occ_PMC-TELEMETRY_CODE=0xC002
+#BXT_5)occ_s0i3-deep   _STARTING-BIT=0
+#BXT_5)occ_s0i3-deep   _CONSTANT-MASK=0xFFFFFFFF
+#BXT_5)occ_s0i3-deep   _METHOD=DIFF
+#BXT_5)occ_s0i3-deep   _SCALE=1
+#BXT_5)occ_s0i3-deep   _REPORTER=S0I3_RESIDENCY_REPORTER
+#BXT_5)occ_s0i3-deep   _TIMELINE-FILE=s0i3_tl
+#BXT_5)occ_s0i3-deep   _OUTPUT-LABEL=s0i3-deep occ
+#
+#BXT_5)res_PMC-TELEMETRY_CODE=0xC802
+#BXT_5)res_s0i3-deep   _STARTING-BIT=0
+#BXT_5)res_s0i3-deep   _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+#BXT_5)res_s0i3-deep   _METHOD=DIFF
+#BXT_5)res_s0i3-deep   _SCALE=0.00000005208333
+#BXT_5)res_s0i3-deep   _REPORTER=S0I3_RESIDENCY_REPORTER
+#BXT_5)res_s0i3-deep   _TIMELINE-FILE=s0i3_tl
+#BXT_5)res_s0i3-deep   _OUTPUT-LABEL=s0i3-deep time
+#BXT_5)res_s0i3-deep   _COMMENT=SoC in s0i3 with clock trunks shut down
+#<--END EXCLUDE FROM NDA
+
+#######
+# APL #
+#######
+
+## PUNIT
+APL_1)occ_PUNIT-TELEMETRY_CODE=0x8009
+APL_1)occ_PCS-s0i3    _STARTING-BIT=0
+APL_1)occ_PCS-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+APL_1)occ_PCS-s0i3    _METHOD=DIFF
+APL_1)occ_PCS-s0i3    _SCALE=1
+APL_1)occ_PCS-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+APL_1)occ_PCS-s0i3    _TIMELINE-FILE=s0i3_tl
+APL_1)occ_PCS-s0i3    _OUTPUT-LABEL=PCS-s0i3 occ
+APL_1)occ_PCS-s0i3    _GROUP=s0i3
+
+APL_1)res_PUNIT-TELEMETRY_CODE=0x8408
+APL_1)res_PCS-s0i3    _STARTING-BIT=0
+APL_1)res_PCS-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+APL_1)res_PCS-s0i3    _METHOD=DIFF
+APL_1)res_PCS-s0i3    _SCALE=0.00000005208333
+APL_1)res_PCS-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+APL_1)res_PCS-s0i3    _TIMELINE-FILE=s0i3_tl
+APL_1)res_PCS-s0i3    _OUTPUT-LABEL=PCS-s0i3 time
+APL_1)res_PCS-s0i3    _COMMENT=PCS ready to enter s0i3 while IOSS not ready to enter s0i3 (IA module in MC7, L2 flushed, GT/I-Unit/Display in deep idle, memory in self-refresh)
+APL_1)res_PCS-s0i3    _GROUP=s0i3
+
+APL_2)occ_PUNIT-TELEMETRY_CODE=0x800A
+APL_2)occ_SoC-s0i3    _STARTING-BIT=0
+APL_2)occ_SoC-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+APL_2)occ_SoC-s0i3    _METHOD=DIFF
+APL_2)occ_SoC-s0i3    _SCALE=1
+APL_2)occ_SoC-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+APL_2)occ_SoC-s0i3    _TIMELINE-FILE=s0i3_tl
+APL_2)occ_SoC-s0i3    _OUTPUT-LABEL=SoC-s0i3 occ
+APL_2)occ_SoC-s0i3    _GROUP=s0i3
+
+APL_2)res_PUNIT-TELEMETRY_CODE=0x8409
+APL_2)res_SoC-s0i3    _STARTING-BIT=0
+APL_2)res_SoC-s0i3    _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+APL_2)res_SoC-s0i3    _METHOD=DIFF
+APL_2)res_SoC-s0i3    _SCALE=0.00000005208333
+APL_2)res_SoC-s0i3    _REPORTER=S0I3_RESIDENCY_REPORTER
+APL_2)res_SoC-s0i3    _TIMELINE-FILE=s0i3_tl
+APL_2)res_SoC-s0i3    _OUTPUT-LABEL=SoC-s0i3 time
+APL_2)res_SoC-s0i3    _COMMENT=Time SoC in s0i3 from PUNIT view (includes entry and exit latency)
+APL_2)res_SoC-s0i3    _GROUP=s0i3
+
+## PMC
+APL_3)occ_PMC-TELEMETRY_CODE=0xC000
+APL_3)occ_s0i3-total  _STARTING-BIT=0
+APL_3)occ_s0i3-total  _CONSTANT-MASK=0xFFFFFFFF
+APL_3)occ_s0i3-total  _METHOD=DIFF
+APL_3)occ_s0i3-total  _SCALE=1
+APL_3)occ_s0i3-total  _REPORTER=S0I3_RESIDENCY_REPORTER
+APL_3)occ_s0i3-total  _TIMELINE-FILE=s0i3_tl
+APL_3)occ_s0i3-total  _OUTPUT-LABEL=s0i3-total occ
+APL_3)occ_s0i3-total  _GROUP=s0i3
+
+APL_3)res_PMC-TELEMETRY_CODE=0xC800
+APL_3)res_s0i3-total  _STARTING-BIT=0
+APL_3)res_s0i3-total  _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+APL_3)res_s0i3-total  _METHOD=DIFF
+APL_3)res_s0i3-total  _SCALE=0.00000005208333
+APL_3)res_s0i3-total  _REPORTER=S0I3_RESIDENCY_REPORTER
+APL_3)res_s0i3-total  _TIMELINE-FILE=s0i3_tl
+APL_3)res_s0i3-total  _OUTPUT-LABEL=s0i3-total time
+APL_3)res_s0i3-total  _COMMENT=Time SoC in s0i3 (does not include entry and exit latency)
+APL_3)res_s0i3-total  _GROUP=s0i3
+
+#-->START EXCLUDE FROM NDA
+#APL_4)occ_PMC-TELEMETRY_CODE=0xC001
+#APL_4)occ_s0i3-shallow_STARTING-BIT=0
+#APL_4)occ_s0i3-shallow_CONSTANT-MASK=0xFFFFFFFF
+#APL_4)occ_s0i3-shallow_METHOD=DIFF
+#APL_4)occ_s0i3-shallow_SCALE=1
+#APL_4)occ_s0i3-shallow_REPORTER=S0I3_RESIDENCY_REPORTER
+#APL_4)occ_s0i3-shallow_TIMELINE-FILE=s0i3_tl
+#APL_4)occ_s0i3-shallow_OUTPUT-LABEL=s0i3-shallow occ
+#APL_4)occ_s0i3-shallow_GROUP=s0i3
+#
+#APL_4)res_PMC-TELEMETRY_CODE=0xC801
+#APL_4)res_s0i3-shallow_STARTING-BIT=0
+#APL_4)res_s0i3-shallow_CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+#APL_4)res_s0i3-shallow_METHOD=DIFF
+#APL_4)res_s0i3-shallow_SCALE=0.00000005208333
+#APL_4)res_s0i3-shallow_REPORTER=S0I3_RESIDENCY_REPORTER
+#APL_4)res_s0i3-shallow_TIMELINE-FILE=s0i3_tl
+#APL_4)res_s0i3-shallow_OUTPUT-LABEL=s0i3-shallow time
+#APL_4)res_s0i3-shallow_COMMENT=SoC in s0i3 with clock trunks on
+#APL_4)res_s0i3-shallow_GROUP=s0i3
+#
+#APL_5)occ_PMC-TELEMETRY_CODE=0xC002
+#APL_5)occ_s0i3-deep   _STARTING-BIT=0
+#APL_5)occ_s0i3-deep   _CONSTANT-MASK=0xFFFFFFFF
+#APL_5)occ_s0i3-deep   _METHOD=DIFF
+#APL_5)occ_s0i3-deep   _SCALE=1
+#APL_5)occ_s0i3-deep   _REPORTER=S0I3_RESIDENCY_REPORTER
+#APL_5)occ_s0i3-deep   _TIMELINE-FILE=s0i3_tl
+#APL_5)occ_s0i3-deep   _OUTPUT-LABEL=s0i3-deep occ
+#APL_5)occ_s0i3-deep   _GROUP=s0i3
+#
+#APL_5)res_PMC-TELEMETRY_CODE=0xC802
+#APL_5)res_s0i3-deep   _STARTING-BIT=0
+#APL_5)res_s0i3-deep   _CONSTANT-MASK=0xFFFFFFFFFFFFFFFF
+#APL_5)res_s0i3-deep   _METHOD=DIFF
+#APL_5)res_s0i3-deep   _SCALE=0.00000005208333
+#APL_5)res_s0i3-deep   _REPORTER=S0I3_RESIDENCY_REPORTER
+#APL_5)res_s0i3-deep   _TIMELINE-FILE=s0i3_tl
+#APL_5)res_s0i3-deep   _OUTPUT-LABEL=s0i3-deep time
+#APL_5)res_s0i3-deep   _COMMENT=SoC in s0i3 with clock trunks shut down
+#APL_5)res_s0i3-deep   _GROUP=s0i3
+#
+#<--END EXCLUDE FROM NDA

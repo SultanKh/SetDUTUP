@@ -1,0 +1,83 @@
+--------------------------------------------------------------------------
+** INTERNAL USE ONLY ** 
+Intel(R) SoC Watch for Windows* OS Version 1.16.1 [Aug 24 2016]
+Copyright (c) 2013-2016, Intel Corp. All Rights Reserved.
+Platform power analysis tool for use with Intel processors, chipsets and platforms.
+email: SoCWatchDevelopers@intel.com 
+*Other names and brands may be claimed as the property of others. 
+--------------------------------------------------------------------------
+Data Collection Started: 2016-12-11 15:00:32.9160477 Jerusalem Standard Time
+Command line options: -f pch-slps0 -t 60 
+
+CPU codename: Skylake
+Number of packages: 1
+Number of cores per package: 2
+Number of logical processors per core: 2
+
+GT SKU: GT2 SKL-ULT3
+PCH Device: Cannon Lake PCH-LP (CNP-LP)
+
+TSC diff (ticks):  707145674400
+TSC freq (kHz):  2400000
+System time diff (sec):  294.64
+
+
+------------------------------------------
+PCH-SLPS0-DBG-GROUP (from feature "pch-slps0")
+------------------------------------------
+                    ,         Min,         Max,           Timed Avg,         Counted Avg,
+                    ,------------,------------,--------------------,--------------------,
+    PCIe CLKREQS Off,           0,           0,                0.00,                0.00,
+--------------------
+PCH SLP S0 DBG Report
+--------------------
+
+Note that SLPS0 DBG registers are sampled for point-in-time values (not residency values). The Count column contains the number of samples taken where status bit indicated true. Further, Status is only snapped @ C10 entry.
+
+# of Samples: 917
+
+             IP Name, Ever Observed (Y/N),Observed Sample Count,   Observed Sample %,
+          ----------,   -----------------,   -----------------,   -----------------,
+        AUDIO DSP D3,                   N,                   0,               0.00%,
+              OTG D3,                   N,                   0,               0.00%,
+             XHCI D3,                   N,                   0,               0.00%,
+             LPIO D3,                   N,                   0,               0.00%,
+              SDX D3,                   N,                   0,               0.00%,
+             SATA D3,                   N,                   0,               0.00%,
+             UFS0 D3,                   N,                   0,               0.00%,
+             UFS1 D3,                   N,                   0,               0.00%,
+             eMMC D3,                   N,                   0,               0.00%,
+        USB2 PLL Off,                   N,                   0,               0.00%,
+       Audio PLL Off,                   N,                   0,               0.00%,
+         Crystal Off,                   N,                   0,               0.00%,
+    LPC Clocks Gated,                   N,                   0,               0.00%,
+mPHY Core Power Gated,                   N,                   0,               0.00%,
+    CSME Power Gated,                   N,                   0,               0.00%,
+    GBE disconnected,                   N,                   0,               0.00%,
+   PCIe in Low Power,                   N,                   0,               0.00%,
+Pltfrm ASLT > thresh,                   N,                   0,               0.00%,
+--------------------
+PCH SLP-S0 Residency
+--------------------
+The residency reported below could under-report the actual SLP-S0 time when PMC clock throttling occurrs.
+
+# of Samples: 917
+
+            ,           %,         Sec,
+            ,------------,   ---------,
+      SLP-S0,       0.00%,       0.00s,
+
+---------------------------------------------------------------------
+Approximated PCH SLP-S0 Residency (corrected for under-reporting)
+---------------------------------------------------------------------
+This residency report uses PMC active time to determine an adjustment that accounts for PMC clock throttling.
+ This is considered an approximation because the adjustment is applied as if the throttling occurred uniformly since there is no better data to apply.
+The adjustment is based on the difference between collection duration and the sum of the PCH active and not active counters:  System Time - (PMC + SLP-S0)
+
+Adjusted Time: 294.64s
+
+            ,           %,         Sec,
+            ,------------,   ---------,
+      SLP-S0,      -1.#J%,      -1.#Js,
+PCH Active (adjusted),      -1.#J%,      -1.#Js,
+

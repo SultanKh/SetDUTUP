@@ -1,0 +1,210 @@
+<?xml version="1.0"?>
+<FwStatus_VLV>
+<Operations>
+<Operation Name="ResetBtn">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</Operation>
+	<Operation Name="OsReset">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</Operation>
+	<Operation Name="WarmReset">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</Operation>
+	<Operation Name="UpowerBtn">
+		<All>
+			<bit>0</bit>
+			<bit>1</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</Operation>
+	<Operation Name="ColdReset">
+		<All>
+			<bit>B</bit>
+		</All>
+	</Operation>
+	<Operation Name="GlobalReset">
+		<All>
+			<bit>2</bit>
+			<bit>3</bit>
+		</All>
+	</Operation>
+	<Operation Name="CseReset">
+		<All>
+			<bit>4</bit>
+		</All>
+	</Operation>
+</Operations> 
+<SystemStates>
+	<SystemState Name="S0" >
+		<All>
+			<bit>0</bit>
+			<bit>1</bit>
+			<bit>2</bit>
+			<bit>3</bit>
+			<bit>4</bit>
+			<bit>5</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>C</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="S3">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="S4">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="S5">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="G3">
+  		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="DS3">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="DS4">
+ 		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+	<SystemState Name="DS5">
+		<All>
+			<bit>0</bit>
+			<bit>6</bit>
+			<bit>7</bit>
+			<bit>8</bit>
+			<bit>9</bit>
+			<bit>A</bit>
+			<bit>B</bit>
+			<bit>D</bit>
+			<bit>E</bit>
+			<bit>F</bit>
+		</All>
+	</SystemState>
+      <Status bit="0">Succeeded</Status>
+      <Status bit="1">Error    </Status>
+      <Status bit="2">Error    </Status>
+      <Status bit="3">Error    </Status>
+      <Status bit="4">Error    </Status>
+      <Status bit="5">Error    </Status>
+      <Status bit="6">Succeeded</Status>
+      <Status bit="7">Succeeded</Status>
+      <Status bit="8">Succeeded</Status>
+      <Status bit="9">Succeeded</Status>
+      <Status bit="A">Succeeded</Status>
+      <Status bit="B">Succeeded</Status>
+      <Status bit="C">Error    </Status>
+      <Status bit="D">Succeeded</Status>
+      <Status bit="E">Succeeded</Status>
+      <Status bit="F">Succeeded</Status>
+    </SystemState>
+</SystemStates>
+</FwStatus_VLV>

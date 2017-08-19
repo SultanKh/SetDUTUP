@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D42AE893-859D-4F89-AB1C-3EE64FB8F0A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SetThisUp</RootNamespace>
+    <AssemblyName>SetThisUp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="APSCommon">
+      <HintPath>..\..\..\..\..\Downloads\APSCommon.dll</HintPath>
+    </Reference>
+    <Reference Include="APSCommonUtils">
+      <HintPath>..\..\..\..\..\Downloads\APSCommonUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="PowerDataStructure">
+      <HintPath>..\..\..\..\..\Downloads\PowerDataStructure.dll</HintPath>
+    </Reference>
+    <Reference Include="StateSignalMapping">
+      <HintPath>..\..\..\..\..\Downloads\StateSignalMapping.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xOSaClientNetLib">
+      <HintPath>..\..\..\..\..\Desktop\C#Xosa\xOSaClientNetLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BackGroundWorker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DownloaderThread.cs" />
+    <Compile Include="DriverInstallerClass.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ImageBurnClass.cs" />
+    <Compile Include="MotorAutoSetup.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveSettings.cs" />
+    <Compile Include="TestFlowRunner.cs" />
+    <Compile Include="UserUsing.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Dediprogfiles\USB Driver\WinUSB Driver\dediprog.cat" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_BXT.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_CHV.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_CHV2_0.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_CSE.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_CSE_11.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_ME10_0.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_ME9_1.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_ME9_5.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_ME_10.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_VLV1_0.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\dalps\CalcApplet_VLV_1.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\loopDalps\CalcApplet_BXT.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\loopDalps\CalcApplet_CHV.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\loopDalps\CalcApplet_CSE.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\loopDalps\CalcApplet_ME10_0.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\loopDalps\CalcApplet_ME9_1.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\loopDalps\CalcApplet_ME9_5.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\loopDalps\CalcApplet_VLV_1_0.dalp" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\PTTAlive.ps1" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\PTTAliveOrderly.ps1" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\PTTAliveWin7.ps1" />
+    <None Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\run.bat" />
+    <None Include="UserFiles\Logs\CliApplication.log" />
+    <None Include="UserFiles\Logs\PmspExecution_13-07-17_08-59\G3TestTest_Passed.log" />
+    <None Include="UserFiles\Logs\PmspExecution_19-07-17_01-57\S4CM3PgTestTest.log" />
+    <None Include="UserFiles\Logs\PmspExecution_19-07-17_02-01\S4CM3PgTestTest.log" />
+    <None Include="UserFiles\Logs\UiApplication.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="lib\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dediprogfiles\dpcmd.exe" />
+    <Content Include="Dediprogfiles\STTubeDevice203.dll" />
+    <Content Include="Dediprogfiles\USB Driver\WinUSB Driver\dediprog.inf" />
+    <Content Include="Dediprogfiles\USB Driver\WinUSB Driver\i386\WdfCoInstaller01009.dll" />
+    <Content Include="Dediprogfiles\USB Driver\WinUSB Driver\i386\WinUSBCoInstaller2.dll" />
+    <Content Include="Dediprogfiles\USB Driver\WinUSB Driver\WdfCoInstaller01009.dll" />
+    <Content Include="Dediprogfiles\USB Driver\WinUSB Driver\WinUSBCoInstaller2.dll" />
+    <Content Include="Dediprogfiles\winusb.dll" />
+    <Content Include="FlashChipsMappingFile.xml" />
+    <Content Include="PlatformMappings\ApolloLake Desktop APS3.xml" />
+    <Content Include="PlatformMappings\ApolloLake Mobile APS3.xml" />
+    <Content Include="PlatformMappings\BayTrail Desktop APS3.xml" />
+    <Content Include="PlatformMappings\BayTrail Mobile APS3.xml" />
+    <Content Include="PlatformMappings\BayTrail Tablet APS3.xml" />
+    <Content Include="PlatformMappings\BayTrailCR Tablet APS3.xml" />
+    <Content Include="PlatformMappings\Braswell None APS3.xml" />
+    <Content Include="PlatformMappings\Broxton Tablet APS3.xml" />
+    <Content Include="PlatformMappings\CanonLake Mobile APS3.xml" />
+    <Content Include="PlatformMappings\CanonLake Mobile APSg.xml" />
+    <Content Include="PlatformMappings\CherryTrail Tablet APS3.xml" />
+    <Content Include="PlatformMappings\GeminiLake Mobile APS3.xml" />
+    <Content Include="PlatformMappings\GeminiLake Mobile APSg.xml" />
+    <Content Include="PlatformMappings\KabyLake Desktop APS3.xml" />
+    <Content Include="PlatformMappings\KabyLake Mobile APS3.xml" />
+    <Content Include="PlatformMappings\KabyLake ServerWorkstation APS3.xml" />
+    <Content Include="PlatformMappings\Me10 Mobile APS3.xml" />
+    <Content Include="PlatformMappings\Me11 Desktop APS3.xml" />
+    <Content Include="PlatformMappings\Me11 Mobile APS3.xml" />
+    <Content Include="PlatformMappings\Me11 ServerWorkstation APS3.xml" />
+    <Content Include="PlatformMappings\Me8 Desktop APS2.xml" />
+    <Content Include="PlatformMappings\Me8 Desktop APS3.xml" />
+    <Content Include="PlatformMappings\Me8 Mobile APS2.xml" />
+    <Content Include="PlatformMappings\Me8 Mobile APS3.xml" />
+    <Content Include="PlatformMappings\Me8 ServerWorkstation APS2.xml" />
+    <Content Include="PlatformMappings\Me8 ServerWorkstation APS3.xml" />
+    <Content Include="PlatformMappings\Me9 Desktop APS2.xml" />
+    <Content Include="PlatformMappings\Me9 Desktop APS3.xml" />
+    <Content Include="PlatformMappings\Me9 Mobile APS2.xml" />
+    <Content Include="PlatformMappings\Me9 Mobile APS3.xml" />
+    <Content Include="PlatformMappings\Me9 ServerWorkstation APS2.xml" />
+    <Content Include="PlatformMappings\Me9 ServerWorkstation APS3.xml" />
+    <Content Include="PlatformMappings\Me9_5 Mobile APS3.xml" />
+    <Content Include="UserFiles\Configuration\CnlConfiguration.xml" />
+    <Content Include="UserFiles\Configuration\DefaultConfiguration.xml" />
+    <Content Include="UserFiles\Configuration\ExternalScriptBrowser.xml" />
+    <Content Include="UserFiles\Configuration\GlkConfiguration.xml" />
+    <Content Include="UserFiles\Configuration\IclSimicsconfiguration.xml" />
+    <Content Include="UserFiles\Configuration\TestBrowser.xml" />
+    <Content Include="UserFiles\Externals\aDSPAliveness.xml" />
+    <Content Include="UserFiles\Externals\DALAliveness.xml" />
+    <Content Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\DALaliveness.exe" />
+    <Content Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\README.txt" />
+    <Content Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\IPLoading\readme.txt" />
+    <Content Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\README.txt" />
+    <Content Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\Sensors\README.txt" />
+    <Content Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\Sensors\SensorAlive.exe" />
+    <Content Include="UserFiles\Externals\ExecutionFiles\AlivnessTests\Sensors\Windows7.SensorAndLocation.dll" />
+    <Content Include="UserFiles\Externals\ISHAliveness.xml" />
+    <Content Include="UserFiles\Externals\iUnitAliveness.xml" />
+    <Content Include="UserFiles\Externals\PTTAliveness.xml" />
+    <Content Include="UserFiles\Externals\SensorAliveness.xml" />
+    <Content Include="UserFiles\Externals\TCSSAliveness.xml" />
+    <Content Include="UserFiles\Logs\logDirectory.txt" />
+    <Content Include="UserFiles\Logs\PmspExecution_13-07-17_08-59\G3TestTest_Passed.html" />
+    <Content Include="UserFiles\Logs\PmspExecution_13-07-17_08-59\SummaryLog___13-07-17_08-59.html" />
+    <Content Include="UserFiles\Logs\PmspExecution_19-07-17_01-57\S4CM3PgTestTest.html" />
+    <Content Include="UserFiles\Logs\PmspExecution_19-07-17_01-57\SummaryLog___19-07-17_01-57.html" />
+    <Content Include="UserFiles\Logs\PmspExecution_19-07-17_02-01\S4CM3PgTestTest.html" />
+    <Content Include="UserFiles\Logs\PmspExecution_19-07-17_02-01\SummaryLog___19-07-17_02-01.html" />
+    <Content Include="UserFiles\Scripts\Basic\BootTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\CM3SleepPgTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\ColdResetTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\ConnectedStandbyTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\CseResetTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\G3Test.xml" />
+    <Content Include="UserFiles\Scripts\Basic\GlobalReset.xml" />
+    <Content Include="UserFiles\Scripts\Basic\HibernateTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\PgTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S3CM3PgTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S3DcTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S3DeepSleepTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S4CM3PgTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S4DcTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S4DeepSleepTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S5CM3PgTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S5DcTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\S5DeepSleepTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\ShutdownTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\SleepTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\UpwrTest.xml" />
+    <Content Include="UserFiles\Scripts\Basic\WarmResetTest.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

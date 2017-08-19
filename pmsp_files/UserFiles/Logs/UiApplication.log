@@ -1,0 +1,2190 @@
+[13.07.2017 | 08:59:09] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[13.07.2017 | 08:59:09] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[13.07.2017 | 08:59:09] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[13.07.2017 | 08:59:09] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[13.07.2017 | 08:59:09] [   TRACE] Begin play async test execution
+[13.07.2017 | 08:59:09] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[13.07.2017 | 08:59:09] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, Disable. (Windowsx64) 
+[13.07.2017 | 08:59:09] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[13.07.2017 | 08:59:09] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[13.07.2017 | 08:59:09] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[13.07.2017 | 08:59:09] [    INFO] [      Test Execution]  == Verify Platform in OS
+[13.07.2017 | 08:59:09] [    INFO] [   General Operation]  Begin recovery flow...
+[13.07.2017 | 08:59:09] [   DEBUG] [        Power Device]  Get power source
+[13.07.2017 | 08:59:09] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[13.07.2017 | 08:59:09] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 08:59:09] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 08:59:09] [   DEBUG] [        Power Device]  Get power source
+[13.07.2017 | 08:59:09] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[13.07.2017 | 08:59:09] [   DEBUG] [   General Operation]  Platform in AcDc power source, and in Os
+[13.07.2017 | 08:59:09] [    INFO] [   General Operation]  Finish recovery flow
+[13.07.2017 | 08:59:09] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 08:59:09] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 08:59:09] [    INFO] [      Test Execution]  == Copy required files to DUT
+[13.07.2017 | 08:59:09] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: Resources\ProjectResources\BigCore\CNL\MEInfo\WINDOWS64\
+[13.07.2017 | 08:59:11] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: Resources\DeviceManagerItemsDown.exe
+[13.07.2017 | 08:59:11] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\
+[13.07.2017 | 08:59:13] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\
+[13.07.2017 | 08:59:14] [    INFO] [      Test Execution]  == Try Set Power Policy
+[13.07.2017 | 08:59:14] [   DEBUG] [   General Operation]  Set power policy isn't enable to 'Disable' status.
+[13.07.2017 | 08:59:14] [    INFO] [      Test Execution]  == Try Get FW version of DUT
+[13.07.2017 | 08:59:14] [DEEP_DEBUG] [   General Operation]  Try get FW version at first time
+[13.07.2017 | 08:59:14] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION 
+[13.07.2017 | 08:59:14] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION   
+[13.07.2017 | 08:59:15] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 08:59:15] [   TRACE] [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Version: 12.0.0.1006 LP
+[13.07.2017 | 08:59:15] [    INFO] [   General Operation]  Initiate FW version at first time is 12.0.0.1006
+[13.07.2017 | 08:59:15] [ SUMMARY] [      Test Execution]  ========= Finish prepare Setup =====
+[13.07.2017 | 08:59:15] [ SUMMARY] [      Test Execution]  ========= Begin run Test: G3Test =====
+[13.07.2017 | 08:59:15] [    INFO] [   General Operation]  Begin recovery flow...
+[13.07.2017 | 08:59:15] [   DEBUG] [        Power Device]  Get power source
+[13.07.2017 | 08:59:15] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[13.07.2017 | 08:59:15] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 08:59:15] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 08:59:15] [   DEBUG] [        Power Device]  Get power source
+[13.07.2017 | 08:59:16] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[13.07.2017 | 08:59:16] [   DEBUG] [   General Operation]  Platform in AcDc power source, and in Os
+[13.07.2017 | 08:59:16] [    INFO] [   General Operation]  Finish recovery flow
+[13.07.2017 | 08:59:16] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 08:59:16] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 08:59:16] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Scripts\Basic\G3Test.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[13.07.2017 | 08:59:16] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[13.07.2017 | 08:59:16] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[13.07.2017 | 08:59:16] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 08:59:16] [   TRACE] [xOSa Remote Executer]  Output from running command line: Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_01\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_01\3&11583659&0&28
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_10\3&11583659&0&FD
+Device Name: SoundWire Bus, Device ID: INTELAUDIO\SDW_ROOT\5&2F21C8F&1
+Device Name: SoundWire device, Device ID: INTELAUDIO\LINKTYPE_05&DEVTYPE_05&VEN_8086&DEV_AE35&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0500
+Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_10\3&11583659&0&98
+Device Name: Generic Bluetooth Adapter, Device ID: USB\VID_8087&PID_0AAA\5&3406B811&0&10
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_10\3&11583659&0&B4
+Device Name: CannonLake SCS3: SD Card - 9DF5, Device ID: PCI\VEN_8086&DEV_9DF5&SUBSYS_72708086&REV_10\3&11583659&0&A5
+Device Name: Digital microphone device, Device ID: INTELAUDIO\LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0100
+Unknown Device Name, Device ID: ACPI\INT34BB\3&11583659&0
+[13.07.2017 | 08:59:16] [DEEP_DEBUG] [  Windows Controller]  Got a few down-drivers
+[13.07.2017 | 08:59:16] [ SUMMARY] [        Test: G3Test]  ===== Run iteration number 1 =====
+[13.07.2017 | 08:59:16] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:16] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:17] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:17] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:17] [    INFO] [        Test: G3Test]  Step DALAliveness is performing...
+[13.07.2017 | 08:59:17] [    INFO] [   DALAliveness Step]  Starting to run external script
+[13.07.2017 | 08:59:17] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DALAliveness\DALaliveness.exe  
+[13.07.2017 | 08:59:17] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DALAliveness\DALaliveness.exe    
+[13.07.2017 | 08:59:18] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 08:59:18] [   TRACE] [xOSa Remote Executer]  Output from running command line: Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+[13.07.2017 | 08:59:18] [   DEBUG] [   DALAliveness Step]  The output of DALAliveness is Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+
+[13.07.2017 | 08:59:18] [    INFO] [   DALAliveness Step]  The DALAliveness passed successfully
+[13.07.2017 | 08:59:18] [   DEBUG] [   DALAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 08:59:28] [    INFO] [        Test: G3Test]  Step DALAliveness passed with status: Passed
+[13.07.2017 | 08:59:28] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:28] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:28] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:28] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:28] [    INFO] [        Test: G3Test]  Step PTTAliveness is performing...
+[13.07.2017 | 08:59:28] [    INFO] [   PTTAliveness Step]  Starting to run external script
+[13.07.2017 | 08:59:28] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\PTTAliveness\run.bat  
+[13.07.2017 | 08:59:28] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\PTTAliveness\run.bat    
+[13.07.2017 | 08:59:32] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 08:59:32] [   TRACE] [xOSa Remote Executer]  Output from running command line: C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0
+[13.07.2017 | 08:59:32] [   DEBUG] [   PTTAliveness Step]  The output of PTTAliveness is 
+C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0 
+
+[13.07.2017 | 08:59:32] [    INFO] [   PTTAliveness Step]  The PTTAliveness passed successfully
+[13.07.2017 | 08:59:32] [   DEBUG] [   PTTAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 08:59:42] [    INFO] [        Test: G3Test]  Step PTTAliveness passed with status: Passed
+[13.07.2017 | 08:59:42] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:42] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:42] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 08:59:42] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 08:59:42] [    INFO] [        Test: G3Test]  Step G3 is performing...
+[13.07.2017 | 08:59:42] [    INFO] [             G3 Step]  Begin perform G3 
+[13.07.2017 | 08:59:42] [   DEBUG] [        Power Device]  Set power source to G3
+[13.07.2017 | 08:59:42] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl setPwrSrc G3 
+[13.07.2017 | 08:59:42] [    INFO] [             G3 Step]  Finish perform G3 successfully
+[13.07.2017 | 08:59:42] [    INFO] [             G3 Step]  Connectivity checking is begining
+[13.07.2017 | 08:59:42] [   DEBUG] [             G3 Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 08:59:42] [DEEP_DEBUG] [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 08:59:42] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 08:59:42] [   TRACE] [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 08:59:42] [DEEP_DEBUG] [        Power Device]  Current system state isn't G3 it is: S0
+[13.07.2017 | 08:59:43] [DEEP_DEBUG] [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 08:59:43] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 08:59:43] [   TRACE] [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 08:59:43] [DEEP_DEBUG] [        Power Device]  Current system state isn't G3 it is: S0
+[13.07.2017 | 08:59:43] [DEEP_DEBUG] [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 08:59:43] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 08:59:43] [   TRACE] [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 08:59:43] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 08:59:43] [   DEBUG] [             G3 Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 08:59:44] [   DEBUG] [             G3 Step]   Check Platform Isn't in OS is beginning...
+[13.07.2017 | 08:59:44] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:00:24] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:00:24] [   DEBUG] [             G3 Step]  Check Platform Isn't in OS passed successfull
+[13.07.2017 | 09:00:24] [   DEBUG] [             G3 Step]   Save System State Operation is beginning...
+[13.07.2017 | 09:00:24] [   TRACE] [    Condition Checks]  Last Boot Type set to: 'G3'
+[13.07.2017 | 09:00:24] [   DEBUG] [             G3 Step]  Save System State Operation passed successfull
+[13.07.2017 | 09:00:24] [    INFO] [             G3 Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:00:24] [    INFO] [             G3 Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:00:24] [   DEBUG] [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:00:24] [DEEP_DEBUG] [        Power Device]  Check platform stayed stable in last state  G3\ MeOff
+[13.07.2017 | 09:00:24] [DEEP_DEBUG] [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:00:24] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:24] [   TRACE] [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:00:24] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 09:00:24] [   DEBUG] [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:00:24] [   DEBUG] [         Post Checks]  Condition Check DUT lost ping is beginning...
+[13.07.2017 | 09:00:24] [   DEBUG] [   General Operation]  Run command line
+[13.07.2017 | 09:00:24] [DEEP_DEBUG]                            ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:00:27] [   DEBUG] [   General Operation]  Finish running
+[13.07.2017 | 09:00:27] [   TRACE] [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Request timed out.
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+[13.07.2017 | 09:00:27] [   DEBUG] [         Post Checks]  Condition Check DUT lost ping finished with status Passed
+[13.07.2017 | 09:00:27] [    INFO] [             G3 Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:00:37] [    INFO] [        Test: G3Test]  Step G3 passed with status: Passed
+[13.07.2017 | 09:00:37] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:00:37] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:00:37] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:00:37] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:00:37] [    INFO] [        Test: G3Test]  Step AcDc is performing...
+[13.07.2017 | 09:00:37] [    INFO] [           AcDc Step]  Begin perform AcDc
+[13.07.2017 | 09:00:37] [   DEBUG] [        Power Device]  Set power source to AcDc
+[13.07.2017 | 09:00:37] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl setPwrSrc AcDc 
+[13.07.2017 | 09:00:37] [    INFO] [           AcDc Step]  Finish perform AcDc successfully
+[13.07.2017 | 09:00:37] [    INFO] [           AcDc Step]  Connectivity checking is begining
+[13.07.2017 | 09:00:37] [   DEBUG] [           AcDc Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 09:00:37] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:00:37] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:37] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:00:37] [DEEP_DEBUG] [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:00:38] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:00:38] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:38] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:00:38] [DEEP_DEBUG] [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:00:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:00:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:00:39] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:00:39] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:00:39] [   DEBUG] [           AcDc Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 09:00:39] [   DEBUG] [           AcDc Step]   Check Platform In OS is beginning...
+[13.07.2017 | 09:00:39] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:01:19] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:01:19] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:01:19] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 09:01:19] [   DEBUG] [           AcDc Step]  Check Platform In OS passed successfull
+[13.07.2017 | 09:01:19] [   DEBUG] [           AcDc Step]   Check Last Boot Type is beginning...
+[13.07.2017 | 09:01:19] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};  
+[13.07.2017 | 09:01:19] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};    
+[13.07.2017 | 09:01:22] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:22] [   TRACE] [xOSa Remote Executer]  Output from running command line: ProviderName: Microsoft-Windows-Kernel-Boot
+
+TimeCreated                     Id LevelDisplayName Message                    
+-----------                     -- ---------------- -------                    
+9/8/2085 5:33:46 AM             27 Information      The boot type was 0x0.
+[13.07.2017 | 09:01:22] [   DEBUG] [  Windows Controller]  last boot type index was: 0
+[13.07.2017 | 09:01:22] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}} 
+[13.07.2017 | 09:01:22] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}   
+[13.07.2017 | 09:01:24] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:24] [   TRACE] [xOSa Remote Executer]  Output from running command line: LastBootUpTime     
+--------------     
+9/8/2085 5:33:46 AM
+[13.07.2017 | 09:01:24] [   TRACE] [    Condition Checks]  Last Boot Type was: 'S5', at 9/8/2085 5:33:46 AM
+[13.07.2017 | 09:01:24] [   DEBUG] [           AcDc Step]  Check Last Boot Type passed successfull
+[13.07.2017 | 09:01:24] [    INFO] [           AcDc Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:01:24] [    INFO] [           AcDc Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:01:24] [   DEBUG] [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:01:24] [DEEP_DEBUG] [        Power Device]  Check platform stayed stable in last state  S0\ MeOn
+[13.07.2017 | 09:01:24] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:01:24] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:01:24] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:01:24] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:01:24] [   DEBUG] [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:01:24] [   DEBUG] [         Post Checks]  Condition Check DUT response to ping is beginning...
+[13.07.2017 | 09:01:24] [   DEBUG] [   General Operation]  Run command line
+[13.07.2017 | 09:01:24] [DEEP_DEBUG]                            ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:01:24] [   DEBUG] [   General Operation]  Finish running
+[13.07.2017 | 09:01:24] [   TRACE] [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Reply from 192.168.1.253: bytes=32 time=2ms TTL=128
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 2ms, Average = 2ms
+[13.07.2017 | 09:01:24] [   DEBUG] [         Post Checks]  Condition Check DUT response to ping finished with status Passed
+[13.07.2017 | 09:01:24] [   DEBUG] [         Post Checks]  Condition Check FW Status is beginning...
+[13.07.2017 | 09:01:24] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts 
+[13.07.2017 | 09:01:24] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts   
+[13.07.2017 | 09:01:24] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:24] [   TRACE] [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Status Register1: 0x90000255
+FW Status Register2: 0x80110106
+FW Status Register3: 0x00000020
+FW Status Register4: 0x00004004
+FW Status Register5: 0x00000000
+FW Status Register6: 0x40400000
+
+  CurrentState:                         Normal
+  ManufacturingMode:                    Enabled
+  FlashPartition:                       Valid
+  OperationalState:                     CM0 with UMA
+  InitComplete:                         Complete
+  BUPLoadState:                         Success
+  ErrorCode:                            No Error
+  ModeOfOperation:                      Normal
+  SPI Flash Log:                        Present
+  Phase:                                Maestro
+  ME File System Corrupted:             No
+  FPF and ME Config Status:             Committed
+[13.07.2017 | 09:01:24] [   DEBUG] [    Condition Checks]  Fw status is: '0x80110106'
+[13.07.2017 | 09:01:24] [   TRACE] [    Condition Checks]  FW status checking accoridng G3 state
+[13.07.2017 | 09:01:24] [   DEBUG] [         Post Checks]  Condition Check FW Status finished with status Passed
+[13.07.2017 | 09:01:24] [   DEBUG] [         Post Checks]  Condition Check FW Response is beginning...
+[13.07.2017 | 09:01:24] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION 
+[13.07.2017 | 09:01:24] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION   
+[13.07.2017 | 09:01:25] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:25] [   TRACE] [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Version: 12.0.0.1006 LP
+[13.07.2017 | 09:01:25] [   DEBUG] [    Condition Checks]  Fw version is: '12.0.0.1006'
+[13.07.2017 | 09:01:25] [   DEBUG] [         Post Checks]  Condition Check FW Response finished with status Passed
+[13.07.2017 | 09:01:25] [   DEBUG] [         Post Checks]  Condition Check Device Manager Status is beginning...
+[13.07.2017 | 09:01:25] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[13.07.2017 | 09:01:25] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[13.07.2017 | 09:01:26] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:26] [   TRACE] [xOSa Remote Executer]  Output from running command line: Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_01\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_01\3&11583659&0&28
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_10\3&11583659&0&FD
+Device Name: SoundWire Bus, Device ID: INTELAUDIO\SDW_ROOT\5&2F21C8F&1
+Device Name: SoundWire device, Device ID: INTELAUDIO\LINKTYPE_05&DEVTYPE_05&VEN_8086&DEV_AE35&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0500
+Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_10\3&11583659&0&98
+Device Name: Generic Bluetooth Adapter, Device ID: USB\VID_8087&PID_0AAA\5&3406B811&0&10
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_10\3&11583659&0&B4
+Device Name: CannonLake SCS3: SD Card - 9DF5, Device ID: PCI\VEN_8086&DEV_9DF5&SUBSYS_72708086&REV_10\3&11583659&0&A5
+Device Name: Digital microphone device, Device ID: INTELAUDIO\LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0100
+Unknown Device Name, Device ID: ACPI\INT34BB\3&11583659&0
+[13.07.2017 | 09:01:26] [DEEP_DEBUG] [  Windows Controller]  Got a few down-drivers
+[13.07.2017 | 09:01:26] [   DEBUG] [    Condition Checks]  There are a few down drivers
+[13.07.2017 | 09:01:26] [   DEBUG] [         Post Checks]  Condition Check Device Manager Status finished with status Passed
+[13.07.2017 | 09:01:26] [    INFO] [           AcDc Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:01:36] [    INFO] [        Test: G3Test]  Step AcDc passed with status: Passed
+[13.07.2017 | 09:01:36] [ SUMMARY] [        Test: G3Test]  ===== Iteration number 1 passed successfully =====
+[13.07.2017 | 09:01:36] [ SUMMARY] [        Test: G3Test]  ===== Run iteration number 2 =====
+[13.07.2017 | 09:01:36] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:36] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:36] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:36] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:36] [    INFO] [        Test: G3Test]  Step DALAliveness is performing...
+[13.07.2017 | 09:01:36] [    INFO] [   DALAliveness Step]  Starting to run external script
+[13.07.2017 | 09:01:36] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DALAliveness\DALaliveness.exe  
+[13.07.2017 | 09:01:36] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DALAliveness\DALaliveness.exe    
+[13.07.2017 | 09:01:37] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:37] [   TRACE] [xOSa Remote Executer]  Output from running command line: Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+[13.07.2017 | 09:01:37] [   DEBUG] [   DALAliveness Step]  The output of DALAliveness is Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+
+[13.07.2017 | 09:01:37] [    INFO] [   DALAliveness Step]  The DALAliveness passed successfully
+[13.07.2017 | 09:01:37] [   DEBUG] [   DALAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 09:01:47] [    INFO] [        Test: G3Test]  Step DALAliveness passed with status: Passed
+[13.07.2017 | 09:01:47] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:47] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:47] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:01:47] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:01:47] [    INFO] [        Test: G3Test]  Step PTTAliveness is performing...
+[13.07.2017 | 09:01:47] [    INFO] [   PTTAliveness Step]  Starting to run external script
+[13.07.2017 | 09:01:47] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\PTTAliveness\run.bat  
+[13.07.2017 | 09:01:47] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\PTTAliveness\run.bat    
+[13.07.2017 | 09:01:50] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:01:50] [   TRACE] [xOSa Remote Executer]  Output from running command line: C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0
+[13.07.2017 | 09:01:50] [   DEBUG] [   PTTAliveness Step]  The output of PTTAliveness is 
+C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0 
+
+[13.07.2017 | 09:01:50] [    INFO] [   PTTAliveness Step]  The PTTAliveness passed successfully
+[13.07.2017 | 09:01:50] [   DEBUG] [   PTTAliveness Step]  Delay for 0 seconds.
+[13.07.2017 | 09:02:00] [    INFO] [        Test: G3Test]  Step PTTAliveness passed with status: Passed
+[13.07.2017 | 09:02:00] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:00] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:00] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:00] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:00] [    INFO] [        Test: G3Test]  Step G3 is performing...
+[13.07.2017 | 09:02:00] [    INFO] [             G3 Step]  Begin perform G3 
+[13.07.2017 | 09:02:00] [   DEBUG] [        Power Device]  Set power source to G3
+[13.07.2017 | 09:02:00] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl setPwrSrc G3 
+[13.07.2017 | 09:02:00] [    INFO] [             G3 Step]  Finish perform G3 successfully
+[13.07.2017 | 09:02:00] [    INFO] [             G3 Step]  Connectivity checking is begining
+[13.07.2017 | 09:02:00] [   DEBUG] [             G3 Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 09:02:00] [DEEP_DEBUG] [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:02:00] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:00] [   TRACE] [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:02:00] [DEEP_DEBUG] [        Power Device]  Current system state isn't G3 it is: S0
+[13.07.2017 | 09:02:01] [DEEP_DEBUG] [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:02:01] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:01] [   TRACE] [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:02:01] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 09:02:01] [   DEBUG] [             G3 Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 09:02:01] [   DEBUG] [             G3 Step]   Check Platform Isn't in OS is beginning...
+[13.07.2017 | 09:02:01] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:02:41] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:02:41] [   DEBUG] [             G3 Step]  Check Platform Isn't in OS passed successfull
+[13.07.2017 | 09:02:41] [   DEBUG] [             G3 Step]   Save System State Operation is beginning...
+[13.07.2017 | 09:02:41] [   TRACE] [    Condition Checks]  Last Boot Type set to: 'G3'
+[13.07.2017 | 09:02:41] [   DEBUG] [             G3 Step]  Save System State Operation passed successfull
+[13.07.2017 | 09:02:41] [    INFO] [             G3 Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:02:41] [    INFO] [             G3 Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:02:41] [   DEBUG] [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:02:41] [DEEP_DEBUG] [        Power Device]  Check platform stayed stable in last state  G3\ MeOff
+[13.07.2017 | 09:02:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  G3\ MeOff
+[13.07.2017 | 09:02:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:41] [   TRACE] [        Power Device]  Last state set to  G3\ MeOff
+[13.07.2017 | 09:02:41] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected G3 \ MeOff
+[13.07.2017 | 09:02:41] [   DEBUG] [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:02:41] [   DEBUG] [         Post Checks]  Condition Check DUT lost ping is beginning...
+[13.07.2017 | 09:02:41] [   DEBUG] [   General Operation]  Run command line
+[13.07.2017 | 09:02:41] [DEEP_DEBUG]                            ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:02:45] [   DEBUG] [   General Operation]  Finish running
+[13.07.2017 | 09:02:45] [   TRACE] [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Request timed out.
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 0, Lost = 1 (100% loss),
+[13.07.2017 | 09:02:45] [   DEBUG] [         Post Checks]  Condition Check DUT lost ping finished with status Passed
+[13.07.2017 | 09:02:45] [    INFO] [             G3 Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:02:55] [    INFO] [        Test: G3Test]  Step G3 passed with status: Passed
+[13.07.2017 | 09:02:55] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:55] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:55] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[13.07.2017 | 09:02:55] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[13.07.2017 | 09:02:55] [    INFO] [        Test: G3Test]  Step AcDc is performing...
+[13.07.2017 | 09:02:55] [    INFO] [           AcDc Step]  Begin perform AcDc
+[13.07.2017 | 09:02:55] [   DEBUG] [        Power Device]  Set power source to AcDc
+[13.07.2017 | 09:02:55] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl setPwrSrc AcDc 
+[13.07.2017 | 09:02:55] [    INFO] [           AcDc Step]  Finish perform AcDc successfully
+[13.07.2017 | 09:02:55] [    INFO] [           AcDc Step]  Connectivity checking is begining
+[13.07.2017 | 09:02:55] [   DEBUG] [           AcDc Step]   Check System State \ ME State is beginning...
+[13.07.2017 | 09:02:55] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:02:55] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:55] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:02:55] [DEEP_DEBUG] [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:02:56] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:02:56] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:56] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:02:56] [DEEP_DEBUG] [        Power Device]  Current system state isn't S0 it is: G3
+[13.07.2017 | 09:02:56] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:02:56] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:02:56] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:02:57] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:02:57] [   DEBUG] [           AcDc Step]  Check System State \ ME State passed successfull
+[13.07.2017 | 09:02:57] [   DEBUG] [           AcDc Step]   Check Platform In OS is beginning...
+[13.07.2017 | 09:02:57] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:03:37] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[13.07.2017 | 09:03:37] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[13.07.2017 | 09:03:37] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[13.07.2017 | 09:03:37] [   DEBUG] [           AcDc Step]  Check Platform In OS passed successfull
+[13.07.2017 | 09:03:37] [   DEBUG] [           AcDc Step]   Check Last Boot Type is beginning...
+[13.07.2017 | 09:03:37] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};  
+[13.07.2017 | 09:03:37] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WinEvent -ProviderName Microsoft-Windows-Kernel-boot -MaxEvents 10 | Where-Object {$_.id -like 27};    
+[13.07.2017 | 09:03:40] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:40] [   TRACE] [xOSa Remote Executer]  Output from running command line: ProviderName: Microsoft-Windows-Kernel-Boot
+
+TimeCreated                     Id LevelDisplayName Message                    
+-----------                     -- ---------------- -------                    
+9/8/2085 5:36:04 AM             27 Information      The boot type was 0x0.
+[13.07.2017 | 09:03:40] [   DEBUG] [  Windows Controller]  last boot type index was: 0
+[13.07.2017 | 09:03:40] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}} 
+[13.07.2017 | 09:03:40] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli c:\windows\system32\WindowsPowerShell\v1.0\powershell.exe Get-WmiObject win32_operatingsystem | select @{LABEL=’LastBootUpTime’;EXPRESSION={$_.ConverttoDateTime($_.lastbootuptime)}}   
+[13.07.2017 | 09:03:42] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:42] [   TRACE] [xOSa Remote Executer]  Output from running command line: LastBootUpTime     
+--------------     
+9/8/2085 5:36:04 AM
+[13.07.2017 | 09:03:42] [   TRACE] [    Condition Checks]  Last Boot Type was: 'S5', at 9/8/2085 5:36:04 AM
+[13.07.2017 | 09:03:42] [   DEBUG] [           AcDc Step]  Check Last Boot Type passed successfull
+[13.07.2017 | 09:03:42] [    INFO] [           AcDc Step]  Connectivity checking passed successfull
+[13.07.2017 | 09:03:42] [    INFO] [           AcDc Step]  Post-Conditions checking is begining
+[13.07.2017 | 09:03:42] [   DEBUG] [         Post Checks]  Condition Verify state is stable is beginning...
+[13.07.2017 | 09:03:42] [DEEP_DEBUG] [        Power Device]  Check platform stayed stable in last state  S0\ MeOn
+[13.07.2017 | 09:03:42] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S0\ MeOn
+[13.07.2017 | 09:03:42] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[13.07.2017 | 09:03:42] [   TRACE] [        Power Device]  Last state set to  S0\ MeOn
+[13.07.2017 | 09:03:42] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected S0 \ MeOn
+[13.07.2017 | 09:03:42] [   DEBUG] [         Post Checks]  Condition Verify state is stable finished with status Passed
+[13.07.2017 | 09:03:42] [   DEBUG] [         Post Checks]  Condition Check DUT response to ping is beginning...
+[13.07.2017 | 09:03:42] [   DEBUG] [   General Operation]  Run command line
+[13.07.2017 | 09:03:42] [DEEP_DEBUG]                            ping  192.168.1.253 -n 1 
+[13.07.2017 | 09:03:42] [   DEBUG] [   General Operation]  Finish running
+[13.07.2017 | 09:03:42] [   TRACE] [   General Operation]  Output from running command line: Pinging 192.168.1.253 with 32 bytes of data:
+Reply from 192.168.1.253: bytes=32 time=2ms TTL=128
+
+Ping statistics for 192.168.1.253:
+    Packets: Sent = 1, Received = 1, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 2ms, Average = 2ms
+[13.07.2017 | 09:03:42] [   DEBUG] [         Post Checks]  Condition Check DUT response to ping finished with status Passed
+[13.07.2017 | 09:03:42] [   DEBUG] [         Post Checks]  Condition Check FW Status is beginning...
+[13.07.2017 | 09:03:42] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts 
+[13.07.2017 | 09:03:42] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -fwsts   
+[13.07.2017 | 09:03:42] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:42] [   TRACE] [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Status Register1: 0x90000255
+FW Status Register2: 0x80110106
+FW Status Register3: 0x00000020
+FW Status Register4: 0x00004004
+FW Status Register5: 0x00000000
+FW Status Register6: 0x40400000
+
+  CurrentState:                         Normal
+  ManufacturingMode:                    Enabled
+  FlashPartition:                       Valid
+  OperationalState:                     CM0 with UMA
+  InitComplete:                         Complete
+  BUPLoadState:                         Success
+  ErrorCode:                            No Error
+  ModeOfOperation:                      Normal
+  SPI Flash Log:                        Present
+  Phase:                                Maestro
+  ME File System Corrupted:             No
+  FPF and ME Config Status:             Committed
+[13.07.2017 | 09:03:42] [   DEBUG] [    Condition Checks]  Fw status is: '0x80110106'
+[13.07.2017 | 09:03:42] [   TRACE] [    Condition Checks]  FW status checking accoridng G3 state
+[13.07.2017 | 09:03:42] [   DEBUG] [         Post Checks]  Condition Check FW Status finished with status Passed
+[13.07.2017 | 09:03:42] [   DEBUG] [         Post Checks]  Condition Check FW Response is beginning...
+[13.07.2017 | 09:03:42] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION 
+[13.07.2017 | 09:03:42] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION   
+[13.07.2017 | 09:03:44] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:44] [   TRACE] [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Version: 12.0.0.1006 LP
+[13.07.2017 | 09:03:44] [   DEBUG] [    Condition Checks]  Fw version is: '12.0.0.1006'
+[13.07.2017 | 09:03:44] [   DEBUG] [         Post Checks]  Condition Check FW Response finished with status Passed
+[13.07.2017 | 09:03:44] [   DEBUG] [         Post Checks]  Condition Check Device Manager Status is beginning...
+[13.07.2017 | 09:03:44] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[13.07.2017 | 09:03:44] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[13.07.2017 | 09:03:44] [   DEBUG] [xOSa Remote Executer]  Finish running
+[13.07.2017 | 09:03:44] [   TRACE] [xOSa Remote Executer]  Output from running command line: Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_01\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_01\3&11583659&0&28
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_10\3&11583659&0&FD
+Device Name: SoundWire Bus, Device ID: INTELAUDIO\SDW_ROOT\5&2F21C8F&1
+Device Name: SoundWire device, Device ID: INTELAUDIO\LINKTYPE_05&DEVTYPE_05&VEN_8086&DEV_AE35&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0500
+Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_10\3&11583659&0&98
+Device Name: Generic Bluetooth Adapter, Device ID: USB\VID_8087&PID_0AAA\5&3406B811&0&10
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_10\3&11583659&0&B4
+Device Name: CannonLake SCS3: SD Card - 9DF5, Device ID: PCI\VEN_8086&DEV_9DF5&SUBSYS_72708086&REV_10\3&11583659&0&A5
+Device Name: Digital microphone device, Device ID: INTELAUDIO\LINKTYPE_02&DEVTYPE_01&VEN_8086&DEV_AE20&SUBSYS_00000001&REV_0001\5&2F21C8F&1&0100
+Unknown Device Name, Device ID: ACPI\INT34BB\3&11583659&0
+[13.07.2017 | 09:03:44] [DEEP_DEBUG] [  Windows Controller]  Got a few down-drivers
+[13.07.2017 | 09:03:44] [   DEBUG] [    Condition Checks]  There are a few down drivers
+[13.07.2017 | 09:03:44] [   DEBUG] [         Post Checks]  Condition Check Device Manager Status finished with status Passed
+[13.07.2017 | 09:03:44] [    INFO] [           AcDc Step]  Post-Conditionst checking finished successfully
+[13.07.2017 | 09:03:54] [    INFO] [        Test: G3Test]  Step AcDc passed with status: Passed
+[13.07.2017 | 09:03:54] [ SUMMARY] [        Test: G3Test]  ===== Iteration number 2 passed successfully =====
+[13.07.2017 | 09:03:54] [SUMMARY_PASS] [        Test: G3Test]  ===== Finish run 2 iterations successfully =====
+[13.07.2017 | 09:03:54] [ SUMMARY] [      Test Execution]  ========= Finish run Test: G3Test =====
+[13.07.2017 | 09:03:54] [ SUMMARY] [      Test Execution]  ========= Execution finished =====
+[19.07.2017 | 01:57:42] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[19.07.2017 | 01:57:42] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[19.07.2017 | 01:57:42] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[19.07.2017 | 01:57:42] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[19.07.2017 | 01:57:42] [   TRACE] Begin play async test execution
+[19.07.2017 | 01:57:42] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[19.07.2017 | 01:57:42] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, Disable. (Windowsx64) 
+[19.07.2017 | 01:57:42] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[19.07.2017 | 01:57:42] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[19.07.2017 | 01:57:42] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[19.07.2017 | 01:57:43] [    INFO] [      Test Execution]  == Verify Platform in OS
+[19.07.2017 | 01:57:43] [    INFO] [   General Operation]  Begin recovery flow...
+[19.07.2017 | 01:57:43] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 01:57:43] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 01:57:43] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 01:57:43] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 01:57:43] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 01:57:43] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 01:57:43] [   DEBUG] [   General Operation]  Platform in AcDc power source, and in Os
+[19.07.2017 | 01:57:43] [    INFO] [   General Operation]  Finish recovery flow
+[19.07.2017 | 01:57:43] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 01:57:43] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 01:57:43] [    INFO] [      Test Execution]  == Copy required files to DUT
+[19.07.2017 | 01:57:43] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: Resources\ProjectResources\BigCore\CNL\MEInfo\WINDOWS64\
+[19.07.2017 | 01:57:45] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: Resources\DeviceManagerItemsDown.exe
+[19.07.2017 | 01:57:45] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\
+[19.07.2017 | 01:57:48] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\
+[19.07.2017 | 01:57:48] [    INFO] [      Test Execution]  == Try Set Power Policy
+[19.07.2017 | 01:57:48] [   DEBUG] [   General Operation]  Set power policy isn't enable to 'Disable' status.
+[19.07.2017 | 01:57:48] [    INFO] [      Test Execution]  == Try Get FW version of DUT
+[19.07.2017 | 01:57:48] [DEEP_DEBUG] [   General Operation]  Try get FW version at first time
+[19.07.2017 | 01:57:48] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION 
+[19.07.2017 | 01:57:48] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION   
+[19.07.2017 | 01:57:49] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 01:57:49] [   TRACE] [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Version: 12.0.0.1002 LP
+[19.07.2017 | 01:57:49] [    INFO] [   General Operation]  Initiate FW version at first time is 12.0.0.1002
+[19.07.2017 | 01:57:49] [ SUMMARY] [      Test Execution]  ========= Finish prepare Setup =====
+[19.07.2017 | 01:57:49] [ SUMMARY] [      Test Execution]  ========= Begin run Test: S4CM3PgTest =====
+[19.07.2017 | 01:57:49] [    INFO] [   General Operation]  Begin recovery flow...
+[19.07.2017 | 01:57:49] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 01:57:49] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 01:57:49] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 01:57:49] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 01:57:50] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 01:57:50] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 01:57:50] [   DEBUG] [   General Operation]  Platform in AcDc power source, and in Os
+[19.07.2017 | 01:57:50] [    INFO] [   General Operation]  Finish recovery flow
+[19.07.2017 | 01:57:50] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 01:57:50] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 01:57:50] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Scripts\Basic\S4CM3PgTest.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[19.07.2017 | 01:57:50] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[19.07.2017 | 01:57:50] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[19.07.2017 | 01:57:50] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 01:57:50] [   TRACE] [xOSa Remote Executer]  Output from running command line: Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_11\3&11583659&0&98
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_11\3&11583659&0&B4
+Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_02\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_02\3&11583659&0&28
+Device Name: PCI Data Acquisition and Signal Processing Controller, Device ID: PCI\VEN_8086&DEV_9DF9&SUBSYS_00008086&REV_11\3&11583659&0&90
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_11\3&11583659&0&FD
+Device Name: SM Bus Controller, Device ID: PCI\VEN_8086&DEV_9DA3&SUBSYS_72708086&REV_11\3&11583659&0&FC
+[19.07.2017 | 01:57:50] [DEEP_DEBUG] [  Windows Controller]  Got a few down-drivers
+[19.07.2017 | 01:57:50] [ SUMMARY] [   Test: S4CM3PgTest]  ===== Run iteration number 1 =====
+[19.07.2017 | 01:57:50] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 01:57:50] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 01:57:50] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 01:57:50] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 01:57:50] [    INFO] [   Test: S4CM3PgTest]  Step DALAliveness is performing...
+[19.07.2017 | 01:57:51] [    INFO] [   DALAliveness Step]  Starting to run external script
+[19.07.2017 | 01:57:51] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DALAliveness\DALaliveness.exe  
+[19.07.2017 | 01:57:51] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DALAliveness\DALaliveness.exe    
+[19.07.2017 | 01:57:52] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 01:57:52] [   TRACE] [xOSa Remote Executer]  Output from running command line: Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+[19.07.2017 | 01:57:52] [   DEBUG] [   DALAliveness Step]  The output of DALAliveness is Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+
+[19.07.2017 | 01:57:52] [    INFO] [   DALAliveness Step]  The DALAliveness passed successfully
+[19.07.2017 | 01:57:52] [   DEBUG] [   DALAliveness Step]  Delay for 0 seconds.
+[19.07.2017 | 01:58:02] [    INFO] [   Test: S4CM3PgTest]  Step DALAliveness passed with status: Passed
+[19.07.2017 | 01:58:02] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 01:58:02] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 01:58:02] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 01:58:02] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 01:58:02] [    INFO] [   Test: S4CM3PgTest]  Step PTTAliveness is performing...
+[19.07.2017 | 01:58:02] [    INFO] [   PTTAliveness Step]  Starting to run external script
+[19.07.2017 | 01:58:02] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\PTTAliveness\run.bat  
+[19.07.2017 | 01:58:02] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\PTTAliveness\run.bat    
+[19.07.2017 | 01:58:06] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 01:58:06] [   TRACE] [xOSa Remote Executer]  Output from running command line: C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0
+[19.07.2017 | 01:58:06] [   DEBUG] [   PTTAliveness Step]  The output of PTTAliveness is 
+C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0 
+
+[19.07.2017 | 01:58:06] [    INFO] [   PTTAliveness Step]  The PTTAliveness passed successfully
+[19.07.2017 | 01:58:06] [   DEBUG] [   PTTAliveness Step]  Delay for 0 seconds.
+[19.07.2017 | 01:58:16] [    INFO] [   Test: S4CM3PgTest]  Step PTTAliveness passed with status: Passed
+[19.07.2017 | 01:58:16] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 01:58:16] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 01:58:16] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 01:58:16] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 01:58:16] [    INFO] [   Test: S4CM3PgTest]  Step Hibernate is performing...
+[19.07.2017 | 01:58:16] [    INFO] [      Hibernate Step]  Begin perform hibernate 
+[19.07.2017 | 01:58:16] [DEEP_DEBUG] [  Windows Controller]  Validate S4 is supported in DUT
+[19.07.2017 | 01:58:16] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: powercfg /A 
+[19.07.2017 | 01:58:16] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli powercfg /A   
+[19.07.2017 | 01:58:16] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 01:58:16] [   TRACE] [xOSa Remote Executer]  Output from running command line: The following sleep states are available on this system:
+    Hibernate
+    Fast Startup
+
+The following sleep states are not available on this system:
+    Standby (S1)
+	The system firmware does not support this standby state.
+	An internal system component has disabled this standby state.
+		Graphics
+
+    Standby (S2)
+	The system firmware does not support this standby state.
+	An internal system component has disabled this standby state.
+		Graphics
+
+    Standby (S3)
+	An internal system component has disabled this standby state.
+		Graphics
+
+    Standby (S0 Low Power Idle)
+	The system firmware does not support this standby state.
+
+    Hybrid Sleep
+	Standby (S3) is not available.
+[19.07.2017 | 01:58:16] [DEEP_DEBUG] [xOSa Remote Executer]  Perform S4 operation
+[19.07.2017 | 01:58:16] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 power s4 
+[19.07.2017 | 01:58:16] [    INFO] [      Hibernate Step]  Finish perform hibernate successfully
+[19.07.2017 | 01:58:16] [    INFO] [      Hibernate Step]  Connectivity checking is begining
+[19.07.2017 | 01:58:16] [   DEBUG] [      Hibernate Step]   Check System State \ ME State is beginning...
+[19.07.2017 | 01:58:16] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:16] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:16] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:16] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:17] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:17] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:17] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:17] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:17] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:17] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:17] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:18] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:18] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:18] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:18] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:18] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:19] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:19] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:19] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:19] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:19] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:19] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:19] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:19] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:20] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:20] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:20] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:20] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:20] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:20] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:20] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:20] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:21] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:21] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:21] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:21] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:21] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:21] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:21] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:21] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:22] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:22] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:22] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:22] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:22] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:22] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:22] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:22] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:23] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:23] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:23] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:23] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:23] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:23] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:23] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:23] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:24] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:24] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:24] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:24] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:25] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:25] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:25] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:25] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:25] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:25] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:25] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:25] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:26] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:26] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:26] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:26] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:26] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:26] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:26] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:26] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:27] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:27] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:27] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:27] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:27] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:27] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:27] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:27] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:28] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:28] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:28] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:28] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:28] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:28] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:28] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:28] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:29] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:29] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:29] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:29] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:29] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:29] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:29] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:29] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:30] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:30] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:30] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:30] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:31] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:31] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:31] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:31] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:31] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:31] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:31] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:31] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 01:58:32] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:32] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:32] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:32] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:32] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:32] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:32] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:32] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:33] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:33] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:33] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:33] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:33] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:33] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:33] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:33] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:34] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:34] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:34] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:34] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:34] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:34] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:34] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:34] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:35] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:35] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:35] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:35] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:36] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:36] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:36] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:36] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:36] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:36] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:36] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:36] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:37] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:37] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:37] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:37] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:37] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:37] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:37] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:37] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:38] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:38] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:38] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:38] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:38] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:38] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:38] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:38] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:39] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:39] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:39] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:40] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:40] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:40] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:40] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:40] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:41] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:41] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:42] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:42] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:42] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:42] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:42] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:42] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:42] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:42] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:43] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:43] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:43] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:43] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:43] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:43] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:43] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:44] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:44] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:44] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:44] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:44] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:45] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:45] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:45] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:45] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:45] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:45] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:45] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:45] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:46] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:46] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:46] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:46] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:46] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:46] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:46] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:46] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:47] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:47] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:47] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:47] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:47] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:47] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:47] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:47] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:48] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:48] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:48] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:48] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:49] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:49] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:49] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:49] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:49] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:49] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:49] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:50] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:50] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:50] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:50] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:50] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:51] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:51] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:51] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:51] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:51] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:51] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:51] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:51] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:52] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:52] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:52] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:52] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:52] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:52] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:52] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:52] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:53] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:53] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:53] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:53] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:53] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:53] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:53] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:53] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:54] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:54] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:54] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:54] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:55] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:55] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:55] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:55] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:55] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:55] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:55] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:55] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:56] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:56] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:56] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:56] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:56] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:56] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:56] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:56] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:57] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:57] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:57] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:57] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:57] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:57] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:57] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:57] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:58] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:58] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:58] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:58] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:58] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:58] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:58] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:59] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:58:59] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:58:59] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:58:59] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:58:59] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:00] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:00] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:00] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:00] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:00] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:00] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:00] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:00] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:01] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:01] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:01] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:01] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:01] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:01] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:01] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:01] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:02] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:02] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:02] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:02] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:02] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:02] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:02] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:02] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:03] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:03] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:03] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:03] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:04] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:04] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:04] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:04] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:04] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:04] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:04] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:04] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:05] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:05] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:05] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:05] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:05] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:05] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:05] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:05] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:06] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:06] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:06] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:06] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:06] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:06] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:06] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:06] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:07] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:07] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:07] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:07] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:07] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:07] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:07] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:08] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:08] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:08] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:08] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:08] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:09] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:09] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:09] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:09] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:09] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:09] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:09] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:09] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:10] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:10] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:10] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:10] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:10] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:10] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:10] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:10] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:11] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:11] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:11] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:11] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:11] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:11] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:11] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:11] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:12] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:12] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:12] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:12] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:12] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:12] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:12] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:13] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:13] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:13] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:13] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:13] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:14] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:14] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:14] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:14] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:14] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:14] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:14] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:14] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:15] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:15] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:15] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:15] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:15] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:15] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:15] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:15] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:16] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:16] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:16] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:16] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:16] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:16] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:16] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:16] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:17] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:17] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:17] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:17] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:18] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:18] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:18] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:18] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:18] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:18] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:18] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:18] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:19] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:19] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:19] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:19] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:19] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:19] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:19] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:19] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:20] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:20] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:20] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:20] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:20] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:20] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:20] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:20] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:21] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:21] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:21] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:21] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:21] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:21] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:21] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:22] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:22] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:22] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:22] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:22] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:23] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:23] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:23] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:23] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:23] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:23] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:23] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:23] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:24] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:24] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:24] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:24] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:24] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:24] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:24] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:24] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:25] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:25] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:25] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:25] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:25] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:25] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:25] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:25] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:26] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:26] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:26] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:26] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:27] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:27] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:27] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:27] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:27] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:27] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:27] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:27] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:28] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:28] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:28] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:28] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:28] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:28] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:28] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:28] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:29] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:29] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:29] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:29] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:29] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:29] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:29] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:29] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:30] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:30] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:30] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:30] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:30] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:30] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:30] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:30] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:31] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:31] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:31] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:31] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:32] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:32] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:32] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:32] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:32] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:32] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:32] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:32] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:33] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:33] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:33] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:33] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:33] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:34] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:34] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:34] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:34] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:34] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:35] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:35] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:35] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:35] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:35] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:35] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:36] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:36] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:36] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:36] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:36] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:36] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:36] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:36] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:37] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:37] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:37] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:37] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:37] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:37] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:37] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:37] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:38] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:38] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:38] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:38] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:38] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:38] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:38] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:39] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:39] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:39] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:40] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:40] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:40] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:40] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:40] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:40] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:40] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:40] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:41] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:41] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:42] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:42] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:42] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:42] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:42] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:42] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:42] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:42] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:43] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:43] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:43] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:43] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:44] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:44] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:44] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:44] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:44] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:44] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:44] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:44] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:45] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:45] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:45] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:45] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:45] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:45] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:45] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:45] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:46] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:46] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:46] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:46] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:46] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:46] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:46] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:46] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:47] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:47] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:47] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:47] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:47] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:47] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:47] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:48] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:48] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:48] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:48] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:48] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:49] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:49] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:49] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:49] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:49] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:49] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:49] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:49] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:50] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:50] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:50] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:50] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:50] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:50] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:50] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:50] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 01:59:51] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 01:59:51] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 01:59:51] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 01:59:52] [DEEP_DEBUG] [        Power Device]  Current state of platofrm is as expected S4 \ MeOn
+[19.07.2017 | 01:59:52] [   DEBUG] [      Hibernate Step]  Check System State \ ME State passed successfull
+[19.07.2017 | 01:59:52] [   DEBUG] [      Hibernate Step]   Check Platform Isn't in OS is beginning...
+[19.07.2017 | 01:59:52] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 01:59:57] [   TRACE] Abort playing test execution
+[19.07.2017 | 01:59:57] [   TRACE] Abort playing current test
+[19.07.2017 | 02:00:37] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[19.07.2017 | 02:00:37] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[19.07.2017 | 02:00:37] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[19.07.2017 | 02:00:37] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[19.07.2017 | 02:00:37] [   TRACE] Begin play async test execution
+[19.07.2017 | 02:00:37] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[19.07.2017 | 02:00:37] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Corporate, PowerPolicy2. (Windowsx64) 
+[19.07.2017 | 02:00:37] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[19.07.2017 | 02:00:37] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[19.07.2017 | 02:00:37] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[19.07.2017 | 02:00:37] [    INFO] [      Test Execution]  == Verify Platform in OS
+[19.07.2017 | 02:00:37] [    INFO] [   General Operation]  Begin recovery flow...
+[19.07.2017 | 02:00:37] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 02:00:37] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 02:00:37] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 02:00:37] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 02:00:37] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 02:00:37] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 02:00:37] [   DEBUG] [   General Operation]  Platform in AcDc power source, and in Os
+[19.07.2017 | 02:00:37] [    INFO] [   General Operation]  Finish recovery flow
+[19.07.2017 | 02:00:37] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 02:00:37] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 02:00:37] [    INFO] [      Test Execution]  == Copy required files to DUT
+[19.07.2017 | 02:00:37] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: Resources\ProjectResources\BigCore\CNL\MEInfo\WINDOWS64\
+[19.07.2017 | 02:00:40] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: Resources\DeviceManagerItemsDown.exe
+[19.07.2017 | 02:00:40] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: Resources\Provision\
+[19.07.2017 | 02:00:42] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: UserFiles\Externals\ExecutionFiles\AlivnessTests\DAL\
+[19.07.2017 | 02:00:44] [   TRACE] [xOSa Remote Executer]  Upload file(s) to DUT: UserFiles\Externals\ExecutionFiles\AlivnessTests\PTT\
+[19.07.2017 | 02:00:45] [    INFO] [      Test Execution]  == Try Set Power Policy
+[19.07.2017 | 02:00:45] [    INFO] [      Test Execution]  Try Provision DUT
+[19.07.2017 | 02:00:45] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\Provision\hbp.bat 
+[19.07.2017 | 02:00:45] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\Provision\hbp.bat   
+[19.07.2017 | 02:00:46] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 02:00:46] [   TRACE] [xOSa Remote Executer]  Output from running command line: C:\PMSPTools\Provision>HostBasedSetup.exe -discovery 
+
+Calling function Discovery...
+
+Connected to MEI driver, version: 12.0.0.1050
+
+C:\PMSPTools\Provision>HostBasedSetup.exe -setup -newpass Admin!98 
+
+Calling function Setup...
+
+Connected to MEI driver, version: 12.0.0.1050
+[19.07.2017 | 02:00:46] [   DEBUG] [   General Operation]  Didn't Success to provision the DUT
+[19.07.2017 | 02:00:46] [DEEP_DEBUG] [   General Operation]  Output of provision tool: 
+C:\PMSPTools\Provision>HostBasedSetup.exe -discovery 
+
+Calling function Discovery...
+
+Connected to MEI driver, version: 12.0.0.1050
+
+C:\PMSPTools\Provision>HostBasedSetup.exe -setup -newpass Admin!98 
+
+Calling function Setup...
+
+Connected to MEI driver, version: 12.0.0.1050
+
+[19.07.2017 | 02:00:46] [DEEP_DEBUG] [   General Operation]  Error Message of provision tool: MEI Error:  I/O control command (6): The handle is invalid.
+
+MEI Error:  Failed to connect to MEI PTHI client.
+
+Error - HostBasedSetupException: 
+Failed to connect to MEI AMTHI client
+Status code: 1
+MEI Error:  I/O control command (6): The handle is invalid.
+
+MEI Error:  Failed to connect to MEI PTHI client.
+
+Error - HostBasedSetupException: 
+Failed to connect to MEI AMTHI client
+Status code: 1
+
+[19.07.2017 | 02:00:46] [   DEBUG] [   General Operation]  Begin set power policy to PowerPolicy2.
+[19.07.2017 | 02:01:12] [   DEBUG] [   General Operation]  Set power policy failed: Unable to connect.
+[19.07.2017 | 02:01:12] [    WARN] [      Test Execution]  Failed to set power source according configuration. Unable to connect
+[19.07.2017 | 02:01:12] [    INFO] [      Test Execution]  == Try Get FW version of DUT
+[19.07.2017 | 02:01:12] [DEEP_DEBUG] [   General Operation]  Try get FW version at first time
+[19.07.2017 | 02:01:12] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION 
+[19.07.2017 | 02:01:12] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\MEInfo\MEInfowin64.exe -feat FW VERSION   
+[19.07.2017 | 02:01:13] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 02:01:13] [   TRACE] [xOSa Remote Executer]  Output from running command line: Intel(R) MEInfo Version: 12.0.0.7079
+Copyright(C) 2005 - 2017, Intel Corporation. All rights reserved.
+
+
+
+FW Version: 12.0.0.1002 LP
+[19.07.2017 | 02:01:13] [    INFO] [   General Operation]  Initiate FW version at first time is 12.0.0.1002
+[19.07.2017 | 02:01:13] [ SUMMARY] [      Test Execution]  ========= Finish prepare Setup =====
+[19.07.2017 | 02:01:13] [ SUMMARY] [      Test Execution]  ========= Begin run Test: S4CM3PgTest =====
+[19.07.2017 | 02:01:13] [    INFO] [   General Operation]  Begin recovery flow...
+[19.07.2017 | 02:01:13] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 02:01:13] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 02:01:13] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 02:01:13] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 02:01:13] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 02:01:13] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 02:01:13] [   DEBUG] [   General Operation]  Platform in AcDc power source, and in Os
+[19.07.2017 | 02:01:13] [    INFO] [   General Operation]  Finish recovery flow
+[19.07.2017 | 02:01:13] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 02:01:14] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm is in OS
+[19.07.2017 | 02:01:14] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Scripts\Basic\S4CM3PgTest.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[19.07.2017 | 02:01:14] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DeviceManagerItemsDown.exe 
+[19.07.2017 | 02:01:14] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DeviceManagerItemsDown.exe   
+[19.07.2017 | 02:01:14] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 02:01:14] [   TRACE] [xOSa Remote Executer]  Output from running command line: Device Name: PCI Serial Port, Device ID: PCI\VEN_8086&DEV_9DFC&SUBSYS_72708086&REV_11\3&11583659&0&98
+Device Name: PCI Simple Communications Controller, Device ID: PCI\VEN_8086&DEV_9DE4&SUBSYS_72708086&REV_11\3&11583659&0&B4
+Device Name: Base System Device, Device ID: PCI\VEN_8086&DEV_5A11&SUBSYS_72708086&REV_02\3&11583659&0&40
+Device Name: Multimedia Controller, Device ID: PCI\VEN_8086&DEV_5A19&SUBSYS_72708086&REV_02\3&11583659&0&28
+Device Name: PCI Data Acquisition and Signal Processing Controller, Device ID: PCI\VEN_8086&DEV_9DF9&SUBSYS_00008086&REV_11\3&11583659&0&90
+Device Name: PCI Device, Device ID: PCI\VEN_8086&DEV_9DA4&SUBSYS_72708086&REV_11\3&11583659&0&FD
+Device Name: SM Bus Controller, Device ID: PCI\VEN_8086&DEV_9DA3&SUBSYS_72708086&REV_11\3&11583659&0&FC
+[19.07.2017 | 02:01:14] [DEEP_DEBUG] [  Windows Controller]  Got a few down-drivers
+[19.07.2017 | 02:01:14] [ SUMMARY] [   Test: S4CM3PgTest]  ===== Run iteration number 1 =====
+[19.07.2017 | 02:01:14] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:01:14] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:01:14] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:01:14] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:01:14] [    INFO] [   Test: S4CM3PgTest]  Step DALAliveness is performing...
+[19.07.2017 | 02:01:14] [    INFO] [   DALAliveness Step]  Starting to run external script
+[19.07.2017 | 02:01:14] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\DALAliveness\DALaliveness.exe  
+[19.07.2017 | 02:01:14] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\DALAliveness\DALaliveness.exe    
+[19.07.2017 | 02:01:15] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 02:01:15] [   TRACE] [xOSa Remote Executer]  Output from running command line: Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+[19.07.2017 | 02:01:15] [   DEBUG] [   DALAliveness Step]  The output of DALAliveness is Installing applet.
+Opening session.
+Performing send and receive.
+Closing session.
+Uninstalling applet.
+********Passed********
+
+[19.07.2017 | 02:01:15] [    INFO] [   DALAliveness Step]  The DALAliveness passed successfully
+[19.07.2017 | 02:01:15] [   DEBUG] [   DALAliveness Step]  Delay for 0 seconds.
+[19.07.2017 | 02:01:25] [    INFO] [   Test: S4CM3PgTest]  Step DALAliveness passed with status: Passed
+[19.07.2017 | 02:01:25] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:01:25] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:01:25] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:01:25] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:01:25] [    INFO] [   Test: S4CM3PgTest]  Step PTTAliveness is performing...
+[19.07.2017 | 02:01:25] [    INFO] [   PTTAliveness Step]  Starting to run external script
+[19.07.2017 | 02:01:25] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: C:\PMSPTools\PTTAliveness\run.bat  
+[19.07.2017 | 02:01:25] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli C:\PMSPTools\PTTAliveness\run.bat    
+[19.07.2017 | 02:01:28] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 02:01:28] [   TRACE] [xOSa Remote Executer]  Output from running command line: C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0
+[19.07.2017 | 02:01:28] [   DEBUG] [   PTTAliveness Step]  The output of PTTAliveness is 
+C:\PMSPTools\PTTAliveness>powershell Set-ExecutionPolicy Bypass -Force 
+
+C:\PMSPTools\PTTAliveness>powershell ./PTTAlive.ps1 
+Failed to reset TPM lockout
+TPM is enabled
+TPM is activated
+TPM AutoProvisioning is enabled
+TPM is Owned
+TPM is ready
+PASSED
+
+C:\PMSPTools\PTTAliveness>exit /b 0 
+
+[19.07.2017 | 02:01:28] [    INFO] [   PTTAliveness Step]  The PTTAliveness passed successfully
+[19.07.2017 | 02:01:28] [   DEBUG] [   PTTAliveness Step]  Delay for 0 seconds.
+[19.07.2017 | 02:01:38] [    INFO] [   Test: S4CM3PgTest]  Step PTTAliveness passed with status: Passed
+[19.07.2017 | 02:01:38] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:01:38] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:01:38] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:01:38] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:01:38] [    INFO] [   Test: S4CM3PgTest]  Step Hibernate is performing...
+[19.07.2017 | 02:01:38] [    INFO] [      Hibernate Step]  Begin perform hibernate 
+[19.07.2017 | 02:01:38] [DEEP_DEBUG] [  Windows Controller]  Validate S4 is supported in DUT
+[19.07.2017 | 02:01:38] [   DEBUG] [xOSa Remote Executer]  Run CommandLine, command: powercfg /A 
+[19.07.2017 | 02:01:38] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 cli powercfg /A   
+[19.07.2017 | 02:01:39] [   DEBUG] [xOSa Remote Executer]  Finish running
+[19.07.2017 | 02:01:39] [   TRACE] [xOSa Remote Executer]  Output from running command line: The following sleep states are available on this system:
+    Hibernate
+    Fast Startup
+
+The following sleep states are not available on this system:
+    Standby (S1)
+	The system firmware does not support this standby state.
+	An internal system component has disabled this standby state.
+		Graphics
+
+    Standby (S2)
+	The system firmware does not support this standby state.
+	An internal system component has disabled this standby state.
+		Graphics
+
+    Standby (S3)
+	An internal system component has disabled this standby state.
+		Graphics
+
+    Standby (S0 Low Power Idle)
+	The system firmware does not support this standby state.
+
+    Hybrid Sleep
+	Standby (S3) is not available.
+[19.07.2017 | 02:01:39] [DEEP_DEBUG] [xOSa Remote Executer]  Perform S4 operation
+[19.07.2017 | 02:01:39] [CLI_INFO]                            xOSaConsole.exe 192.168.1.253:6500 power s4 
+[19.07.2017 | 02:01:39] [    INFO] [      Hibernate Step]  Finish perform hibernate successfully
+[19.07.2017 | 02:01:39] [    INFO] [      Hibernate Step]  Connectivity checking is begining
+[19.07.2017 | 02:01:39] [   DEBUG] [      Hibernate Step]   Check System State \ ME State is beginning...
+[19.07.2017 | 02:01:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:39] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:39] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:39] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:39] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:40] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:40] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:40] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:40] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:40] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:40] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:40] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:40] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:41] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:41] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:42] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:42] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:42] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:42] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:43] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:43] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:43] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:43] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:43] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:43] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:43] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:43] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:44] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:44] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:44] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:44] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:44] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:44] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:44] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:44] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:45] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:45] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:45] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:45] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:45] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:45] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:45] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:45] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:46] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:46] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:46] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:46] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:46] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:46] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:46] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:46] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:47] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:47] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:47] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:47] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:47] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:47] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:47] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:47] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:48] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:48] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:48] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:48] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:48] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:48] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:49] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:49] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:49] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:49] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:49] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:49] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:50] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:50] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:50] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:50] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:50] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:50] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:50] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:50] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:51] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:51] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:51] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:51] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:51] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:51] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:51] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:51] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:52] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:52] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:52] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:52] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:52] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:52] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:52] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:52] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:53] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:53] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:53] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:53] [DEEP_DEBUG] [        Power Device]  Current system state isn't S4 it is: S0
+[19.07.2017 | 02:01:53] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:53] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:53] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:54] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:54] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:54] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:54] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:54] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:55] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:55] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:55] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:55] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:55] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:55] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:55] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:55] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:56] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:56] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:56] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:56] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:56] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:56] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:56] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:56] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:57] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:57] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:57] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:57] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:57] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:57] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:57] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:58] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:58] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:58] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:58] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:58] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:59] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:59] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:59] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:59] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:01:59] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:01:59] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:01:59] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:01:59] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:00] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:00] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:00] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:00] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:01] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:01] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:01] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:01] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:01] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:01] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:01] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:02] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:02] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:02] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:02] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:02] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:03] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:03] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:03] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:03] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:03] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:03] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:03] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:03] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:04] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:04] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:04] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:04] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:05] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:05] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:05] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:05] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:05] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:05] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:05] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:05] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:06] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:06] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:06] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:06] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:06] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:06] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:06] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:06] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:07] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:07] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:07] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:07] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:07] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:07] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:07] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:07] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:08] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:08] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:08] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:08] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:08] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:08] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:08] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:09] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:09] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:09] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:09] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:09] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:10] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:10] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:10] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:10] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:10] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:10] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:10] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:10] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:11] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:11] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:11] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:11] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:11] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:11] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:11] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:11] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:12] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:12] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:12] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:12] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:12] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:12] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:12] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:13] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:13] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:13] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:13] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:13] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:14] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:14] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:14] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:14] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:14] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:14] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:14] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:14] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:15] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:15] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:15] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:15] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:15] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:15] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:15] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:15] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:16] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:16] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:16] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:16] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:16] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:16] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:16] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:16] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:17] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:17] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:17] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:17] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:18] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:18] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:18] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:18] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:18] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:18] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:18] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:18] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:19] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:19] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:19] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:19] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:19] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:19] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:19] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:19] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:20] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:20] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:20] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:20] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:20] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:20] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:20] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:21] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:21] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:21] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:21] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:21] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:22] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:22] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:22] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:22] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:22] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:22] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:22] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:22] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:23] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:23] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:23] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:23] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:23] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:23] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:23] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:23] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:24] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:24] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:24] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:24] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:24] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:24] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:24] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:24] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:25] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:25] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:25] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:25] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:25] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:25] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:25] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:26] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:26] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:26] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:26] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:26] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:27] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:27] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:27] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:27] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:27] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:27] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:27] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:27] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:28] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:28] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:28] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:28] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:28] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:28] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:28] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:28] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:29] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:29] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:29] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:29] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:29] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:29] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:29] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:29] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:30] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:30] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:30] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:30] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:31] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:31] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:31] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:31] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:31] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:31] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:31] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:31] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:32] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:32] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:32] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:32] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:32] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:32] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:32] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:32] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:33] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:33] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:33] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:33] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:33] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:33] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:33] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:33] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:34] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:34] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:34] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:34] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:34] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:34] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:34] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:34] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:35] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:35] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:35] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:35] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:36] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:36] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:36] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:36] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:36] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:36] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:36] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:36] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:37] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:37] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:37] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:37] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:37] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:37] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:37] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:37] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:38] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:38] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:38] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:38] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:38] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:38] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:38] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:38] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:39] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:39] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:39] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:39] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:39] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:40] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:40] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:40] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:40] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:40] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:41] [DEEP_DEBUG] [        Power Device]  Current ME state isn't MeOn it is: MeOff
+[19.07.2017 | 02:02:41] [DEEP_DEBUG] [        Power Device]  Check state of platform according  S4\ MeOn
+[19.07.2017 | 02:02:41] [CLI_INFO]                            MuDi.Cli.exe Sig getstate /t systemstate 
+[19.07.2017 | 02:02:41] [   TRACE] [        Power Device]  Last state set to  S4\ MeOn
+[19.07.2017 | 02:02:45] [   TRACE] Abort playing test execution
+[19.07.2017 | 02:02:45] [   TRACE] Abort playing current test
+[19.07.2017 | 02:11:51] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[19.07.2017 | 02:11:51] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[19.07.2017 | 02:11:51] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[19.07.2017 | 02:11:51] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[19.07.2017 | 02:11:51] [   TRACE] Begin play async test execution
+[19.07.2017 | 02:11:51] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[19.07.2017 | 02:11:51] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.252] , Corporate, PowerPolicy2. (Windowsx64) 
+[19.07.2017 | 02:11:51] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[19.07.2017 | 02:11:51] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[19.07.2017 | 02:11:51] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[19.07.2017 | 02:11:52] [    INFO] [      Test Execution]  == Verify Platform in OS
+[19.07.2017 | 02:11:52] [    INFO] [   General Operation]  Begin recovery flow...
+[19.07.2017 | 02:11:52] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 02:11:52] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 02:11:52] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 02:12:36] [   TRACE] Abort playing test execution
+[19.07.2017 | 02:13:03] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[19.07.2017 | 02:13:03] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[19.07.2017 | 02:13:03] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[19.07.2017 | 02:13:03] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[19.07.2017 | 02:13:03] [   TRACE] Begin play async test execution
+[19.07.2017 | 02:13:03] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[19.07.2017 | 02:13:03] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.252] , Corporate, PowerPolicy2. (Windowsx64) 
+[19.07.2017 | 02:13:03] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[19.07.2017 | 02:13:03] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[19.07.2017 | 02:13:03] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[19.07.2017 | 02:13:04] [    INFO] [      Test Execution]  == Verify Platform in OS
+[19.07.2017 | 02:13:04] [    INFO] [   General Operation]  Begin recovery flow...
+[19.07.2017 | 02:13:04] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 02:13:04] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 02:13:04] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 02:14:04] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[19.07.2017 | 02:14:04] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:14:04] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:14:04] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 02:14:04] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 02:14:04] [   DEBUG] [   General Operation]  Try to wake platform from S0 state by power button
+[19.07.2017 | 02:14:04] [   DEBUG] [        Power Device]  Press Power Button
+[19.07.2017 | 02:14:04] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl pwr 
+[19.07.2017 | 02:14:04] [   DEBUG] [   General Operation]  Delay for 20 seconds.
+[19.07.2017 | 02:14:24] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 02:14:41] [   TRACE] Abort playing test execution
+[19.07.2017 | 06:31:42] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[19.07.2017 | 06:31:43] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[19.07.2017 | 06:31:43] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[19.07.2017 | 06:31:43] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[19.07.2017 | 06:31:43] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[19.07.2017 | 06:31:43] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[19.07.2017 | 06:31:43] [   TRACE] Begin play async test execution
+[19.07.2017 | 06:31:43] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[19.07.2017 | 06:31:43] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Consumer. (Windowsx64) 
+[19.07.2017 | 06:31:43] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[19.07.2017 | 06:31:43] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[19.07.2017 | 06:31:43] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[19.07.2017 | 06:31:43] [    INFO] [      Test Execution]  == Verify Platform in OS
+[19.07.2017 | 06:31:43] [    INFO] [   General Operation]  Begin recovery flow...
+[19.07.2017 | 06:31:43] [   DEBUG] [        Power Device]  Get power source
+[19.07.2017 | 06:31:43] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[19.07.2017 | 06:31:43] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 06:32:43] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[19.07.2017 | 06:32:43] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 06:32:43] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 06:32:43] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[19.07.2017 | 06:32:43] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[19.07.2017 | 06:32:43] [   DEBUG] [   General Operation]  Try to wake platform from S0 state by power button
+[19.07.2017 | 06:32:43] [   DEBUG] [        Power Device]  Press Power Button
+[19.07.2017 | 06:32:43] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl pwr 
+[19.07.2017 | 06:32:44] [   DEBUG] [   General Operation]  Delay for 20 seconds.
+[19.07.2017 | 06:33:04] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 06:34:04] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[19.07.2017 | 06:34:04] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 06:35:00] [   TRACE] Abort playing test execution
+[19.07.2017 | 06:35:04] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[19.07.2017 | 06:35:04] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 06:36:04] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[19.07.2017 | 06:36:04] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[19.07.2017 | 06:37:04] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[19.07.2017 | 06:37:04] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[31.07.2017 | 14:01:21] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[31.07.2017 | 14:01:21] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[31.07.2017 | 14:01:21] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[31.07.2017 | 14:01:21] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[31.07.2017 | 14:01:21] [   TRACE] Begin play async test execution
+[31.07.2017 | 14:01:21] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[31.07.2017 | 14:01:21] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Consumer. (Windowsx64) 
+[31.07.2017 | 14:01:21] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[31.07.2017 | 14:01:21] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[31.07.2017 | 14:01:21] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[31.07.2017 | 14:01:21] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[31.07.2017 | 14:01:21] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[31.07.2017 | 14:01:21] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[31.07.2017 | 14:03:19] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[31.07.2017 | 14:03:19] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[31.07.2017 | 14:03:19] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[31.07.2017 | 14:03:19] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[31.07.2017 | 14:03:19] [   TRACE] Begin play async test execution
+[31.07.2017 | 14:03:19] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[31.07.2017 | 14:03:19] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Consumer. (Windowsx64) 
+[31.07.2017 | 14:03:19] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[31.07.2017 | 14:03:19] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[31.07.2017 | 14:03:19] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[31.07.2017 | 14:03:19] [    INFO] [      Test Execution]  == Verify Platform in OS
+[31.07.2017 | 14:03:19] [    INFO] [   General Operation]  Begin recovery flow...
+[31.07.2017 | 14:03:19] [   DEBUG] [        Power Device]  Get power source
+[31.07.2017 | 14:03:19] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[31.07.2017 | 14:03:19] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[31.07.2017 | 14:03:59] [DEEP_DEBUG] [xOSa Remote Executer]  Platofrm isn't in OS
+[31.07.2017 | 14:03:59] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[31.07.2017 | 14:03:59] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[31.07.2017 | 14:03:59] [DEEP_DEBUG] [        Power Device]  Check state of platform
+[31.07.2017 | 14:03:59] [CLI_INFO]                            MuDi.Cli.exe Sig GetState /t SystemState 
+[31.07.2017 | 14:03:59] [   DEBUG] [   General Operation]  Try to wake platform from S0 state by power button
+[31.07.2017 | 14:03:59] [   DEBUG] [        Power Device]  Press Power Button
+[31.07.2017 | 14:03:59] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl pwr 
+[31.07.2017 | 14:04:00] [   DEBUG] [   General Operation]  Delay for 20 seconds.
+[31.07.2017 | 14:04:20] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...

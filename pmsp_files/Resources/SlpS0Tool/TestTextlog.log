@@ -1,0 +1,18 @@
+WDTF_SYSTEM               : INFO  : Attempt Entering Connected Standby At (hh:mm:ss): 3:52:34 , Wake Time In Milliseconds: 60000 
+WDTF_SYSTEM               : INFO  : Exiting Connected Standby. Elapsed time (hh:mm:ss): 0:1:2
+WDTF_SYSTEM               : INFO  : Attempt Entering Connected Standby At (hh:mm:ss): 3:56:6 , Wake Time In Milliseconds: 120000 
+WDTF_SYSTEM               : INFO  : Exiting Connected Standby. Elapsed time (hh:mm:ss): 0:2:2
+WDTF_SYSTEM               : ERROR : This system does not support Connected Standby. Win32=50 - The request is not supported.
+
+WDTF_SYSTEM               : ERROR : This system does not support Connected Standby. Win32=50 - The request is not supported.
+
+WDTF_SYSTEM               : ERROR : This system does not support Connected Standby. Win32=50 - The request is not supported.
+
+WDTF_SYSTEM               : ERROR : This system does not support Connected Standby. Win32=50 - The request is not supported.
+
+WDTF_SYSTEM               : INFO  : Attempt Entering Connected Standby At (hh:mm:ss): 13:24:8 , Wake Time In Milliseconds: 1000 
+WDTF_SYSTEM               : INFO  : Attempt Entering Connected Standby At (hh:mm:ss): 14:27:24 , Wake Time In Milliseconds: 1000 
+WDTF_SYSTEM               : INFO  : Attempt Entering Connected Standby At (hh:mm:ss): 14:31:54 , Wake Time In Milliseconds: 1000 
+WDTF_SYSTEM               : INFO  : Exiting Connected Standby. Elapsed time (hh:mm:ss): 0:0:1
+WDTF_SYSTEM               : INFO  : Attempt Entering Connected Standby At (hh:mm:ss): 14:39:22 , Wake Time In Milliseconds: 10000 
+WDTF_SYSTEM               : INFO  : Exiting Connected Standby. Elapsed time (hh:mm:ss): 0:0:10

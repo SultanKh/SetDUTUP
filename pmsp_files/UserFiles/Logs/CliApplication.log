@@ -1,0 +1,39 @@
+[23.07.2017 | 01:49:26] [   TRACE] [           XML Utils]  Failed to deserialze execution file- stae: Could not find file 'C:\Program Files\Intel Power Managment Script Player\stae'.
+[23.07.2017 | 01:49:28] [   TRACE] [           XML Utils]  Failed to deserialze execution file- state: Could not find file 'C:\Program Files\Intel Power Managment Script Player\state'.
+[31.07.2017 | 13:56:44] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\Administrator.SERVER\Desktop\pmsp_files\UserFiles\Scripts\Basic\G3Test.xml: Object reference not set to an instance of an object.
+[31.07.2017 | 13:56:44] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[31.07.2017 | 13:56:44] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[31.07.2017 | 13:56:44] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[31.07.2017 | 13:56:44] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[31.07.2017 | 13:56:44] [   TRACE] Begin play async test execution
+[31.07.2017 | 13:56:44] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[31.07.2017 | 13:56:44] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Consumer. (Windowsx64) 
+[31.07.2017 | 13:56:44] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[31.07.2017 | 13:56:44] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[31.07.2017 | 13:56:44] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[31.07.2017 | 13:56:44] [   ERROR] [      Test Execution]  Power Device is not connected. please verify your setup-settings, and your environment
+[31.07.2017 | 13:56:44] [   ERROR] [      Test Execution]  Failed to prepare setup. execution won't be exceute
+[31.07.2017 | 13:56:44] [ SUMMARY] [      Test Execution]  ========= Exucution stopped =====
+[31.07.2017 | 14:02:23] [   TRACE] [           XML Utils]  Failed to deserialze execution file- C:\Users\Administrator.SERVER\Desktop\pmsp_files\UserFiles\Scripts\Basic\G3Test.xml: Object reference not set to an instance of an object.
+[31.07.2017 | 14:02:25] [   TRACE] [   DALAliveness Step]  Add files for Copy
+[31.07.2017 | 14:02:25] [   TRACE] [   PTTAliveness Step]  Add files for Copy
+[31.07.2017 | 14:02:25] [   TRACE] [      Test Execution]  Current Log Directory is: UserFiles\Logs\
+[31.07.2017 | 14:02:25] [CLI_INFO]                            PMSP.Cli.exe UserFiles\Configuration\TestBrowser.xml /c UserFiles\Configuration\DefaultConfiguration.xml 
+[31.07.2017 | 14:02:25] [   TRACE] Begin play async test execution
+[31.07.2017 | 14:02:25] [ SUMMARY] [      Test Execution]  ========= Execution is begining =====
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  DUT Details: Mobile Mobile [192.168.1.253] , Consumer. (Windowsx64) 
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  Configuration File Path is: UserFiles\Configuration\DefaultConfiguration.xml
+[31.07.2017 | 14:02:25] [ SUMMARY] [      Test Execution]  ========= Prepare Setup =====
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  == Verify Power Device is connected
+[31.07.2017 | 14:02:25] [    INFO] [      Test Execution]  == Verify Platform in OS
+[31.07.2017 | 14:02:25] [    INFO] [   General Operation]  Begin recovery flow...
+[31.07.2017 | 14:02:25] [   DEBUG] [        Power Device]  Get power source
+[31.07.2017 | 14:02:25] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl getPwrSrc  
+[31.07.2017 | 14:02:25] [   DEBUG] [   General Operation]  Platorm is not in AcDc state (in Ac state). move to AcDc--
+[31.07.2017 | 14:02:25] [   DEBUG] [        Power Device]  Set power source to AcDc
+[31.07.2017 | 14:02:25] [CLI_INFO]                            MuDi.Cli.exe PwrCtrl setPwrSrc AcDc 
+[31.07.2017 | 14:02:25] [DEEP_DEBUG] [xOSa Remote Executer]  Check if platofrm in OS...
+[31.07.2017 | 14:07:03] [   TRACE] [           XML Utils]  Failed to deserialze execution file- -c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\-c'.
+[31.07.2017 | 14:07:10] [   TRACE] [           XML Utils]  Failed to deserialze execution file- -c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\-c'.
+[31.07.2017 | 14:07:15] [   TRACE] [           XML Utils]  Failed to deserialze execution file- -c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\-c'.
+[31.07.2017 | 14:07:56] [   TRACE] [           XML Utils]  Failed to deserialze execution file- c: Could not find file 'C:\Users\Administrator.SERVER\Desktop\pmsp_files\c'.

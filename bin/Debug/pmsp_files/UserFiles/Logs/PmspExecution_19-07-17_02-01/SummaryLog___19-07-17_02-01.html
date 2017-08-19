@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://github.com/douglascrockford/JSON-js."></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document.body).ready(function () {
+            var summaryCsvId = "summaryTable";
+            var testsSummaryLogId = "testsSummaryLog";
+
+            var csvText = $("#" + summaryCsvId).html();
+            csvText = csvText.substring(0, csvText.length - 1) + "]";
+            csvText = csvText.replace(/\\/g, "\\\\");
+            var tests = JSON.parse(csvText);
+            //alert((tests[0])["Name"]);
+
+            var flatedRows = jsonArrayToTestsArray(tests);
+            var dataTablesColumns = getDataTableColumns();
+
+            $('#' + testsSummaryLogId).DataTable({
+                dom: 'Bfrtip',
+                buttons: [
+                    'copy', 'csv', 'excel', 'pdf', 'print'
+                ],
+				paging: false,
+                data: flatedRows,
+                columns: dataTablesColumns
+
+            });
+        });
+
+        var SUCCESS = "Success";
+        var FAILURE = "Failed";
+        var SKIPPED = "Skiped";
+
+        function jsonArrayToTestsArray(jsonArray) {
+            var testsArray = Array();
+            $.each(jsonArray, function (key, item) {
+                var flattenedTest =
+                    {
+
+                        testName: item["TestCaseSummary"]["Name"],
+                        time: item["Date"],
+                        status: item["TestCaseSummary"]["Status"],
+                        logFilePath: item["TestCaseSummary"]["LogFilePath"],
+                        numberOfIterations: item["TestCaseSummary"]["NumberOfIterations"],
+                    };
+                testsArray.push(flattenedTest);
+            });
+            return testsArray;
+        }
+
+        function getDataTableColumns() {
+            var dataTableColumns = Array();
+
+            dataTableColumns.push(
+                    {
+                        title: "Date Time",
+                        data: "time",
+                        width: "200px",
+                    });
+
+            dataTableColumns.push(
+                    {
+                        title: "Test name",
+                        data: "testName",
+                        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                            $(nTd).addClass("testResult" + oData["status"]);
+                        }
+                    });
+
+            dataTableColumns.push(
+                    {
+                        title: "Status",
+                        data: "status",
+                        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                            $(nTd).addClass("testResult" + oData["status"]);
+                        }
+                    });
+dataTableColumns.push(
+                    {
+                        title: "NumberOfIterations",
+                        data: "numberOfIterations",
+                        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                            $(nTd).addClass("testResult" + oData["status"]);
+                        }
+                    });
+
+            dataTableColumns.push(
+                    {
+                        title: "LogFilePath",
+                        data: "logFilePath",
+
+                        "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+                            //the regex: "/[^\/\\]*[\/\\]*$/", is used to extract the local link for test's logs folder
+                            var filePath = "file:///" + oData["logFilePath"].replace('\\', '/');
+                            // alert(filePath);
+                            var fileLink = $("<a>" + oData["logFilePath"] + "</a>").attr("href", filePath);
+
+                            $(nTd).html(fileLink);
+                        }
+                    });
+            return dataTableColumns;
+        }
+
+    </script>
+    <style>
+        h1, h2, div {
+            background-color:;
+            text-align: center;
+            font-family: "Ariel";
+        }
+
+
+        * {
+            font-family: Arial;
+        }
+
+        table {
+            font-size: 17px;
+        }
+
+
+
+        a {
+            color: blue;
+        }
+
+        td {
+            font-family: Lucida Console;
+            vertical-align: top;
+            border-width: 3px 0;
+            border-color: black;
+            border-style: solid;
+            color: black;
+            padding: 15px 25px;
+            border-spacing: 0 0;
+        }
+
+        .testResultPassed {
+            background-color: #96cb7b;
+        }
+
+        .testResultFailed {
+            background-color: #f36565;
+        }
+
+        .testResultSkipped {
+            background-color: #ddd9d9;
+        }
+
+        table.pvtTable tr th, table.pvtTable tr th {
+            font-size: 300%;
+        }
+
+
+        .pvtAttr {
+            font-size: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tests Summary</h1>
+    <table id="testsSummaryLog" class="display" width="100%"></table>
+<pre id="summaryTable" hidden="true" />
+    [
