@@ -5,13 +5,13 @@ my personla tool name SetDUT up - then it was developed to be the team tool.
 
 
 ## DUT:
-  is an abreviation for Device Under Test, inroduced by Intel Inc.. consist of the most updated  components by Intel, CPU, SSD, motherbord
+  is an abreviation for Device Under Test,devices inroduced by Intel Inc.. consist of the most updated  components by Intel, CPU, SSD, motherbord
 and PCH. DUT with with respect to every project represents Personal PC,PC for business, PC gamers and computer servers.
 
 ### this tool was used on latest Project named KabyLake X, PC for business
 
 ## this Solution:
-  tool was developed for saving time and energy in order to maintain focus on our main purpose VALIDATING and testing the FW PCH.
+  tool was developed for saving time and energy in order to maintain focus on our main purpose witch is VALIDATING and testing the FW PCH developed by the leading Developer Team named PCH.
   this tool rest in the Controler PC or tester PC
   
   
